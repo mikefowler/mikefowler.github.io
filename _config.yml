@@ -13,14 +13,14 @@ pygments: true
 permalink: /:year/:month/:day/:title/
 
 exclude: [
-  'node_modules', 
+  'node_modules',
   'assets/sass',
   'Gruntfile.js',
   'mikefowler.me.sublime-project',
   'mikefowler.me.sublime-workspace',
   'package.json',
   'README.md',
-  'vendor'
+  'vendor',
   'config.rb',
   'Gemfile',
   'Gemfile.lock',
