@@ -1,0 +1,44 @@
+<%
+file_name = if @opts[:font_face_path]
+  File.join @opts[:font_face_path], @data[:file_name]
+else
+  @data[:file_name]
+end
+%>/* 
+ * Font Custom: bare CSS
+ */
+
+@include font-face("<%= @opts[:font_name] %>", font-files(
+  '<%= file_name %>.woff', woff,
+  '<%= file_name %>.ttf', ttf,
+  '<%= file_name %>.svg', svg), '<%= file_name %>.eot', normal, normal);
+
+%icon-font {
+  font-family: "<%= @opts[:font_name] %>";
+}
+
+<%=  @data[:glyphs].map { |name| ".#{@opts[:css_prefix] + name}" }.join(",\n") %> {
+  display: inline-block;
+  vertical-align: middle;
+  &:before {
+    @extend %icon-font;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    text-decoration: inherit;
+  }
+}
+
+<% @data[:glyphs].each_with_index do |name, index| %>
+%<%= @opts[:css_prefix] + name %>-glyph {
+  content: "\<%= (61696+index).to_s(16) %>";
+}
+.<%= @opts[:css_prefix] + name %>:before {
+  @extend %<%= @opts[:css_prefix] + name %>-glyph;
+}
+<% end %>

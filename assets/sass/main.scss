@@ -1,0 +1,479 @@
+
+///////////////////////////////////////////////
+// CONFIG
+///////////////////////////////////////////////
+
+// COMPASS DEFAULTS
+
+$base-font-size: 16px;
+$base-line-height: $base-font-size * 1.5;
+
+// COMPASS
+
+@import 'compass';
+
+// FUNCTIONS
+
+@function em($px, $base: $base-font-size) {
+  @return ($px / $base) * 1em;
+}
+
+// SITE CONFIG
+
+$debug: false;
+// $debug: true;
+
+$body-padding: 1em;
+
+$color-black: #444;
+$color-light-grey: #f1f1f1;
+$color-grey: #ccc;
+$color-primary: rgb(55, 188, 250);
+
+$font-xl: 24px;
+$font-l: 20px;
+$font-m: 16px;
+$font-s: 14px;
+$font-xs: 12px;
+
+$default-text-color: $color-black;
+
+$masthead-width: 80px;
+$masthead-width-open: 150px;
+  
+///////////////////////////////////////////////
+// PLACEHOLDERS
+///////////////////////////////////////////////
+
+%container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+%group {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+///////////////////////////////////////////////
+// NORMALIZE
+///////////////////////////////////////////////
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+///////////////////////////////////////////////
+// GLOBAL
+///////////////////////////////////////////////
+
+@include establish-baseline;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: normal;
+  font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  border-top: 10px solid $color-primary;
+
+  @if $debug == true {
+    @include debug-vertical-alignment;
+  }
+}
+
+p {
+  margin: 0;
+  @include adjust-leading-to(1);
+  @include trailer;
+}
+
+a {
+  text-decoration: underline;
+  color: $default-text-color;
+  @include transition(0.25s color ease);
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  @include trailer(0.5);
+}
+
+h1 {
+  font-size: em($font-xl);
+}
+
+h2, h3, h4, h5, h6 {
+  font-size: em($font-l);
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+sup, sub {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.6em;
+   @include adjust-font-size-to($font-xs);
+}
+
+sub {
+  top: 0.4em;
+}
+
+ul, ol {
+  @include trailer;
+
+  li {
+    @include trailer(0.25);
+  }
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background: $color-grey;
+}
+
+blockquote {
+  border-left: 5px solid $color-primary;
+  padding-left: rhythm(0.5);
+}
+
+///////////////////////////////////////////////
+// MASTHEAD
+///////////////////////////////////////////////
+
+.masthead {
+  background: #f5f5f5;
+  padding: 0 rhythm(1);
+  text-align: justify;
+  height: rhythm(3);
+  @include adjust-leading-to(3);
+  @include trailer;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+}
+
+.masthead__branding {
+  display: inline-block;
+  vertical-align: top;
+  @include adjust-font-size-to(36px, 3);
+
+  a {
+    position: relative;
+    display: block;
+  }
+
+}
+
+.masthead__nav {
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  width: 70%;
+}
+
+.masthead__nav-item {
+  display: inline-block;
+  margin-left: 8%;
+  @include adjust-leading-to(1);
+}
+
+///////////////////////////////////////////////
+// ARTICLE
+///////////////////////////////////////////////
+
+.article {
+
+}
+
+.article__content {
+  
+}
+
+.article__title {
+  text-align: center;
+  @include leader;
+  @include trailer;
+  
+  a {
+    text-decoration: none;
+  }
+  
+}
+
+.article__pubdate {
+  display: block;
+  margin: 0;
+  color: lighten($default-text-color, 25%);
+  @include adjust-font-size-to($font-xs);
+}
+
+.footnotes {
+  @include adjust-font-size-to($font-xs);
+
+  p {
+    display: inline;
+  }
+}
+
+///////////////////////////////////////////////
+// GRID
+///////////////////////////////////////////////
+
+.center {
+
+  > p,
+  > blockquote,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > ul,
+  > ol,
+  > .highlight,
+  > .gist {
+    
+    @media screen and (min-width: 37.5em) {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    @media screen and (min-width: 50em) {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+  }
+
+  > .highlight {
+    @include trailer;
+  }
+
+}
+
+.pull {
+  width: 100%;
+  @include leader;
+  @include trailer;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.push-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.pull-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+///////////////////////////////////////////////
+// FOOTER
+///////////////////////////////////////////////
+
+#footer {
+  text-align: center;
+  @include adjust-font-size-to($font-xs);
+  
+  .container {
+    border-top: 1px solid $color-light-grey;
+    @include leader(2);
+    @include padding-leader(2);
+    @include padding-trailer(2);
+  }
+
+}
+
+///////////////////////////////////////////////
+// UTILITIES
+///////////////////////////////////////////////
+
+.group {
+  @extend %group;
+}
+
+.container {
+  @extend %container;
+}
+
+.alignleft {
+  float: left;
+  margin-right: rhythm(1);
+  @include trailer;
+
+  > * {
+    max-width: 100%;
+  }
+}
+
+.alignright {
+  float: right;
+  margin-left: rhythm(1);
+  @include trailer;
+
+  > * {
+    max-width: 100%;
+  }
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.highlight {
+  background: #f1f1f1;
+  padding: rhythm(0.5);
+  font-family: monospace;
+  @include adjust-font-size-to($font-s, 0.7);
+
+  pre {
+    overflow-x: hidden;
+    overflow-x: scroll;
+  }
+}
+
+@import 'icons';
+
+///////////////////////////////////////////////
+// BREAKPOINTS
+///////////////////////////////////////////////
+
+// > 320px
+
+@media screen and (min-width: 20em) {
+
+}
+
+// > 480px
+
+@media screen and (min-width: 30em) {
+
+  body {
+    font-size: 112.5%; // 18px
+  }
+
+}
+
+// < 600px
+
+@media screen and (max-width: 37.5em) {
+
+}
+
+// > 600px
+
+@media screen and (min-width: 37.5em) {
+  
+}
+
+// > 800px
+
+@media screen and (min-width: 50em) {
+
+  body {
+    font-size: 125%; // 20px
+  }
+
+}
+
+// > 1024px
+
+@media screen and (min-width: 64em) {
+
+  body {
+    font-size: 137.5%; // 22px
+  }
+
+}
+
+// > 1200px
+
+@media screen and (min-width: 75em) {
+
+  body {
+    font-size: 150%; // 24px;
+  }
+
+}
+
+// > 1920px
+
+@media screen and (min-width: 120em) {
+
+  body {
+    font-size: 162.5%; // 26px
+  }
+
+}
+
+///////////////////////////////////////////////
+// VENDOR
+///////////////////////////////////////////////
+
+@import 'syntax';

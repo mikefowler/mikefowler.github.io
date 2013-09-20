@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+  <meta name="viewport" content="width=device-width">
+  
+  <script type="text/javascript" src="//use.typekit.net/jal3zqa.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+  <link rel="stylesheet" href="{{ site.css }}/main.css">
+  {% for file in page.css %}
+    <link rel="stylesheet" href="{{ site.css }}/page/{{file}}">
+  {% endfor %}
+
+</head>
+<body>
+    
+  {% include masthead.html %}
+    
+  <div id="main" class="container">{{ content }}</div>
+
+  {% include footer.html %}
+  
+  <script src="{{ site.js }}/app.js"></script>
+  {% for file in page.js %}
+    <script src="{{ site.js }}/page/{{file}}"></script>
+  {% endfor %}
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10512170-10']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</body>
+</html>

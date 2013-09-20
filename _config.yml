@@ -1,0 +1,21 @@
+name: Mike Fowler
+author: Mike Fowler
+
+css: '/assets/css'
+js: '/assets/js'
+images: '/assets/images'
+
+markdown: redcarpet
+
+pygments: true
+permalink: /:year/:month/:day/:title/
+
+exclude: [
+  node_modules, 
+  assets/sass,
+  Gruntfile.js,
+  mikefowler.me.sublime-project,
+  mikefowler.me.sublime-workspace,
+  package.json,
+  README.md
+]

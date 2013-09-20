@@ -1,0 +1,16 @@
+{
+  "fonts": [
+    "icons.ttf",
+    "icons.woff",
+    "icons.eot",
+    "icons.svg"
+  ],
+  "templates": [
+    "_icons.scss"
+  ],
+  "file_name": "icons",
+  "glyphs": [
+    "logomark",
+    "menu"
+  ]
+}

@@ -1,0 +1,45 @@
+/* 
+ * Font Custom: bare CSS
+ */
+
+@include font-face("icons", font-files(
+  'icons.woff', woff,
+  'icons.ttf', ttf,
+  'icons.svg', svg), 'icons.eot', normal, normal);
+
+%icon-font {
+  font-family: "icons";
+}
+
+.icon-logomark,
+.icon-menu {
+  display: inline-block;
+  vertical-align: middle;
+  &:before {
+    @extend %icon-font;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    text-decoration: inherit;
+  }
+}
+
+
+%icon-logomark-glyph {
+  content: "\f100";
+}
+.icon-logomark:before {
+  @extend %icon-logomark-glyph;
+}
+
+%icon-menu-glyph {
+  content: "\f101";
+}
+.icon-menu:before {
+  @extend %icon-menu-glyph;
+}
