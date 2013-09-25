@@ -6,11 +6,20 @@
     "icons.svg"
   ],
   "templates": [
-    "_icons.scss"
+    "_icons.scss",
+    "fontcustom-preview.html",
+    "fontcustom.css"
   ],
   "file_name": "icons",
   "glyphs": [
+    "facebook",
+    "foursquare",
+    "instagram",
+    "lastfm",
+    "linkedin",
     "logomark",
-    "menu"
+    "menu",
+    "twitter-square",
+    "twitter"
   ]
 }

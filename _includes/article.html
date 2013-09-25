@@ -1,4 +1,4 @@
-{% if page.home %}
+{% if page.home or page.listing %}
   {% assign home = true %}
 {% endif %}
 
@@ -6,18 +6,24 @@
   {% assign page = post %}
 {% endif %}
 
-<article class="article center">
+<article class="article">
     
-  <h1 class="article__title">
-    {% if home == true %}<a href="{{page.url}}">{% endif %}
-      {{page.title}}
-    {% if home == true %}</a>{% endif %}
-  </h1>
+  <header class="article__header center">
     
-  {% if page.date %}
-  <p class="article__pubdate" ><time datetime="{{page.date | date: '%Y-%m-%d %H:%M'}}">{{page.date | date: '%m/%d/%y'}}, a {{page.date | date: '%A' }}.</time></p>
-  {% endif %}
+    <h1 class="article__title">
+      {% if home == true %}<a href="{{page.url}}">{% endif %}
+        {{page.title}}
+      {% if home == true %}</a>{% endif %}
+    </h1>
+      
+    {% if page.date %}
+    <p class="article__pubdate" ><time datetime="{{page.date | date: '%Y-%m-%d %H:%M'}}">{{page.date | date: '%m/%d/%y'}}, a {{page.date | date: '%A' }}.</time></p>
+    {% endif %}
 
-  {{content}}
+  </header>
+  
+  <div class="article__content center">
+    {{content}}
+  </div>
 
 </article>

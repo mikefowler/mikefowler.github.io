@@ -1,0 +1,21 @@
+---
+layout: default
+title: "Thoughts"
+listing: true
+---
+
+<div class="article-list">
+
+  {% for post in site.categories.thoughts %}
+    
+    {% assign content = post.content %}
+
+    {% if post.layout == 'article' %}
+      {% include article.html %}
+    {% elsif post.layout == 'link' %}
+      {% include link.html %}
+    {% endif %}
+
+  {% endfor %}
+
+</div>

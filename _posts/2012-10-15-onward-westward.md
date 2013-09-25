@@ -2,6 +2,7 @@
 layout: article
 title: "Onward. Westward."
 date: 2012-10-15 03:09
+category: thoughts
 ---
 In only four weeks I will be both living and working in a new place. Sure, I've made these changes before: new job, new apartment. But this is different, because both of these new places are further than across town. They're further than across the border into another familiar New England state and further even than a long drive to Philadelphia or a short plane ride to Chicago.
 
@@ -21,7 +22,7 @@ Of course, the other half of this story is the move across the country to a bran
 
 It goes without saying that the developer culture in San Francisco is strong, and the prospect of continually meeting and working with people who are as passionate about work and creation as I am is extremely attractive to me. Whether it's code meetups, conferences or casual encounters, I'm ready to expand my network of influential human beings.
 
-Stay Weird, Vermont
+Stay weird, Vermont
 -------------------
 
 Vermont isn't going anywhere. Nor is the New England I was raised in and all of its eccentricities. If or when I decide to venture back to the East Coast, I expect I'll find the culture of people much the same, and there is something mildly comforting in that. The culture of Vermont has truly molded me over the past six years, both spiritually and philosophically (*and maybe physically, Mike thinks as he trims his beard and dons flannel*).

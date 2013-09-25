@@ -25,7 +25,6 @@
 
   {% include footer.html %}
   
-  <script src="{{ site.js }}/app.js"></script>
   {% for file in page.js %}
     <script src="{{ site.js }}/page/{{file}}"></script>
   {% endfor %}

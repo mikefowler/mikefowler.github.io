@@ -1,7 +1,8 @@
 ---
 layout: article
-title: "Settling on a Content System"
+title: "Settling on a content system"
 date: 2011-12-14 00:56
+category: thoughts
 ---
 Around the time that I started developing this site I had started reading more about content systems that would generate static sites (as opposed to a database driven CMS). After a couple days of research I settled on [Stacey](http://www.staceyapp.com), a brilliantly simple PHP-based system that builds pages on the fly using markdown-parsed source files. After familiarizing myself with the templating language I got to work creating my theme and finished that a week or so later. I was fairly happy with the ease of it and how I could exercise my obsessive need for file structure organization. It was easy to include additional stylesheets or javascript on any given page, which I knew I would need for any code demos I wanted to post. 
 
@@ -9,7 +10,7 @@ Despite these things I was irked that there was no good way to categorize posts.
 
 In any case, something else came along at just the right time. Octopress! The fantastic piece of work by [Brandon Mathis](http://brandonmathis.com/) walks the perfect line between being easy to use with a lot of features out of the box and maintaining a high level of customizability. I was able to maintain everything I loved about Stacey and gain those few extra additional features, and that made it worth learning *another* theme framework literally days before I was going to put the site up.
 
-This is Why It's Hot
+This is why it's hot
 --------------------
 
 - Github Hosting: It's extremely easy to set this up with Octopress, and built in

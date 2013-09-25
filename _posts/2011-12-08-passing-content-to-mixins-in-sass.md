@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Passing Content to Mixins in Sass"
+title: "Passing content to mixins in Sass"
 date: 2011-12-08 14:39
 category: thoughts
 ---

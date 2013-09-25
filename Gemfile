@@ -1,2 +1,4 @@
 source 'https://rubygems.org'
-gem 'github-pages'
+
+gem 'jekyll'
+gem 'compass', '~> 0.13.alpha.4'

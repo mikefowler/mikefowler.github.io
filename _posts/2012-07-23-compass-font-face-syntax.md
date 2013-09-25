@@ -1,7 +1,8 @@
 ---
 layout: article
-title: "Font Face Syntax in Compass"
+title: "Font-face syntax in Compass"
 date: 2012-07-23 11:50
+category: thoughts
 ---
 Since the documentation on the Compass website is a tad confusing I thought I'd clarify the basic usage of the @font-face mixin included in Compass.
 

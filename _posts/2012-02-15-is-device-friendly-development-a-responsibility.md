@@ -1,13 +1,14 @@
 ---
 layout: article
-title: "Is Device-Friendly Development a Responsibility?"
+title: "Is device-friendly development a responsibility?"
 date: 2012-02-15 10:38
+category: thoughts
 ---
 I got to thinking the other day: is developing device-friendly websites a responsibility of the developer? If it's not now, will it ever be?
 
 This is an issue that I think is worth talking about. I'd like to hear some other opinions as I think through this myself. I'll start with some thinking points and then wrap it together at the end.
 
-In The Beginning...
+In the beginning...
 -------------------
 
 ...there were tables. For the simple reason that tables made it easy to align content in a grid-like fashion, tables become the de-facto method for creating visual layout. Layout via CSS become possible in the late 1990's, but with browser support shoddy at best, it was certainly not the tried and true method that table layout was. And so things were, until the community began more closely considering things like semantics, accessibility and search optimization. As it turned out, the markup you used to create your layout could adversely affect these things. 
@@ -16,7 +17,7 @@ Gradually, CSS became more powerful and saw better browser implementation. Funda
 
 During this transition period, did we, as developers, consider it our duty, our *responsibility*, to inform clients of this transition and push them in the direction of a table-less layout?
 
-Poor Browser Implementation Abound
+Poor browser implementation abound
 ----------------------------------
 
 Let's jump five to ten years down the road. Microsoft has won the war against Netscape, and Internet Explorer dominates the browser market. Dominate might even be too lenient a description. Check out [this 2003 press release](http://www.onestat.com/html/aboutus_pressbox23.html) from OneStat. This release came near the height of Microsoft's browser dominance and shows Internet Explorer 6 with an astonishing 97.34% of the market share.
@@ -25,7 +26,7 @@ While these stats serve to illustrate just how much the market has changed since
 
 So, a second rhetorical: In the past five to six years, have developers made it their responsibility to sway clients away from lingering old versions of browsers with poor implementations of CSS and towards modern browsers that provide the user with a richer, immersive experience?
 
-Get to the Point, Already.
+Get to the point, already.
 --------------------------
 
 Ok, ok. Let's pull this back around. First some opinions.
@@ -40,7 +41,7 @@ That being said, *where do small companies fall in this trend?* Should we expect
 
 It seems to me that as the developers, the people engineering ways to experience content, a certain amount of this responsibility falls to us. If our job, as I feel is the case, is about delivering content in the most efficient and effective manner, then I think we absolutely have a responsibility to encourage clients to move towards mobile-friendly designs.
 
-In Practice
+In practice
 -----------
 
 Is anybody doing this yet? I'd love to hear from developers who have already made responsive development a part of their standard client packages, or have at least begun to have that conversation with some of the smaller companies you do work for. Like I said earlier, I think this is a conversation worth having, so please feel free to voice your opinion and get this discussion going.

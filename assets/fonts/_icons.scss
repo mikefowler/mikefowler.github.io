@@ -11,8 +11,15 @@
   font-family: "icons";
 }
 
+.icon-facebook,
+.icon-foursquare,
+.icon-instagram,
+.icon-lastfm,
+.icon-linkedin,
 .icon-logomark,
-.icon-menu {
+.icon-menu,
+.icon-twitter-square,
+.icon-twitter {
   display: inline-block;
   vertical-align: middle;
   &:before {
@@ -30,16 +37,65 @@
 }
 
 
-%icon-logomark-glyph {
+%icon-facebook-glyph {
   content: "\f100";
+}
+.icon-facebook:before {
+  @extend %icon-facebook-glyph;
+}
+
+%icon-foursquare-glyph {
+  content: "\f101";
+}
+.icon-foursquare:before {
+  @extend %icon-foursquare-glyph;
+}
+
+%icon-instagram-glyph {
+  content: "\f102";
+}
+.icon-instagram:before {
+  @extend %icon-instagram-glyph;
+}
+
+%icon-lastfm-glyph {
+  content: "\f103";
+}
+.icon-lastfm:before {
+  @extend %icon-lastfm-glyph;
+}
+
+%icon-linkedin-glyph {
+  content: "\f104";
+}
+.icon-linkedin:before {
+  @extend %icon-linkedin-glyph;
+}
+
+%icon-logomark-glyph {
+  content: "\f105";
 }
 .icon-logomark:before {
   @extend %icon-logomark-glyph;
 }
 
 %icon-menu-glyph {
-  content: "\f101";
+  content: "\f106";
 }
 .icon-menu:before {
   @extend %icon-menu-glyph;
+}
+
+%icon-twitter-square-glyph {
+  content: "\f107";
+}
+.icon-twitter-square:before {
+  @extend %icon-twitter-square-glyph;
+}
+
+%icon-twitter-glyph {
+  content: "\f108";
+}
+.icon-twitter:before {
+  @extend %icon-twitter-glyph;
 }

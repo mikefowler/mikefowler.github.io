@@ -57,23 +57,29 @@ module.exports = function(grunt) {
       build: {
         cmd: 'jekyll build'
       },
-      serve: {
+      staging: {
         cmd: 'jekyll serve -w'
+      },
+      write: {
+        cmd: 'jekyll serve -w --drafts'
       },
       deploy: {
         // @tbd
       },
       fontcustom: {
-        cmd: 'fontcustom compile images/icons/ -c ./_config/'
+        cmd: 'fontcustom compile assets/images/icons/ -c ./_config/'
       }
     },
 
     concurrent: {
-      develop: {
-        tasks: ['exec:serve', 'watch'],
-        options: {
-          logConcurrentOutput: true
-        }
+      options: {
+        logConcurrentOutput: true
+      },
+      write: {
+        tasks: ['exec:write', 'watch'],
+      },
+      staging: {
+        tasks: ['exec:staging', 'watch'],
       }
     }
 
@@ -89,8 +95,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-concurrent');
 
   // Tasks
-
-  grunt.registerTask('default', ['concurrent:develop']);
+  
+  grunt.registerTask('write', ['concurrent:write']);
+  grunt.registerTask('staging', ['concurrent:staging']);
   grunt.registerTask('test', ['jshint']);
+  grunt.registerTask('default', ['write']);
 
 };

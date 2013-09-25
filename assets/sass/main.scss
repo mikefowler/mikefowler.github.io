@@ -30,8 +30,8 @@ $color-light-grey: #f1f1f1;
 $color-grey: #ccc;
 $color-primary: rgb(55, 188, 250);
 
-$font-xl: 24px;
-$font-l: 20px;
+$font-xl: 28px;
+$font-l: 24px;
 $font-m: 16px;
 $font-s: 14px;
 $font-xs: 12px;
@@ -40,7 +40,13 @@ $default-text-color: $color-black;
 
 $masthead-width: 80px;
 $masthead-width-open: 150px;
-  
+
+///////////////////////////////////////////////
+// NORMALIZE
+///////////////////////////////////////////////
+
+@import 'normalize';
+
 ///////////////////////////////////////////////
 // PLACEHOLDERS
 ///////////////////////////////////////////////
@@ -60,41 +66,26 @@ $masthead-width-open: 150px;
   }
 }
 
-///////////////////////////////////////////////
-// NORMALIZE
-///////////////////////////////////////////////
+%code {
+  background: #f1f1f1;
+  font-family: monospace;
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+%unstyled-list {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+%hidden {
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 ///////////////////////////////////////////////
@@ -107,6 +98,10 @@ table {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-weight: normal;
   font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;
@@ -114,6 +109,10 @@ body {
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
   border-top: 10px solid $color-primary;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 
   @if $debug == true {
     @include debug-vertical-alignment;
@@ -136,17 +135,18 @@ a {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  @include trailer(0.5);
-}
-
 h1 {
-  font-size: em($font-xl);
+  @include trailer(0.5);
+  @include adjust-font-size-to($font-xl, 1.2);
 }
 
 h2, h3, h4, h5, h6 {
-  font-size: em($font-l);
+  @include trailer(0.5);
+  @include adjust-font-size-to($font-l, 1.2);
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: normal;
 }
 
 strong {
@@ -187,6 +187,11 @@ blockquote {
   padding-left: rhythm(0.5);
 }
 
+code {
+  @extend %code;
+  padding: 0.125em 0.25em;
+}
+
 ///////////////////////////////////////////////
 // MASTHEAD
 ///////////////////////////////////////////////
@@ -205,7 +210,7 @@ blockquote {
     width: 100%;
     height: 0;
   }
-
+  
   a {
     text-decoration: none;
   }
@@ -215,6 +220,7 @@ blockquote {
 .masthead__branding {
   display: inline-block;
   vertical-align: top;
+  margin: 0;
   @include adjust-font-size-to(36px, 3);
 
   a {
@@ -229,6 +235,15 @@ blockquote {
   vertical-align: top;
   text-align: right;
   width: 70%;
+
+  h1 {
+    @extend %hidden;
+  }
+
+}
+
+.masthead__nav-list {
+  @extend %unstyled-list;
 }
 
 .masthead__nav-item {
@@ -238,15 +253,53 @@ blockquote {
 }
 
 ///////////////////////////////////////////////
+// MAIN
+///////////////////////////////////////////////
+
+#main {
+  flex: 1;
+}
+
+///////////////////////////////////////////////
+// ARTICLE LIST
+///////////////////////////////////////////////
+
+.article-list {
+
+  .article {
+    @include leader(2);
+    @include padding-trailer(4);
+    border-bottom: 1px solid $color-light-grey;
+
+    &:first-child {
+      @include leader(0);
+    }
+    &:last-child {
+      @include padding-trailer(0);
+    }
+  }
+
+}
+
+///////////////////////////////////////////////
 // ARTICLE
 ///////////////////////////////////////////////
 
 .article {
 
+  
 }
 
 .article__content {
   
+  :first-child {
+    margin-top: 0;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+
 }
 
 .article__title {
@@ -264,6 +317,7 @@ blockquote {
   display: block;
   margin: 0;
   color: lighten($default-text-color, 25%);
+  @include trailer(0.5);
   @include adjust-font-size-to($font-xs);
 }
 
@@ -273,6 +327,14 @@ blockquote {
   p {
     display: inline;
   }
+}
+
+///////////////////////////////////////////////
+// ABOUT
+///////////////////////////////////////////////
+
+.about__icons {
+  @include adjust-font-size-to(80px);
 }
 
 ///////////////////////////////////////////////
@@ -386,19 +448,57 @@ blockquote {
   margin: 0 auto;
 }
 
+.center-text {
+  text-align: center;
+}
+
 .highlight {
-  background: #f1f1f1;
+  @extend %code;
   padding: rhythm(0.5);
-  font-family: monospace;
   @include adjust-font-size-to($font-s, 0.7);
 
   pre {
+    margin: 0;
     overflow-x: hidden;
     overflow-x: scroll;
+    overflow-y: hidden;
   }
 }
 
+.hidden {
+  @extend %hidden;
+}
+
+///////////////////////////////////////////////
+// ICONS
+///////////////////////////////////////////////
+
 @import 'icons';
+
+.icon-twitter,
+.icon-twitter-square {
+  color: #00acee;
+}
+
+.icon-linkedin {
+  color: #0e76a8;
+}
+
+.icon-lastfm {
+  color: #c3000d;
+}
+
+.icon-instagram {
+  color: #3f729b;
+}
+
+.icon-facebook {
+  color: #3b5998;
+}
+
+.icon-foursquare {
+  color: #25a0ca;
+}
 
 ///////////////////////////////////////////////
 // BREAKPOINTS

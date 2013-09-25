@@ -1,11 +1,12 @@
 ---
 layout: article
-title: "Efficient Theming with Sass"
+title: "Efficient theming with Sass"
 date: 2012-08-14 14:17
+category: thoughts
 ---
 Even after a full year of writing stylesheets almost exclusively with Sass and Compass, I continue to find solutions to common problems that further convince me that I will never write vanilla CSS again. Creating theme sets is something I've worked heavily on in the past three to four months, and it's there that I've honed my Sass-fu and started to establish some of the material I present here. None of this is what I would consider "best practice", but rather possible solutions that I find rather elegant. Some of this may be useful for others, and some of it may not be.
 
-Variable Semantics
+Variable semantics
 ------------------
 
 Let's demonstrate a problem. Say you're developing a base stylesheet, and eventually you're going to create child themes that inherit from your base, overriding variables to change colors, dimensions, etcetera.
@@ -48,14 +49,14 @@ body {
 
 Seem like overkill? I promise you it's not, and you'll thank yourself later, as will any other developer trying to work with your themes.
 
-Standalone Config File
+Standalone config file
 ----------------------
 
 We all know that one of the best parts of precompiling our stylesheets is the ability to use variables. As the ones developing and maintaining code, effective use of variables can shave hours off the time it takes to make changes or implement new features on a platform. That being said, large systems using Sass will undoubtedly end up with a considerable number of variables. All of these variables should (hopefully) be kept in a single well-documented file. For every large system I maintain stylesheets for, this file is my ```_config.scss``` partial.
 
 The official Compass website does a decent job [explaining this concept](http://compass-style.org/help/tutorials/best_practices/), but does not explicitly state something crucial to this concept: **your configuration partial should *never* define or import any actual CSS**. Importing anything into the configuration partial that would result in actual compiled CSS ruins the ability to then import that configuration file into multiple files without duplicating code.
 
-"Smart" Variables
+"Smart" variables
 -----------------
 
 Say you're developing a theme, and you have a header bar that has a background gradient. You could define the two colors of the gradient as two variables:
@@ -93,7 +94,7 @@ However... this poses an issue. What happens when you have a theme to develop th
 
 Implementing this where appropriate will result in a more flexible theming environment.
 
-Inline Your Media Queries
+Inline your @media queries
 -------------------------
 
 This concept has [been written about before](/thoughts/passing-content-to-mixins-in-sass/), but it's worth mentioning here and expanding upon a bit. First, an example. Below we have the beginnings of a file structure for a responsive design. Simplified, yes, but bare with me. Individual sections are defined for different areas of the page, segmented by docblock-style comments. We're using a custom mixin for our responsive queries, passing content in via ```@content``` blocks. Everything looks great.

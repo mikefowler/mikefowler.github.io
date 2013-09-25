@@ -1,7 +1,8 @@
 ---
 layout: article
-title: "Our Obligation as Developers"
+title: Our obligation as developers
 date: 2011-12-20 10:11
+category: thoughts
 ---
 There's no doubt that semantics are an oft-spoken about topic, especially recently. But let's address a different issue.
 

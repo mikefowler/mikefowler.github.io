@@ -29,7 +29,7 @@ output: assets/fonts
 #
 # default: [ css, preview ]
 
-templates: [ '_config/_icons.scss' ]
+templates: [ '_config/_icons.scss', preview ]
 
 # ---------------------------------------------------------------------------- #
 # Font Name

@@ -1,7 +1,8 @@
 ---
 layout: article
-title: "A New Frontier in 2013"
+title: "A new frontier in 2013"
 date: 2013-01-01 12:39
+category: thoughts
 ---
 It's been a time since I last blogged, and during that time much has happened. Within the last two months, I moved my life [across the country](/thoughts/onward-westward); started working at [Findery](http://findery.com); stumbled upon another vegan developer, [Jim Whimpey](http://jimwhimpey.com), on the internet and found an apartment with him; joined a new rock gym, [Mission Cliffs](http://www.touchstoneclimbing.com/mission-cliffs); survived the apocalypse; and became an everyday commuter on [The Wiggle](http://en.wikipedia.org/wiki/The_Wiggle). And in the midst of all this happening, I still managed to dip my toes into the ocean of things to explore that a new city provides.
 
@@ -9,7 +10,7 @@ And so begins my first year on the western frontier. Surrounded by thousands upo
 
 The immediate reaction of a young creative in this city: how can you possibly distinguish yourself in an environment like this, so saturated with smart, hard-working people? But it truly is only that, an immediate reaction, for the overwhelming sense is one of being energized by the collective drive of a city whose veins pulse with innovation and creativity. I must remind myself that, after all, *this is why I moved here*. This culture and community will push me, as much as I will push myself, to do better work.
 
-Let's Make People Smile
+Let's make people smile
 -----------------------
 
 Looking back at my [beginning-of-the-year post from 2012](http://mikefowler.me/thoughts/professional-goals-for-2012/), my goals were different because many were driven by being in a smaller developer community in Burlington. Speaking at events is certainly going to carry over, but my goals for 2013 are mostly different, and more focused on personal growth. In lieu of leaving a bulleted list in this post to potentially stare me in the face for the remainder of my career, I will deliver my goals for 2013 as a concept:
