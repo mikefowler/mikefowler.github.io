@@ -7,6 +7,12 @@ css: '/assets/css'
 js: '/assets/js'
 images: '/assets/images'
 
+disqus:
+  prod: 
+    shortname: mikefowler
+  dev:
+    shortname: mikefowler-dev
+
 markdown: redcarpet
 
 pygments: true

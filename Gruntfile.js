@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    
+
     watch: {
       scripts: {
         files: '<%= jshint.all %>',
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
       },
       livereload: {
         options: {
-          livereload: true
+          livereload: 35730
         },
         files: [
           '<%= site.build %>/assets/css/**/*.css',
@@ -87,10 +87,10 @@ module.exports = function(grunt) {
         logConcurrentOutput: true
       },
       write: {
-        tasks: ['exec:write', 'watch', 'open:dev'],
+        tasks: ['exec:write', 'watch'],
       },
       staging: {
-        tasks: ['exec:staging', 'watch', 'open:dev'],
+        tasks: ['exec:staging', 'watch'],
       }
     },
 

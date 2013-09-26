@@ -30,8 +30,9 @@ $color-light-grey: #f1f1f1;
 $color-grey: #ccc;
 $color-primary: rgb(55, 188, 250);
 
-$font-xl: 28px;
-$font-l: 24px;
+$font-xxl: 28px;
+$font-xl: 24px;
+$font-l: 20px;
 $font-m: 16px;
 $font-s: 14px;
 $font-xs: 12px;
@@ -137,11 +138,16 @@ a {
 
 h1 {
   @include trailer(0.5);
+  @include adjust-font-size-to($font-xxl, 1.2);
+}
+
+h2, h3 {
+  @include trailer(0.5);
   @include adjust-font-size-to($font-xl, 1.2);
 }
 
-h2, h3, h4, h5, h6 {
-  @include trailer(0.5);
+h4, h5, h6 {
+  @include trailer(0.25);
   @include adjust-font-size-to($font-l, 1.2);
 }
 
@@ -276,6 +282,7 @@ code {
     }
     &:last-child {
       @include padding-trailer(0);
+      border: none;
     }
   }
 
@@ -321,6 +328,15 @@ code {
   @include adjust-font-size-to($font-xs);
 }
 
+.article__comments {
+  @include leader(2);
+
+  .comments {
+    border-top: 1px solid $color-light-grey;
+    @include padding-leader(2);
+  }
+}
+
 .footnotes {
   @include adjust-font-size-to($font-xs);
 
@@ -353,7 +369,8 @@ code {
   > ul,
   > ol,
   > .highlight,
-  > .gist {
+  > .gist,
+  > .comments {
     
     @media screen and (min-width: 37.5em) {
       margin-left: 10%;

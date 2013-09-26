@@ -1,5 +1,5 @@
 {% if page.home or page.listing %}
-  {% assign home = true %}
+  {% assign listing = true %}
 {% endif %}
 
 {% if post %}
@@ -11,9 +11,9 @@
   <header class="article__header center">
     
     <h1 class="article__title">
-      {% if home == true %}<a href="{{page.url}}">{% endif %}
+      {% if listing == true %}<a href="{{page.url}}">{% endif %}
         {{page.title}}
-      {% if home == true %}</a>{% endif %}
+      {% if listing == true %}</a>{% endif %}
     </h1>
       
     {% if page.date %}
@@ -25,5 +25,15 @@
   <div class="article__content center">
     {{content}}
   </div>
+  
+  <div class="article__comments center">
+    
+    {% unless listing %}
+      {% include comments.html %}
+    {% endunless %}
+
+    {% if listing %}
+      <p><a href="{{site.url}}{{page.url}}#disqus_thread"></a></p>
+    {% endif %}
 
 </article>
