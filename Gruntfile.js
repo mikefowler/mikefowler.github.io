@@ -1,8 +1,19 @@
 /*global module:false*/
 module.exports = function(grunt) {
 
+  // show elapsed time at the end
+  require('time-grunt')(grunt);
+
+  // load all grunt tasks
+  require('load-grunt-tasks')(grunt);
+
   grunt.initConfig({
-    
+
+    app: {
+      dev: 'http://mikefowler.dev',
+      prod: 'http://mikefowler.me'
+    },
+
     site: {
       build: '_site'
     },
@@ -64,7 +75,7 @@ module.exports = function(grunt) {
         cmd: 'jekyll serve -w --drafts'
       },
       deploy: {
-        // @tbd
+        cmd: 'git add . && git commit && git push'
       },
       fontcustom: {
         cmd: 'fontcustom compile assets/images/icons/ -c ./_config/'
@@ -76,28 +87,29 @@ module.exports = function(grunt) {
         logConcurrentOutput: true
       },
       write: {
-        tasks: ['exec:write', 'watch'],
+        tasks: ['exec:write', 'watch', 'open:dev'],
       },
       staging: {
-        tasks: ['exec:staging', 'watch'],
+        tasks: ['exec:staging', 'watch', 'open:dev'],
+      }
+    },
+
+    open: {
+      dev: {
+        path: '<%= app.dev %>'
+      },
+      prod: {
+        path: '<%= app.prod %>'
       }
     }
 
   });
 
-  // Dependencies
-
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-exec');
-  grunt.loadNpmTasks('grunt-concurrent');
-
   // Tasks
   
   grunt.registerTask('write', ['concurrent:write']);
   grunt.registerTask('staging', ['concurrent:staging']);
+  grunt.registerTask('deploy', ['exec:deploy']);
   grunt.registerTask('test', ['jshint']);
   grunt.registerTask('default', ['write']);
 
