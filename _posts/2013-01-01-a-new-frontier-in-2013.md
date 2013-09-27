@@ -17,7 +17,7 @@ Looking back at my [beginning-of-the-year post from 2012](http://mikefowler.me/t
 
 I want to create things that elicit an emotional response. At my new job, I get to help build just such a thing every day. Therefore, I will do similar in my side projects. By "eliciting an emotional response", what I actually refer to here might mean anything from inspiring somebody, to making somebody smile, to actually helping create lasting value for a person. 
 
-Last month myself and the rest of our team at Findery got to sit down and chat with [Evan Williams](twitter.com/ev) for a bit. One of the concepts he mentioned while talking with us was that of internet "snack food": products that don't creating lasting value, but satisfy our need for instant gratification and positive reinforcement. That was my takeaway, at least. But the more I've thought about it, the more I realize how spot-on that analogy is. And more than ever it has inspired me to distance myself from creating things that aren't going to create real value.
+Last month myself and the rest of our team at Findery got to sit down and chat with [Evan Williams](http://twitter.com/ev) for a bit. One of the concepts he mentioned while talking with us was that of internet "snack food": products that don't creating lasting value, but satisfy our need for instant gratification and positive reinforcement. That was my takeaway, at least. But the more I've thought about it, the more I realize how spot-on that analogy is. And more than ever it has inspired me to distance myself from creating things that aren't going to create real value.
 
 TL;DR
 -----
