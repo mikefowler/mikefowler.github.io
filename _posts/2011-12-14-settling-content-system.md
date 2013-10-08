@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "Settling on a content system"
-date: 2011-12-14 00:56
+title: Settling on a content system
 category: thoughts
+excerpt: Thoughts on and reasoning behind coding this blog using Octopress.
 ---
 Around the time that I started developing this site I had started reading more about content systems that would generate static sites (as opposed to a database driven CMS). After a couple days of research I settled on [Stacey](http://www.staceyapp.com), a brilliantly simple PHP-based system that builds pages on the fly using markdown-parsed source files. After familiarizing myself with the templating language I got to work creating my theme and finished that a week or so later. I was fairly happy with the ease of it and how I could exercise my obsessive need for file structure organization. It was easy to include additional stylesheets or javascript on any given page, which I knew I would need for any code demos I wanted to post. 
 
@@ -21,3 +21,5 @@ This is why it's hot
 - Customizable to no end - I basically started a theme from nothing and cherry-picked features from the stock theme
   
 Check out Octopress on its [official site](http://octopress.org/) or [fork it on Github](https://github.com/imathis/octopress). For some more thoughts on Octopress, check out [this post over at Divya Manian's site](http://nimbupani.com/redesign-notes.html) (she also just recently launched a redesign running on Octopress).
+
+**Edit:** I have since regressed to plain old Jekyll since the big update came out. I started to become disenchanted with Octopress after realizing that it was a pain to publish a new post unless I was at my laptop with access to Terminal. Plain old Jekyll is my new jam, and if you need a nice writing environment (that you can publish from, no less), [Prose.io](http://prose.io) is so elegant.

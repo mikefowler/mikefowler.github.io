@@ -56,7 +56,6 @@ $masthead-width-open: 150px;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  
 }
 
 %group {
@@ -207,6 +206,7 @@ code {
   padding: 0 rhythm(1);
   text-align: justify;
   height: rhythm(3);
+  overflow: hidden;
   @include adjust-leading-to(3);
   @include trailer;
 
@@ -271,31 +271,34 @@ code {
 ///////////////////////////////////////////////
 
 .article-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  .article {
-    @include leader(2);
-    @include padding-trailer(4);
-    border-bottom: 1px solid $color-light-grey;
+.article-list__item {
+  @extend %group;
+  @include trailer;
+}
 
-    &:first-child {
-      @include leader(0);
-    }
-    &:last-child {
-      @include padding-trailer(0);
-      border: none;
-    }
-  }
+.article-list__meta {
+  color: lighten($default-text-color, 25%);
+  @include adjust-font-size-to($font-xs);
+}
 
+.article-list__content {
+  
+}
+
+.article-list__title {
+  margin: 0;
+  @include adjust-font-size-to($font-m);
 }
 
 ///////////////////////////////////////////////
 // ARTICLE
 ///////////////////////////////////////////////
 
-.article {
-
-  
-}
+.article { }
 
 .article__content {
   
@@ -533,6 +536,18 @@ code {
 
   body {
     font-size: 112.5%; // 18px
+  }
+
+  .article-list__meta {
+    width: 20%;
+    float: left;
+    text-align: right;
+    padding-right: rhythm(2);
+  }
+
+  .article-list__content {
+    width: 80%;
+    float: left;
   }
 
 }

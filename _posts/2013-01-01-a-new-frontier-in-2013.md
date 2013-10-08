@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "A new frontier in 2013"
-date: 2013-01-01 12:39
+title: A new frontier in 2013
 category: thoughts
+excerpt: Reflection on my recent move, and what's to come for the next year.
 ---
 It's been a time since I last blogged, and during that time much has happened. Within the last two months, I moved my life [across the country](/thoughts/onward-westward); started working at [Findery](http://findery.com); stumbled upon another vegan developer, [Jim Whimpey](http://jimwhimpey.com), on the internet and found an apartment with him; joined a new rock gym, [Mission Cliffs](http://www.touchstoneclimbing.com/mission-cliffs); survived the apocalypse; and became an everyday commuter on [The Wiggle](http://en.wikipedia.org/wiki/The_Wiggle). And in the midst of all this happening, I still managed to dip my toes into the ocean of things to explore that a new city provides.
 

@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "The role of humility in community contribution"
-date: 2012-02-03 16:39
+title: The role of humility in community contribution
 category: thoughts
+excerpt: Thoughts on the intimidating nature of contributing to the web community.
 ---
 Developers, designers, artists, musicians... to you I speak. Many of us followed a similar path into our respective creative fields. We spent years as a sponge. We sat quietly on the sidelines, reading as much as we could about our industries. As a result, many of us can proudly say that our livelihoods are the result of long hours of self-teaching and, above all else, an unquenchable passion for the subject.
 

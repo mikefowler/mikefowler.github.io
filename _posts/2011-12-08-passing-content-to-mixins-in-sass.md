@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "Passing content to mixins in Sass"
-date: 2011-12-08 14:39
+title: Passing content to mixins in Sass
 category: thoughts
+excerpt: A demo of passing @content blocks into mixins in Sass, and some potential use cases.
 ---
 
 Version 3.2 of SASS adds this incredibly helpful piece of functionality: the ability to pass @content blocks to a mixin. What do I mean by passing content to a mixin? We can already pass in parameters, isn't that the same thing? Not quite. Consider the following example, as elegantly illustrated by Chris Eppstein in a Gist from several months ago.

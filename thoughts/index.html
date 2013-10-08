@@ -8,13 +8,20 @@ listing: true
 
   {% for post in site.categories.thoughts %}
     
-    {% assign content = post.content %}
+    <article class="article-list__item">
+      
+      <div class="article-list__meta">
+        <time datetime="{{post.date | date: '%Y-%m-%d %H:%M'}}">{{post.date | date: '%m/%d/%Y'}}</time>
+      </div>
+    
+      <div class="article-list__content">
+    
+        <h1 class="article-list__title"><a href="{{post.url}}">{{post.title}}</a></h1>
+        <p class="article-list__excerpt">{{post.excerpt}}</p>
 
-    {% if post.layout == 'article' %}
-      {% include article.html %}
-    {% elsif post.layout == 'link' %}
-      {% include link.html %}
-    {% endif %}
+      </div>
+
+    </article>
 
   {% endfor %}
 

@@ -1,10 +1,9 @@
 ---
 layout: article
-title: "Onward. Westward."
-date: 2012-10-15 03:09
+title: Onward. Westward.
 category: thoughts
 ---
-In only four weeks I will be both living and working in a new place. Sure, I've made these changes before: new job, new apartment. But this is different, because both of these new places are further than across town. They're further than across the border into another familiar New England state and further even than a long drive to Philadelphia or a short plane ride to Chicago.
+In only four weeks I will be both living and working in a new place.<!-- more --> Sure, I've made these changes before: new job, new apartment. But this is different, because both of these new places are further than across town. They're further than across the border into another familiar New England state and further even than a long drive to Philadelphia or a short plane ride to Chicago.
 
 *In four weeks I will be living and working in San Francisco.*
 

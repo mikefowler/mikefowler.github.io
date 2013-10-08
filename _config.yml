@@ -7,6 +7,19 @@ css: '/assets/css'
 js: '/assets/js'
 images: '/assets/images'
 
+post:
+  template: _templates/_post.txt
+  extension: md
+
+page:
+  template: _templates/_page.txt
+  extension: md
+
+git:
+  branch: master
+
+editor: subl
+
 disqus:
   prod: 
     shortname: mikefowler
@@ -14,6 +27,8 @@ disqus:
     shortname: mikefowler-dev
 
 markdown: redcarpet
+
+excerpt_separator: <!-- more -->
 
 pygments: true
 permalink: /:year/:month/:day/:title/
