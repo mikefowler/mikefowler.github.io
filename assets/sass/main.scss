@@ -12,10 +12,100 @@ $base-line-height: $base-font-size * 1.5;
 
 @import 'compass';
 
-// FUNCTIONS
+// FUNCTIONS & MIXINS
 
 @function em($px, $base: $base-font-size) {
   @return ($px / $base) * 1em;
+}
+
+@mixin above($breakpoint) {
+  // > 320px
+  @if $breakpoint == '-' {
+    @media screen and (min-width: 20em) {
+      @content;
+    }
+  }
+  // > 480px
+  @else if $breakpoint == '--' {
+    @media screen and (min-width: 30em) {
+      @content;
+    }
+  }
+  // > 600px
+  @else if $breakpoint == '---' {
+    @media screen and (min-width: 37.5em) {
+      @content;
+    }
+  }
+  // > 800px
+  @else if $breakpoint == '----' {
+    @media screen and (min-width: 50em) {
+      @content;
+    }
+  }
+  // > 1024px
+  @else if $breakpoint == '-----' {
+    @media screen and (min-width: 64em) {
+      @content;
+    }
+  }
+  // > 1200px
+  @else if $breakpoint == '------' {
+    @media screen and (min-width: 75em) {
+      @content;
+    }
+  }
+  // > 1920px
+  @else if $breakpoint == '-------' {
+    @media screen and (min-width: 120em) {
+      @content;
+    }
+  }
+}
+
+@mixin below($breakpoint) {
+  // < 320px
+  @if $breakpoint == '-' {
+    @media screen and (max-width: 20em) {
+      @content;
+    }
+  }
+  // < 480px
+  @else if $breakpoint == '--' {
+    @media screen and (max-width: 30em) {
+      @content;
+    }
+  }
+  // < 600px
+  @else if $breakpoint == '---' {
+    @media screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  // < 800px
+  @else if $breakpoint == '----' {
+    @media screen and (max-width: 50em) {
+      @content;
+    }
+  }
+  // < 1024px
+  @else if $breakpoint == '-----' {
+    @media screen and (max-width: 64em) {
+      @content;
+    }
+  }
+  // < 1200px
+  @else if $breakpoint == '------' {
+    @media screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  // < 1920px
+  @else if $breakpoint == '-------' {
+    @media screen and (max-width: 120em) {
+      @content;
+    }
+  }
 }
 
 // SITE CONFIG
@@ -108,11 +198,30 @@ body {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  border-top: 10px solid $color-primary;
 
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  
+  @include above('--') {
+    font-size: 112.5%; // 18px
+  }
+
+  @include above('----') {
+    font-size: 125%; // 20px
+  }
+
+  @include above('-----') {
+    font-size: 137.5%; // 22px
+  }
+
+  @include above('------') {
+    font-size: 150%; // 24px;
+  }
+
+  @include above('-------') {
+    font-size: 162.5%; // 26px
+  }
 
   @if $debug == true {
     @include debug-vertical-alignment;
@@ -204,18 +313,10 @@ code {
 .masthead {
   background: #f5f5f5;
   padding: 0 rhythm(1);
-  text-align: justify;
-  height: rhythm(3);
+  border-top: 10px solid $color-primary;
   overflow: hidden;
-  @include adjust-leading-to(3);
   @include trailer;
-
-  &::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 0;
-  }
+  @include adjust-leading-to(3);
   
   a {
     text-decoration: none;
@@ -225,9 +326,10 @@ code {
 
 .masthead__branding {
   display: inline-block;
-  vertical-align: top;
-  margin: 0;
-  @include adjust-font-size-to(36px, 3);
+  width: 20%;
+  vertical-align: middle;
+  margin: 0 -4px 0 0;
+  @include adjust-font-size-to(36px);
 
   a {
     position: relative;
@@ -238,9 +340,10 @@ code {
 
 .masthead__nav {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   text-align: right;
-  width: 70%;
+  width: 80%;
+  margin: 0 -4px 0 0;
 
   h1 {
     @extend %hidden;
@@ -254,8 +357,7 @@ code {
 
 .masthead__nav-item {
   display: inline-block;
-  margin-left: 8%;
-  @include adjust-leading-to(1);
+  margin: 0 0 0 8%;
 }
 
 ///////////////////////////////////////////////
@@ -283,10 +385,19 @@ code {
 .article-list__meta {
   color: lighten($default-text-color, 25%);
   @include adjust-font-size-to($font-xs);
+  @include above('--') {
+    width: 20%;
+    float: left;
+    text-align: right;
+    padding-right: rhythm(2);
+  }
 }
 
 .article-list__content {
-  
+  @include above('--') {
+    width: 80%;
+    float: left;
+  }
 }
 
 .article-list__title {
@@ -375,12 +486,12 @@ code {
   > .gist,
   > .comments {
     
-    @media screen and (min-width: 37.5em) {
+    @include above('---') {
       margin-left: 10%;
       margin-right: 10%;
     }
 
-    @media screen and (min-width: 50em) {
+    @include above('----') {
       margin-left: 20%;
       margin-right: 20%;
     }
@@ -427,6 +538,10 @@ code {
     @include leader(2);
     @include padding-leader(2);
     @include padding-trailer(2);
+  }
+
+  .icon-feed {
+    margin-right: 0.5em;
   }
 
 }
@@ -520,88 +635,8 @@ code {
   color: #25a0ca;
 }
 
-///////////////////////////////////////////////
-// BREAKPOINTS
-///////////////////////////////////////////////
-
-// > 320px
-
-@media screen and (min-width: 20em) {
-
-}
-
-// > 480px
-
-@media screen and (min-width: 30em) {
-
-  body {
-    font-size: 112.5%; // 18px
-  }
-
-  .article-list__meta {
-    width: 20%;
-    float: left;
-    text-align: right;
-    padding-right: rhythm(2);
-  }
-
-  .article-list__content {
-    width: 80%;
-    float: left;
-  }
-
-}
-
-// < 600px
-
-@media screen and (max-width: 37.5em) {
-
-}
-
-// > 600px
-
-@media screen and (min-width: 37.5em) {
-  
-}
-
-// > 800px
-
-@media screen and (min-width: 50em) {
-
-  body {
-    font-size: 125%; // 20px
-  }
-
-}
-
-// > 1024px
-
-@media screen and (min-width: 64em) {
-
-  body {
-    font-size: 137.5%; // 22px
-  }
-
-}
-
-// > 1200px
-
-@media screen and (min-width: 75em) {
-
-  body {
-    font-size: 150%; // 24px;
-  }
-
-}
-
-// > 1920px
-
-@media screen and (min-width: 120em) {
-
-  body {
-    font-size: 162.5%; // 26px
-  }
-
+.icon-feed {
+  color: #ff6600;
 }
 
 ///////////////////////////////////////////////

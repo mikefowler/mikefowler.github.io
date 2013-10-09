@@ -12,6 +12,7 @@
 }
 
 .icon-facebook,
+.icon-feed,
 .icon-foursquare,
 .icon-instagram,
 .icon-lastfm,
@@ -44,57 +45,64 @@
   @extend %icon-facebook-glyph;
 }
 
-%icon-foursquare-glyph {
+%icon-feed-glyph {
   content: "\f101";
+}
+.icon-feed:before {
+  @extend %icon-feed-glyph;
+}
+
+%icon-foursquare-glyph {
+  content: "\f102";
 }
 .icon-foursquare:before {
   @extend %icon-foursquare-glyph;
 }
 
 %icon-instagram-glyph {
-  content: "\f102";
+  content: "\f103";
 }
 .icon-instagram:before {
   @extend %icon-instagram-glyph;
 }
 
 %icon-lastfm-glyph {
-  content: "\f103";
+  content: "\f104";
 }
 .icon-lastfm:before {
   @extend %icon-lastfm-glyph;
 }
 
 %icon-linkedin-glyph {
-  content: "\f104";
+  content: "\f105";
 }
 .icon-linkedin:before {
   @extend %icon-linkedin-glyph;
 }
 
 %icon-logomark-glyph {
-  content: "\f105";
+  content: "\f106";
 }
 .icon-logomark:before {
   @extend %icon-logomark-glyph;
 }
 
 %icon-menu-glyph {
-  content: "\f106";
+  content: "\f107";
 }
 .icon-menu:before {
   @extend %icon-menu-glyph;
 }
 
 %icon-twitter-square-glyph {
-  content: "\f107";
+  content: "\f108";
 }
 .icon-twitter-square:before {
   @extend %icon-twitter-square-glyph;
 }
 
 %icon-twitter-glyph {
-  content: "\f108";
+  content: "\f109";
 }
 .icon-twitter:before {
   @extend %icon-twitter-glyph;

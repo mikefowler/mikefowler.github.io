@@ -14,6 +14,7 @@
 }
 
 .icon-facebook:before,
+.icon-feed:before,
 .icon-foursquare:before,
 .icon-instagram:before,
 .icon-lastfm:before,
@@ -34,11 +35,12 @@
 }
 
 .icon-facebook:before { content: "\f100"; }
-.icon-foursquare:before { content: "\f101"; }
-.icon-instagram:before { content: "\f102"; }
-.icon-lastfm:before { content: "\f103"; }
-.icon-linkedin:before { content: "\f104"; }
-.icon-logomark:before { content: "\f105"; }
-.icon-menu:before { content: "\f106"; }
-.icon-twitter-square:before { content: "\f107"; }
-.icon-twitter:before { content: "\f108"; }
+.icon-feed:before { content: "\f101"; }
+.icon-foursquare:before { content: "\f102"; }
+.icon-instagram:before { content: "\f103"; }
+.icon-lastfm:before { content: "\f104"; }
+.icon-linkedin:before { content: "\f105"; }
+.icon-logomark:before { content: "\f106"; }
+.icon-menu:before { content: "\f107"; }
+.icon-twitter-square:before { content: "\f108"; }
+.icon-twitter:before { content: "\f109"; }
