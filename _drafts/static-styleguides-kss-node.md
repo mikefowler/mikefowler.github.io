@@ -1,4 +1,0 @@
----
-layout: article
-category: thoughts
----

@@ -2,8 +2,9 @@
 layout: article
 title: Font-face syntax in Compass
 category: thoughts
+excerpt: Since the documentation on the Compass website is a tad confusing I thought I'd clarify the basic usage of the @font-face mixin included in Compass.
 ---
-Since the documentation on the Compass website is a tad confusing I thought I'd clarify the basic usage of the @font-face mixin included in Compass.<!-- more -->
+Since the documentation on the Compass website is a tad confusing I thought I'd clarify the basic usage of the @font-face mixin included in Compass.
 
 If you're using Font Squirrel or any other web font creation tools, you should have a stack of font files with different file types for each font you need to load: .woff, .ttf, .svg and .eot. Drop these into the ```fonts``` directory for your Compass project (by default it's a folder called 'fonts' inside the compiled CSS directory, like '/css/fonts'). Once these files are in the correct place, the syntax is as follows:
 

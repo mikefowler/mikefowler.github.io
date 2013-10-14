@@ -2,8 +2,9 @@
 layout: article
 title: Our obligation as developers
 category: thoughts
+excerpt: There's no doubt that semantics are an oft-spoken about topic, especially recently. But let's address a different issue.
 ---
-There's no doubt that semantics are an oft-spoken about topic, especially recently. But let's address a different issue.<!-- more -->
+There's no doubt that semantics are an oft-spoken about topic, especially recently. But let's address a different issue.
 
 As the HTML5 spec continues to introduce new elements, the debate rages about [the value](http://bit.ly/un03hJ "Our Pointless Pursuit of Semantic Value"), or [lack thereof](http://bit.ly/sxtcz3 "Pursuing Semantic Value"), of implementation in our own code. In Divya Manian's recent article on Smashing (first link above), she encourages developers to stop worrying about the minute details of the semantic meaning in elements, and I fully agree with her. However, as I read through the comments on Divya's article, and many others like it since then, where developers are discussing semantic value, I began to notice a particular sentiment cropping up a bit too frequently for my liking. **Paraphrased**, these comments would read something like this:
 

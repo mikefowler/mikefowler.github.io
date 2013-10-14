@@ -283,10 +283,17 @@ sub {
 }
 
 ul, ol {
+  padding: 0;
+  word-wrap: break-word;
   @include trailer;
 
   li {
     @include trailer(0.25);
+    @include adjust-leading-to(1);
+  }
+
+  @include below('---') {
+    padding-left: rhythm(1);
   }
 }
 
@@ -463,8 +470,113 @@ code {
 // ABOUT
 ///////////////////////////////////////////////
 
-.about__icons {
-  @include adjust-font-size-to(80px);
+about {
+  @at-root {
+    
+    .#{&}__icons {
+      list-style: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      
+      &:hover {
+        li {
+          opacity: 0.5;
+        }
+      }
+
+      li {
+        margin: 0 0 1em 0;
+        padding: 0 0.25em;
+        display: inline-block;
+        @include transition-duration(0.5s);
+        @include transition-property(opacity);
+        @include transition-timing-function(ease);
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      i {
+        font-size: em(48px);
+
+        @include above('--') {
+          font-size: em(80px);
+        }
+
+        @include above('---') {
+          font-size: 120px;
+        }
+      }
+    }
+    
+    .#{&}--fancy {
+      display: inline-block;
+      @include perspective(1200px);
+      
+      &:hover {
+        li {
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6) {
+            @include transform(scale(0.95));
+          }
+        }
+      }
+
+      li {
+        @include transition-property(transform opacity);
+
+        &:nth-child(1) {
+          @include transform(rotateY(-35deg));
+        }
+        &:nth-child(2) {
+          @include transform(rotateY(35deg));
+        }
+        &:nth-child(3) {
+          @include transform(rotateY(-35deg));
+        }
+        &:nth-child(4) {
+          @include transform(rotateY(35deg));
+        }
+        &:nth-child(5) {
+          @include transform(rotateY(-35deg));
+        }
+        &:nth-child(6) {
+          @include transform(rotateY(35deg));
+        }
+
+        &:hover {
+          z-index: 10;
+          position: relative;
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6) {
+            @include transform(scale(1.2));
+          }
+        }
+
+      }
+
+      a {
+        display: block;
+      }
+
+      i {
+        display: block;
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
+      }
+    }
+  }
 }
 
 ///////////////////////////////////////////////
@@ -633,6 +745,10 @@ code {
 
 .icon-foursquare {
   color: #25a0ca;
+}
+
+.icon-github {
+  color: #333;
 }
 
 .icon-feed {

@@ -16,6 +16,7 @@
 .icon-facebook:before,
 .icon-feed:before,
 .icon-foursquare:before,
+.icon-github:before,
 .icon-instagram:before,
 .icon-lastfm:before,
 .icon-linkedin:before,
@@ -37,10 +38,11 @@
 .icon-facebook:before { content: "\f100"; }
 .icon-feed:before { content: "\f101"; }
 .icon-foursquare:before { content: "\f102"; }
-.icon-instagram:before { content: "\f103"; }
-.icon-lastfm:before { content: "\f104"; }
-.icon-linkedin:before { content: "\f105"; }
-.icon-logomark:before { content: "\f106"; }
-.icon-menu:before { content: "\f107"; }
-.icon-twitter-square:before { content: "\f108"; }
-.icon-twitter:before { content: "\f109"; }
+.icon-github:before { content: "\f103"; }
+.icon-instagram:before { content: "\f104"; }
+.icon-lastfm:before { content: "\f105"; }
+.icon-linkedin:before { content: "\f106"; }
+.icon-logomark:before { content: "\f107"; }
+.icon-menu:before { content: "\f108"; }
+.icon-twitter-square:before { content: "\f109"; }
+.icon-twitter:before { content: "\f10a"; }

@@ -7,8 +7,17 @@
   <meta name="viewport" content="width=device-width">
   
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
-  {% if page.excerpt %}<meta name="description" content="{{page.excerpt}}">
-  {% elsif page.home %}<meta name="description" content="Mike Fowler is a frontend developer living in San Francisco, California.">{% endif %}  
+  {% if page.excerpt %}<meta name="description" content="{{page.excerpt | strip_html}}">
+  {% elsif page.home %}<meta name="description" content="Mike Fowler is a frontend developer living in San Francisco, California.">{% endif %}
+  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+
+  {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+
+  <link rel="canonical" href="{{ canonical }}">
+  <link href="{{site.images}}/favicon.png" rel="icon">
+
+  <link href="/atom.xml" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+
   <script type="text/javascript" src="//use.typekit.net/jal3zqa.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   
@@ -29,10 +38,9 @@
     <script src="{{ site.js }}/page/{{file}}"></script>
   {% endfor %}
   
-  <!--
+  
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="/assets/scripts/app.js"></script>
-  -->
+  <script src="{{site.js}}/app.js"></script>
 
   <script type="text/javascript">
     

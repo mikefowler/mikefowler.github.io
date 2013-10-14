@@ -57,9 +57,9 @@ module.exports = function(grunt) {
         },
         files: [
           '<%= site.build %>/assets/css/**/*.css',
-          // '<%= site.build %>/assets/js/**/*.js',
-          // '<%= site.build %>/assets/images/*.{jpg,png,svg,webp}',
-          // '<%= site.build %>/**/*.html'
+          '<%= site.build %>/assets/js/**/*.js',
+          '<%= site.build %>/assets/images/*.{jpg,png,svg,webp}',
+          '<%= site.build %>/**/*.html'
         ]
       }
     },
