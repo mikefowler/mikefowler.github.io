@@ -2,7 +2,7 @@
 layout: article
 title: Generating static styleguides with Grunt and KSS
 category: thoughts
-excerpt: If you're familiar with the concept of CSS styleguides, you're probably also familiar with [KSS](http://warpspire.com/kss/), a neato TomDoc-inspired methodology for documenting your stylesheets written by Githubber [Kyle Kneath](http://warpspire.com/).
+excerpt: If you're familiar with the concept of CSS styleguides, you're probably also familiar with KSS, a neato TomDoc-inspired methodology for documenting your stylesheets written by Githubber Kyle Kneath.
 ---
 If you're familiar with the concept of CSS styleguides, you're probably also familiar with [KSS](http://warpspire.com/kss/), a neato TomDoc-inspired methodology for documenting your stylesheets written by Githubber [Kyle Kneath](http://warpspire.com/). I've been familiar with the project since it was first released, and I mentioned it in [my Vermont Code Camp presentation]({% post_url 2012-09-22-crafting-scalable-stylesheets %}) last year. Half a year back I had started to implement the documentation in our stylesheets at [Findery](http://www.findery.com) via a Rails engine gem. When it worked, the generated documentation was looking great, but I consistently ran into issues with the engine and my efforts were backburnered for understandably more important tasks.
 
