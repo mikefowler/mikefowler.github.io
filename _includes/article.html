@@ -6,12 +6,12 @@
   {% assign page = post %}
 {% endif %}
 
-<article class="article">
-    
+<article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+
   <header class="article__header center">
     
-    <h1 class="article__title">
-      {% if listing == true %}<a href="{{page.url}}">{% endif %}
+    <h1 class="article__title" itemprop="name">
+      {% if listing == true %}<a href="{{page.url}}" itemprop="url">{% endif %}
         {{page.title}}
       {% if listing == true %}</a>{% endif %}
     </h1>
@@ -22,9 +22,19 @@
 
   </header>
   
-  <div class="article__content center">
+  <div class="article__content center" itemprop="articleBody">
     {{content}}
   </div>
+
+  <div class="article__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="{{ site.author.name }}">
+    <meta itemprop="image" content="{{ site.author.avatar }}">
+    <meta itemprop="url" content="{{ site.url }}">
+    <meta itemprop="email" content="{{ site.author.email }}">
+  </div>
+  
+  <meta itemprop="articleSection" content="{{ page.category }}">
+  <meta itemprop="wordCount" content="{{ page.content | number_of_words }}">
   
   <div class="article__comments center">
     
@@ -35,5 +45,7 @@
     {% if listing %}
       <p><a href="{{site.url}}{{page.url}}#disqus_thread"></a></p>
     {% endif %}
+
+  </div>
 
 </article>

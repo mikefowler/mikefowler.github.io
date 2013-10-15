@@ -449,6 +449,10 @@ code {
   @include adjust-font-size-to($font-xs);
 }
 
+.article__author {
+  @extend %hidden;
+}
+
 .article__comments {
   @include leader(2);
 

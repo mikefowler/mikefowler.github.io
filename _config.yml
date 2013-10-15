@@ -1,11 +1,16 @@
-name: Mike Fowler
-author: Mike Fowler
-url: 'http://mikefowler.me'
-email: mike@mikefowler.me
+name: "Mike Fowler"
+description: "Mike Fowler is a frontend developer living in San Francisco, California."
+url: "http://mikefowler.me"
 
-css: '/assets/css'
-js: '/assets/scripts'
-images: '/assets/images'
+author:
+  name: "Mike Fowler"
+  twitter: "@michaelrfowler"
+  email: "mike@mikefowler.me"
+  avatar: "http://www.gravatar.com/avatar/6e4df57661fc4fa1a6d2bcc8d6f46273.png?s=80"
+
+css: "/assets/css"
+js: "/assets/scripts"
+images: "/assets/images"
 
 post:
   template: _templates/_post.txt
