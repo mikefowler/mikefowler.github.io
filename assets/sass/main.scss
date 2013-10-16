@@ -305,6 +305,8 @@ hr {
 
 blockquote {
   border-left: 5px solid $color-primary;
+  margin-left: 0;
+  margin-right: 0;
   padding-left: rhythm(0.5);
 }
 
