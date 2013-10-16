@@ -3,6 +3,7 @@ layout: article
 title: Our obligation as developers
 category: thoughts
 excerpt: There's no doubt that semantics are an oft-spoken about topic, especially recently. But let's address a different issue.
+keywords: code semantics, web development, html5
 ---
 There's no doubt that semantics are an oft-spoken about topic, especially recently. But let's address a different issue.
 

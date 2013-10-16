@@ -3,6 +3,7 @@ layout: article
 title: Replacing jQuery with Zepto in your Backbone project
 category: thoughts
 excerpt: If you're developing an application for the mobile web and you're using jQuery, you can (and should) probably swap it out for Zepto.
+keywords: zepto, jquery, backbone, backbone.js, require.js
 ---
 
 ### Because honestly, if you're working on an app that specifically targets mobile, you have no reason not to.
