@@ -58,9 +58,9 @@ Let's give it a shot, using Sass 3.3's reworked parent selector:
 
 Closer! Now we have better visual indication that this block of CSS is a module. *However*... this bit of Sass won't compile to the flat module I mention above, but rather to a series of descendant classes. So... what next? 
 
-## Enter @at-root!
+## Get in here, @at-root!
 
-Sass 3.3 introduces a new sort of mixin called ```@at-root```. Content nested inside an ```@at-root``` block will be moved out of whatever hierarchy it's nested in and placed at the "root" of the stylesheet. A bit confusing, but an example makes this more clear:
+Sass 3.3 introduces a new directive called ```@at-root```. Content nested inside an ```@at-root``` block will be moved out of whatever hierarchy it's nested in and placed at the "root" of the stylesheet. A bit confusing, but an example makes this more clear:
 
 **Source:**
 
@@ -141,4 +141,6 @@ We're getting closer, because now we have the flat module *and* the nested visua
 }
 ```
 
-Our little mixin is able to abstract out some of the complexity of the module code itself, and, if you're writing a lot of modules in this way, will keep your Sass stylesheets DRY. I'll be converting a bunch of my project's modules to this format in the coming weeks, and am super excited about this next step for Sass. Keep in mind that there are a [slew of improvements](http://davidwalsh.name/future-sass) coming with Sass 3.3, so keep an eye out for the official release notes.
+Our little mixin is able to abstract out some of the complexity of the module code itself, and, if you're writing a lot of modules in this way, will keep your Sass stylesheets DRY.
+
+I'll be converting a bunch of my project's modules to this format in the coming weeks, and am super excited about this next step for Sass. Keep in mind that there are a [slew of improvements](http://davidwalsh.name/future-sass) coming with Sass 3.3, so keep an eye out for the official release notes.
