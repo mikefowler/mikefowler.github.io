@@ -9,7 +9,7 @@ One of the handiest pieces of functionality that many code editors implement is 
 
 ## Basic Cloning
 
-To clone a file into a new view using Sublime Text 2's default functionality, find `New View into File` in the `File` menu. The result is a new tab in your current group with a second version of the file open. Changes made to the view of either of these files will update the other as well, and saving in one view will save the other. The file has effectively been "cloned".
+To clone a file into a new view using Sublime Text 2's default functionality, find `New View into File` in the `File` menu. The result is a new tab in your current group with a second version of the file open. Changes made to the view of either of these files will update the other as well, and saving in one view will save the other. The file has effectively been “cloned”.
 
 Unfortunately, I found using this menu item frustrating. Even if you set a keyboard shortcut (there isn't one assigned by default), the file is just cloned into the existing group. Given that the point of cloning a file is to look at two copies side by side, it's a downright pain to break your flow in order to select the menu item (or keyboard shortcut) and then split your layout and drag the file over.
 

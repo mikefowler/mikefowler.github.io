@@ -19,6 +19,6 @@ What I'm saying here is something that I too can — and should — be better at
 
 A couple notes to close on that I won't offer any commentary on, because I think they speak on their own behalf.
 
-Last year a book titled ["The Top Five Regrets of the Dying"](http://www.inspirationandchai.com/Regrets-of-the-Dying.html) was released, written by an Australian nurse who spent many years tending to patients dying in palliative care. From her conversations over these years she distilled their departing remorses into five items, and one of these reads: **"I wish I had stayed in touch with my friends"**.
+Last year a book titled ["The Top Five Regrets of the Dying"](http://www.inspirationandchai.com/Regrets-of-the-Dying.html) was released, written by an Australian nurse who spent many years tending to patients dying in palliative care. From her conversations over these years she distilled their departing remorses into five items, and one of these reads: **“I wish I had stayed in touch with my friends”**.
 
-Chris McCandless, the subject of Jon Krakauer's non-fiction book "Into the Wild" and subsequently Sean Penn's partially fictionalized film of the same name, wrote the following line in his journal shortly before dying: **"Happiness only real when shared"**.
+Chris McCandless, the subject of Jon Krakauer's non-fiction book “Into the Wild” and subsequently Sean Penn's partially fictionalized film of the same name, wrote the following line in his journal shortly before dying: **“Happiness only real when shared”**.

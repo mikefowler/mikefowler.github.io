@@ -3,11 +3,11 @@ layout: article
 title: An early look at CSS3 Conditional Rules
 category: thoughts
 excerpt: Feature detection in CSS? Yes, and soon. Let's take a look.
-keywords: @supports, css3, css conditional rules, feature detection
+keywords: "@supports, css3, css conditional rules, feature detection"
 ---
-In a [recent episode of Shop Talk Show](http://shoptalkshow.com/episodes/029-with-tab-atkins/), Tab Atkins briefly mentioned a draft of a spec that includes feature querying in CSS. The feature, ```@supports```, is part of the "[CSS Conditional Rules](http://dev.w3.org/csswg/css3-conditional/)" module, and while the working draft has existed since September of 2011, it was my first time hearing about this proposal. Bear in mind, nothing about this spec is even close to final, and the editors draft specifically mentions that the ```@supports``` rule is at risk.
+In a [recent episode of Shop Talk Show](http://shoptalkshow.com/episodes/029-with-tab-atkins/), Tab Atkins briefly mentioned a draft of a spec that includes feature querying in CSS. The feature, ```@supports```, is part of the “[CSS Conditional Rules](http://dev.w3.org/csswg/css3-conditional/)” module, and while the working draft has existed since September of 2011, it was my first time hearing about this proposal. Bear in mind, nothing about this spec is even close to final, and the editors draft specifically mentions that the ```@supports``` rule is at risk.
 
-The ```@supports``` rule will allow us to test whether a user's browser supports a given CSS 'property: value' pair. The use of ```@supports``` is similar to the way that we currently pass a block of content into the ```@media``` rule to be executed only if the proper conditions are met. In addition to being able to test for a positive result (the browser DOES support the given "property:value" pair), we will also be able to test if a given "property: value" pair is NOT supported by the browser.
+The ```@supports``` rule will allow us to test whether a user's browser supports a given CSS 'property: value' pair. The use of ```@supports``` is similar to the way that we currently pass a block of content into the ```@media``` rule to be executed only if the proper conditions are met. In addition to being able to test for a positive result (the browser DOES support the given “property:value” pair), we will also be able to test if a given “property: value” pair is NOT supported by the browser.
 
 Current state of feature detection
 ----------------------------------

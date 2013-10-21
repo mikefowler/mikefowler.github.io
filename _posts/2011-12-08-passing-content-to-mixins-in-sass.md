@@ -53,6 +53,6 @@ This is exactly what we **can** do with this new release of Sass. Here's what th
 }
 {% endhighlight %}
 
-Everything looks pretty standard here except for the addition of our new keyword "@content", which is equal to whatever content you pass into the mixin inside of the curly braces.
+Everything looks pretty standard here except for the addition of our new keyword “@content”, which is equal to whatever content you pass into the mixin inside of the curly braces.
 
 Check out the link above for some more examples of how this might be used. I'm especially excited for being able to use this for defining animation keyframes. Unfortunately, for now, Compass doesn't seem to parse this correctly.

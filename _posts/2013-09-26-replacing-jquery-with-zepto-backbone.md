@@ -10,7 +10,7 @@ keywords: zepto, jquery, backbone, backbone.js, require.js
 
 You probably know by now that jQuery 2.0 came out back in April, finally dropping support for legacy IE8 and older browsers, and introducing a much-needed build tool to pull out the pieces of the library that you never use. A great milestone for the jQuery team. Still, Zepto is built for and *targets* the mobile web, and includes support for a few browsers that you might normally glance over (hey there, Amazon Silk).
 
-I'm using RequireJS for file loading, so the code on this page reflects that. For those of you not using RequireJS or another file loader, doing a straight replace of jQuery for Zepto should do just fine, as both use the familiar ```$``` alias. For those of you using Require, it's going to look something like this. Because I'm using the [AMD version of Backbone](https://github.com/amdjs/backbone), I'm aliasing the path to Zepto as "jquery", since Backbone specifically ```require```'s the "jquery" module.
+I'm using RequireJS for file loading, so the code on this page reflects that. For those of you not using RequireJS or another file loader, doing a straight replace of jQuery for Zepto should do just fine, as both use the familiar ```$``` alias. For those of you using Require, it's going to look something like this. Because I'm using the [AMD version of Backbone](https://github.com/amdjs/backbone), I'm aliasing the path to Zepto as “jquery”, since Backbone specifically ```require```'s the “jquery” module.
 
 ``` javascript
 require.config({
@@ -20,7 +20,7 @@ require.config({
 })
 ```
 
-At this point, you'll reload your app and potentially find some wacky things going on. Specifically, the vanilla build of Zepto does not include a ```data()``` method for storing objects in memory. If you inspect your page and see a bunch of DOM elements with data attributes of value "[object Object]", you're going to need to create a custom build that includes the data module. The [Zepto Github page](https://github.com/madrobby/zepto) has documenation on how to create custom builds, and while you're there, check out the other available modules, some of which may be able to replace 3rd-party jQuery plugins you were already using: touch, swipe and gesture <support class=""></support>
+At this point, you'll reload your app and potentially find some wacky things going on. Specifically, the vanilla build of Zepto does not include a ```data()``` method for storing objects in memory. If you inspect your page and see a bunch of DOM elements with data attributes of value “[object Object]”, you're going to need to create a custom build that includes the data module. The [Zepto Github page](https://github.com/madrobby/zepto) has documenation on how to create custom builds, and while you're there, check out the other available modules, some of which may be able to replace 3rd-party jQuery plugins you were already using: touch, swipe and gesture.
 
 ### Things to watch out for
 
@@ -44,4 +44,4 @@ Notably, jQuery's ```outerWidth()``` & ```outerHeight()``` methods are missing. 
 
 #### CSS selector support
 
-For doing things like ```$('body').is(':visible')``` or ```$('.article:first')```. This shouldn't be **too** big of an issue, because you can create a custom build that includes the optional "selector" module which provides [limited support](https://github.com/madrobby/zepto/blob/master/src/selector.js#L24) of some commonly used selectors. Refer to the section above for creating a custom build.
+For doing things like ```$('body').is(':visible')``` or ```$('.article:first')```. This shouldn't be **too** big of an issue, because you can create a custom build that includes the optional “selector” module which provides [limited support](https://github.com/madrobby/zepto/blob/master/src/selector.js#L24) of some commonly used selectors. Refer to the section above for creating a custom build.

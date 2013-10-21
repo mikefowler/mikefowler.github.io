@@ -33,7 +33,7 @@ $module: 'note';
 }
 ```
 
-The great news is that in the next release of Sass (available now by installing the release candidate of the gem via ```gem install sass --pre```) the parent selector has been reworked to support chaining with BEM-style elements and modifiers. Ideally we could write the above in a way that more visually indicated a module, but still allowed us to maintain a flat module. What do I mean by "flat"? In other words, I want my Sass file to visually indicate that a given class, say ```.note__content```, is part of a module, but I don't want it nested as a descendant class like ```.note .note__content```.
+The great news is that in the next release of Sass (available now by installing the release candidate of the gem via ```gem install sass --pre```) the parent selector has been reworked to support chaining with BEM-style elements and modifiers. Ideally we could write the above in a way that more visually indicated a module, but still allowed us to maintain a flat module. What do I mean by “flat”? In other words, I want my Sass file to visually indicate that a given class, say ```.note__content```, is part of a module, but I don't want it nested as a descendant class like ```.note .note__content```.
 
 Let's give it a shot, using Sass 3.3's reworked parent selector:
 
@@ -60,7 +60,7 @@ Closer! Now we have better visual indication that this block of CSS is a module.
 
 ## Get in here, @at-root!
 
-Sass 3.3 introduces a new directive called ```@at-root```. Content nested inside an ```@at-root``` block will be moved out of whatever hierarchy it's nested in and placed at the "root" of the stylesheet. A bit confusing, but an example makes this more clear:
+Sass 3.3 introduces a new directive called ```@at-root```. Content nested inside an ```@at-root``` block will be moved out of whatever hierarchy it's nested in and placed at the “root” of the stylesheet. A bit confusing, but an example makes this more clear:
 
 **Source:**
 
