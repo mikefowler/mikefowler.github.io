@@ -56,4 +56,5 @@ PLATFORMS
 DEPENDENCIES
   compass (~> 0.13.alpha.7)
   jekyll
+  liquid (~> 2.5.2)
   sass (~> 3.3.0.rc.1)
