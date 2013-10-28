@@ -6,4 +6,4 @@ node_modules
 *.sublime-workspace
 .sass-cache
 Gemfile.lock
-_config/.env
+.env

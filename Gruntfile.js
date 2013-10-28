@@ -103,12 +103,6 @@ module.exports = function(grunt) {
       }
     },
 
-    env: {
-      dev: {
-        src: '_config/.env'
-      }
-    },
-
     pagespeed: {
       prod: {
         options: {
@@ -119,7 +113,7 @@ module.exports = function(grunt) {
         }
       },
       options: {
-        key: process.env.key,
+        key: process.env.GOOGLE_SIMPLE_API_KEY,
         url: 'http://mikefowler.me'
       }
     }
@@ -132,7 +126,7 @@ module.exports = function(grunt) {
   grunt.registerTask('staging', ['concurrent:staging']);
   grunt.registerTask('deploy', ['exec:deploy']);
   grunt.registerTask('test', ['jshint']);
-  grunt.registerTask('performance', ['env:dev', 'pagespeed']);
+  grunt.registerTask('performance', ['env', 'pagespeed']);
   grunt.registerTask('default', ['write']);
 
 };

@@ -2,6 +2,8 @@
 layout: article
 title: "Coffeescript source maps with Yeoman"
 category: thoughts
+excerpt: Getting Coffeescript source maps working with Yeoman's directory structure.
+date: 2013-10-28 15:41
 ---
 If you're using Yeoman as a base for any of your projects, chances are good that there is stock support for Coffeescript through [grunt-contrib-coffee](https://github.com/gruntjs/grunt-contrib-coffee). So… if you're writing Coffeescript for your project, this is convenient. But you know what else is great? grunt-contrib-coffee also supports generation of Coffeescript source maps. The glory! BUT. It takes some finagling.
 
