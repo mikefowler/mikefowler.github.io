@@ -94,15 +94,6 @@ module.exports = function(grunt) {
       }
     },
 
-    open: {
-      dev: {
-        path: '<%= app.dev %>'
-      },
-      prod: {
-        path: '<%= app.prod %>'
-      }
-    },
-
     pagespeed: {
       prod: {
         options: {
@@ -113,7 +104,7 @@ module.exports = function(grunt) {
         }
       },
       options: {
-        key: process.env.GOOGLE_SIMPLE_API_KEY,
+        key: '<%= process.env.GOOGLE_API_KEY %>',
         url: 'http://mikefowler.me'
       }
     }
@@ -126,7 +117,6 @@ module.exports = function(grunt) {
   grunt.registerTask('staging', ['concurrent:staging']);
   grunt.registerTask('deploy', ['exec:deploy']);
   grunt.registerTask('test', ['jshint']);
-  grunt.registerTask('performance', ['env', 'pagespeed']);
   grunt.registerTask('default', ['write']);
 
 };
