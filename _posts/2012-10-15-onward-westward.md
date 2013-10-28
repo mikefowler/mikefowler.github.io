@@ -8,7 +8,7 @@ In only four weeks I will be both living and working in a new place. Sure, I've 
 
 *In four weeks I will be living and working in San Francisco.*
 
-I don't mean to be dramatic in my writing when I say this, but this is the most radical thing I've ever done in my life. And yet... I feel oddly at ease. My excitement has been repressed in a sense because of the myriad of details that must be attended to: wrap up things at work, get rid of things I don't _need_ to bring across the country, find somebody to sublet my room, and so on and so forth. But beyond that I still sense it... an unexpected calmness that says: “You need this. And you will be great”.
+I don't mean to be dramatic in my writing when I say this, but this is the most radical thing I've ever done in my life. And yet… I feel oddly at ease. My excitement has been repressed in a sense because of the myriad of details that must be attended to: wrap up things at work, get rid of things I don't _need_ to bring across the country, find somebody to sublet my room, and so on and so forth. But beyond that I still sense it… an unexpected calmness that says: “You need this. And you will be great”.
 
 Findery, here I come!
 ---------------------

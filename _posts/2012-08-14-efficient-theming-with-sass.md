@@ -67,7 +67,7 @@ $header-gradient-1: #000;
 $header-gradient-2: #fff;
 ```
 
-However, I find it much cleaner to store these as a list, since the naming of these two variables implies they will always be used together (and if not... rethink the semantics of your variable names):
+However, I find it much cleaner to store these as a list, since the naming of these two variables implies they will always be used together (and if not… rethink the semantics of your variable names):
 
 ``` scss
 $header-gradient: (#000, #fff);
@@ -82,7 +82,7 @@ This reads much cleaner, and then you can use the native Sass ```nth``` function
         nth($header-gradient, 2)));
 ```
 
-However... this poses an issue. What happens when you have a theme to develop that SHOULDN'T use a gradient, but rather a solid color? This is when you can make good use of the built-in ```type-of``` function and some conditionals:
+However… this poses an issue. What happens when you have a theme to develop that SHOULDN'T use a gradient, but rather a solid color? This is when you can make good use of the built-in ```type-of``` function and some conditionals:
 
 ``` scss
 @if type-of($header-gradient) == "list" {
@@ -120,16 +120,16 @@ This concept has [been written about before](/thoughts/passing-content-to-mixins
  */
 
 // Tablet
-@include respond-to('tablet') { // etc... }
+@include respond-to('tablet') { // etc… }
 
 // Desktop
-@include respond-to('desktop') { // etc... }
+@include respond-to('desktop') { // etc… }
 
 ```
 
 Now imagine something else: imagine that for each of the three main sections, ```header```, ```[role="main"]``` and ```[role="contentinfo"]```, we have anywhere between 500 and 1000 lines of code. Suddenly our structure seems a bit more unwieldy. When you get into the tedium of adjusting styles at multiple screen resolutions, the act of scrolling up and down through thousands of lines of code, several times each minute, becomes a chore. Luckily, the solution here is easy.
 
-**Write your media queries inline with the base styles.** Seriously, do it. Keeping media queries in proximity to the base styles does two things: it reduces the obnoxious amount of scrolling between sections while writing styles for different breakpoints, and, maybe most importantly, *contextualizes the content being passed into the media queries*. Often times the styles being set at specific breakpoints are there to override or set properties not present at other resolutions. In other words... most of the styles we write in media queries are meaningless without seeing the base styles to compare.
+**Write your media queries inline with the base styles.** Seriously, do it. Keeping media queries in proximity to the base styles does two things: it reduces the obnoxious amount of scrolling between sections while writing styles for different breakpoints, and, maybe most importantly, *contextualizes the content being passed into the media queries*. Often times the styles being set at specific breakpoints are there to override or set properties not present at other resolutions. In other words… most of the styles we write in media queries are meaningless without seeing the base styles to compare.
 
 ``` scss
 
@@ -139,14 +139,14 @@ Now imagine something else: imagine that for each of the three main sections, ``
 
 [role="banner"] {
 
-  // Base styles...
+  // Base styles…
 
   @include respond-to('tablet') {
-    // Tablet styles...
+    // Tablet styles…
   }
 
   @include respond-to('desktop') {
-    // Desktop styles...
+    // Desktop styles…
   }
 
 }

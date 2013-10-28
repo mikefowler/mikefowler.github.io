@@ -5,7 +5,7 @@ category: thoughts
 excerpt: Thoughts on the intimidating nature of contributing to the web community.
 keywords: open source, open source code, web community, community, humility
 ---
-Developers, designers, artists, musicians... to you I speak. Many of us followed a similar path into our respective creative fields. We spent years as a sponge. We sat quietly on the sidelines, reading as much as we could about our industries. As a result, many of us can proudly say that our livelihoods are the result of long hours of self-teaching and, above all else, an unquenchable passion for the subject.
+Developers, designers, artists, musicians… to you I speak. Many of us followed a similar path into our respective creative fields. We spent years as a sponge. We sat quietly on the sidelines, reading as much as we could about our industries. As a result, many of us can proudly say that our livelihoods are the result of long hours of self-teaching and, above all else, an unquenchable passion for the subject.
 
 Eventually we all come to a crossroads. It's not that our desire to learn begins to wane. No, for most of us that will never happen. Our jobs are our lives. Rather, we begin to desire greater community involvement. For me, this desire brings about a struggle: feeling strongly enough about my own contributions to present them to the community.
 

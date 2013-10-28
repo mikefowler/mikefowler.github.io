@@ -4,7 +4,7 @@ title: Reframing
 category: thoughts
 ---
 
-This post isn't about programming. At least not specifically. Interpret it as you will, but this is derived from a more abstract place. I take that back... don't interpret this as having anything to do with programming. It doesn't.<!-- more -->
+This post isn't about programming. At least not specifically. Interpret it as you will, but this is derived from a more abstract place. I take that back… don't interpret this as having anything to do with programming. It doesn't.<!-- more -->
 
 Due to some recent emotional stress in my life having to do with the passing of a family member, I'm not sure how to feel about a few things bouncing around in my head. One thing that I do know, for it can sometimes take a shit situation like death to bring these realizations to the forefront, is that there is always a way to reframe the way you think about something. Not in the problem-solving sense, but in the "how does this make me feel?" kind of way. In the way that ultimately determines how you let a situation *affect* you.
 

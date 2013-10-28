@@ -16,7 +16,7 @@ The comfort of being in what I feel is a more long-term position takes a big wei
 Harnessing our young population
 -------------------------------
 
-If you're not familiar with Burlington, know this: we have over 20,000 students living and learning in a, relatively speaking, small city. When you include the 20-something population in that figure, we're talking about a veritable force of young minds living in this beautiful city. Although this runs somewhat parallel with what I mention above, another project of mine for 2012 drills down specifically on trying to get the young population connected with one another to create amazing things. Again... more on that when the time is right.
+If you're not familiar with Burlington, know this: we have over 20,000 students living and learning in a, relatively speaking, small city. When you include the 20-something population in that figure, we're talking about a veritable force of young minds living in this beautiful city. Although this runs somewhat parallel with what I mention above, another project of mine for 2012 drills down specifically on trying to get the young population connected with one another to create amazing things. Again… more on that when the time is right.
 
 Building the design side
 ------------------------
@@ -26,11 +26,11 @@ Although I am most certainly a very visually-oriented front-end developer, if I 
 Public speaking
 ---------------
 
-I will openly admit my desire for some public recognition as I'm planning these things I'm talking about here. Not in an egotistical sort of way, but more in the sense that I want to position myself as somebody who is influential and helpful in my geographic area because community building and bringing people together is something from which I derive great pleasure. Part of that is certainly public speaking. A definite goal for myself will be to do a presentation at next years Vermont Code Camp. On what subject? That remains to be seen...
+I will openly admit my desire for some public recognition as I'm planning these things I'm talking about here. Not in an egotistical sort of way, but more in the sense that I want to position myself as somebody who is influential and helpful in my geographic area because community building and bringing people together is something from which I derive great pleasure. Part of that is certainly public speaking. A definite goal for myself will be to do a presentation at next years Vermont Code Camp. On what subject? That remains to be seen…
 
 Bring it, year
 --------------
 
-I must say... I am more excited for the year ahead than I have been in past several. Excited for what I will build, excited for what the web community will build, and excited for the ways in which I can help bring members of my own geographic community together. So let's do this.
+I must say… I am more excited for the year ahead than I have been in past several. Excited for what I will build, excited for what the web community will build, and excited for the ways in which I can help bring members of my own geographic community together. So let's do this.
 
 You can [read more about the Native Creative Consortium](http://www.7dvt.com/2011vermont-creative-types-go-native-new-statewide-consortium) in this Seven Days article.

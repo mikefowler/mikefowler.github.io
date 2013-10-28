@@ -9,10 +9,10 @@ I got to thinking the other day: is developing device-friendly websites a respon
 
 This is an issue that I think is worth talking about. I'd like to hear some other opinions as I think through this myself. I'll start with some thinking points and then wrap it together at the end.
 
-In the beginning...
+In the beginning…
 -------------------
 
-...there were tables. For the simple reason that tables made it easy to align content in a grid-like fashion, tables become the de-facto method for creating visual layout. Layout via CSS become possible in the late 1990's, but with browser support shoddy at best, it was certainly not the tried and true method that table layout was. And so things were, until the community began more closely considering things like semantics, accessibility and search optimization. As it turned out, the markup you used to create your layout could adversely affect these things. 
+…there were tables. For the simple reason that tables made it easy to align content in a grid-like fashion, tables become the de-facto method for creating visual layout. Layout via CSS become possible in the late 1990's, but with browser support shoddy at best, it was certainly not the tried and true method that table layout was. And so things were, until the community began more closely considering things like semantics, accessibility and search optimization. As it turned out, the markup you used to create your layout could adversely affect these things. 
 
 Gradually, CSS became more powerful and saw better browser implementation. Fundamentally, this was one of the first large-scale transitions for web developers. Moving to CSS-based layouts meant learning a new scripting language. Thus, we arrive at our first question:
 

@@ -13,7 +13,7 @@ To clone a file into a new view using Sublime Text 2's default functionality, fi
 
 Unfortunately, I found using this menu item frustrating. Even if you set a keyboard shortcut (there isn't one assigned by default), the file is just cloned into the existing group. Given that the point of cloning a file is to look at two copies side by side, it's a downright pain to break your flow in order to select the menu item (or keyboard shortcut) and then split your layout and drag the file over.
 
-Making Cloning... Better
+Making Cloning… Better
 ------------------------
 
 So I wrote a plugin. My first Sublime Text plugin, in fact. I had been looking for an excuse to look over the plugin API anyways, so this seemed like an easy enough utility to get my hands dirty with. _SimpleClone_ makes it much easier to clone files. Effortless, really. The first version of the plugin provides the ability to clone a file to the right (vertical split) and down (horizontal split) with lightning fast keyboard shortcuts.
