@@ -101,6 +101,27 @@ module.exports = function(grunt) {
       prod: {
         path: '<%= app.prod %>'
       }
+    },
+
+    env: {
+      dev: {
+        src: '_config/.env'
+      }
+    },
+
+    pagespeed: {
+      prod: {
+        options: {
+          paths: ['/'],
+          locale: 'en_US',
+          strategy: 'desktop',
+          threshold: 80
+        }
+      },
+      options: {
+        key: process.env.key,
+        url: 'http://mikefowler.me'
+      }
     }
 
   });
@@ -111,6 +132,7 @@ module.exports = function(grunt) {
   grunt.registerTask('staging', ['concurrent:staging']);
   grunt.registerTask('deploy', ['exec:deploy']);
   grunt.registerTask('test', ['jshint']);
+  grunt.registerTask('performance', ['env:dev', 'pagespeed']);
   grunt.registerTask('default', ['write']);
 
 };
