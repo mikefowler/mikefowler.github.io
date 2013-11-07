@@ -1,6 +1,6 @@
 ---
 layout: article
-title: The anchor "target" attribute
+title: The anchor “target” attribute
 category: thoughts
 excerpt: Did you know that the "target" attribute of the anchor tag accepts more than just preset keywords like "_blank"? If you too have been kept in the dark, allow me to share my delightful new discovery.
 ---
