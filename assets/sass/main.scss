@@ -108,6 +108,17 @@ $base-line-height: $base-font-size * 1.5;
   }
 }
 
+@mixin hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 // SITE CONFIG
 
 $debug: false;
@@ -126,6 +137,12 @@ $font-l: 20px;
 $font-m: 16px;
 $font-s: 14px;
 $font-xs: 12px;
+
+$space-xs: 0.25em;
+$space-s: 0.5em;
+$space-m: 1em;
+$space-l: 2em;
+$space-xl: 4em;
 
 $default-text-color: $color-black;
 
@@ -168,14 +185,7 @@ $masthead-width-open: 150px;
 }
 
 %hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+  @include hidden; 
 }
 
 ///////////////////////////////////////////////
@@ -338,6 +348,7 @@ code {
   width: 20%;
   vertical-align: middle;
   margin: 0 -4px 0 0;
+  text-transform: lowercase;
   @include adjust-font-size-to(36px);
 
   a {
@@ -473,115 +484,217 @@ code {
 }
 
 ///////////////////////////////////////////////
+// PAGINATION
+///////////////////////////////////////////////
+
+.pagination {
+  @extend %group;
+  @include leader;
+  @include padding-leader;
+
+  @include above('----') {
+    padding: 0;
+    margin: 0;
+    height: 0;
+  }
+}
+
+.pagination__title {
+  font-style: italic;
+  @include adjust-font-size-to($font-s);
+
+  @include above('----') {
+    @include hidden;
+  }
+}
+
+.pagination__link {
+  @extend %group;
+  display: block;
+  text-decoration: none;
+  background: $color-light-grey;
+  @include adjust-font-size-to($font-xs);
+  @include trailer(0.5);
+
+  &, &:hover {
+    color: $default-text-color;
+  }
+
+  i {
+    padding: $space-s;
+    background: darken($color-light-grey, 5%);
+  }
+
+  span {
+    display: inline-block;
+    padding: $space-s;
+  }
+
+  @include above('----') {
+    position: fixed;
+    top: 60%;
+    background: none;
+    @include perspective(500px);
+    @include adjust-font-size-to($font-l);
+
+    span {
+      @include hidden;
+    }
+    
+    i {
+      line-height: $font-l;
+      background: $color-light-grey;
+      @include transition-duration(0.5s);
+      @include transition-timing-function(ease);
+      @include transition-property(transform);
+      @include transform(translateZ(0));
+    }
+  }
+
+}
+
+.pagination__link--prev {
+  i {
+    float: left;
+    margin-right: $space-s;
+  }
+
+  @include above('----') {
+    left: 0;
+    i {
+      margin: 0;
+      @include transform-origin(0, 50%);
+      &:hover {
+        @include transform(rotateY(-35deg));
+      }
+    }
+  }
+}
+
+.pagination__link--next {
+  text-align: right;
+  i {
+    float: right;
+    margin-left: $space-s;
+  }
+
+  @include above('----') {
+    right: 0;
+    i {
+      margin: 0;
+      @include transform-origin(100%, 50%);
+      &:hover {
+        @include transform(rotateY(35deg));
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////
 // ABOUT
 ///////////////////////////////////////////////
 
-about {
-  @at-root {
-    
-    .#{&}__icons {
-      list-style: none;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-      
-      &:hover {
-        li {
-          opacity: 0.5;
-        }
-      }
+.about__icons {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  
+  &:hover {
+    li {
+      opacity: 0.5;
+    }
+  }
 
-      li {
-        margin: 0 0 1em 0;
-        padding: 0 0.25em;
-        display: inline-block;
-        @include transition-duration(0.5s);
-        @include transition-property(opacity);
-        @include transition-timing-function(ease);
+  li {
+    margin: 0 0 1em 0;
+    padding: 0 0.25em;
+    display: inline-block;
+    @include transition-duration(0.5s);
+    @include transition-property(opacity);
+    @include transition-timing-function(ease);
 
-        &:hover {
-          opacity: 1;
-        }
-      }
+    &:hover {
+      opacity: 1;
+    }
+  }
 
-      i {
-        font-size: em(48px);
+  i {
+    font-size: em(48px);
 
-        @include above('--') {
-          font-size: em(80px);
-        }
+    @include above('--') {
+      font-size: em(80px);
+    }
 
-        @include above('---') {
-          font-size: 120px;
-        }
+    @include above('---') {
+      font-size: 120px;
+    }
+  }
+}
+  
+.about--fancy {
+  display: inline-block;
+  @include perspective(1200px);
+  
+  &:hover {
+    li {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        @include transform(scale(0.95));
       }
     }
-    
-    .#{&}--fancy {
-      display: inline-block;
-      @include perspective(1200px);
-      
-      &:hover {
-        li {
-          &:nth-child(1),
-          &:nth-child(2),
-          &:nth-child(3),
-          &:nth-child(4),
-          &:nth-child(5),
-          &:nth-child(6) {
-            @include transform(scale(0.95));
-          }
-        }
-      }
+  }
 
-      li {
-        @include transition-property(transform opacity);
+  li {
+    @include transition-property(transform opacity);
 
-        &:nth-child(1) {
-          @include transform(rotateY(-35deg));
-        }
-        &:nth-child(2) {
-          @include transform(rotateY(35deg));
-        }
-        &:nth-child(3) {
-          @include transform(rotateY(-35deg));
-        }
-        &:nth-child(4) {
-          @include transform(rotateY(35deg));
-        }
-        &:nth-child(5) {
-          @include transform(rotateY(-35deg));
-        }
-        &:nth-child(6) {
-          @include transform(rotateY(35deg));
-        }
+    &:nth-child(1) {
+      @include transform(rotateY(-35deg));
+    }
+    &:nth-child(2) {
+      @include transform(rotateY(35deg));
+    }
+    &:nth-child(3) {
+      @include transform(rotateY(-35deg));
+    }
+    &:nth-child(4) {
+      @include transform(rotateY(35deg));
+    }
+    &:nth-child(5) {
+      @include transform(rotateY(-35deg));
+    }
+    &:nth-child(6) {
+      @include transform(rotateY(35deg));
+    }
 
-        &:hover {
-          z-index: 10;
-          position: relative;
-          &:nth-child(1),
-          &:nth-child(2),
-          &:nth-child(3),
-          &:nth-child(4),
-          &:nth-child(5),
-          &:nth-child(6) {
-            @include transform(scale(1.2));
-          }
-        }
-
-      }
-
-      a {
-        display: block;
-      }
-
-      i {
-        display: block;
-        width: 120px;
-        height: 120px;
-        border-radius: 20px;
+    &:hover {
+      z-index: 10;
+      position: relative;
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        @include transform(scale(1.2));
       }
     }
+
+  }
+
+  a {
+    display: block;
+  }
+
+  i {
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
   }
 }
 
@@ -620,6 +733,18 @@ about {
     @include trailer;
   }
 
+}
+
+.centered {
+  @include above('---') {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  @include above('----') {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
 
 .pull {

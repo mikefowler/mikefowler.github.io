@@ -22,6 +22,8 @@
 .icon-linkedin:before,
 .icon-logomark:before,
 .icon-menu:before,
+.icon-point-left:before,
+.icon-point-right:before,
 .icon-twitter-square:before,
 .icon-twitter:before {
   font-family: "icons";
@@ -44,5 +46,7 @@
 .icon-linkedin:before { content: "\f106"; }
 .icon-logomark:before { content: "\f107"; }
 .icon-menu:before { content: "\f108"; }
-.icon-twitter-square:before { content: "\f109"; }
-.icon-twitter:before { content: "\f10a"; }
+.icon-point-left:before { content: "\f109"; }
+.icon-point-right:before { content: "\f10a"; }
+.icon-twitter-square:before { content: "\f10b"; }
+.icon-twitter:before { content: "\f10c"; }

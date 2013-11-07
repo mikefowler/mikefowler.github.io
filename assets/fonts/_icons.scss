@@ -20,6 +20,8 @@
 .icon-linkedin,
 .icon-logomark,
 .icon-menu,
+.icon-point-left,
+.icon-point-right,
 .icon-twitter-square,
 .icon-twitter {
   display: inline-block;
@@ -102,15 +104,29 @@
   @extend %icon-menu-glyph;
 }
 
-%icon-twitter-square-glyph {
+%icon-point-left-glyph {
   content: "\f109";
+}
+.icon-point-left:before {
+  @extend %icon-point-left-glyph;
+}
+
+%icon-point-right-glyph {
+  content: "\f10a";
+}
+.icon-point-right:before {
+  @extend %icon-point-right-glyph;
+}
+
+%icon-twitter-square-glyph {
+  content: "\f10b";
 }
 .icon-twitter-square:before {
   @extend %icon-twitter-square-glyph;
 }
 
 %icon-twitter-glyph {
-  content: "\f10a";
+  content: "\f10c";
 }
 .icon-twitter:before {
   @extend %icon-twitter-glyph;

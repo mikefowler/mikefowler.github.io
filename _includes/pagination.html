@@ -1,0 +1,13 @@
+<aside class="pagination centered">
+
+  <h1 class="pagination__title">More thoughts</h1>
+
+  {% if page.previous.url %}
+  <a class="pagination__link pagination__link--prev" href="{{page.previous.url}}" title="Read “{{page.previous.title}}”" onclick="_gaq.push(['_trackEvent', 'Pagination', 'Clicked previous link', '{{page.previous.title}}']);"><i class="icon-point-left"></i><span>“{{page.previous.title}}”</span></a>
+  {% endif %}
+
+  {% if page.next.url %}
+  <a class="pagination__link pagination__link--next" href="{{page.next.url}}" title="Read “{{page.next.title}}”" onclick="_gaq.push(['_trackEvent', 'Pagination', 'Clicked next link', '{{page.next.title}}']);"><i class="icon-point-right"></i><span>“{{page.next.title}}”</span></a>
+  {% endif %}
+
+</aside>
