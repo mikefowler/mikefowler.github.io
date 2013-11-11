@@ -1,6 +1,7 @@
 name: "Mike Fowler"
 description: "Mike Fowler is a frontend developer living in San Francisco, California."
 url: "http://mikefowler.me"
+rss: "http://feeds.feedburner.com/MikeFowler"
 
 author:
   name: "Mike Fowler"
