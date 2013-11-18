@@ -33,7 +33,7 @@ module.exports = function(grunt) {
       dist: {
         options: {
           config: 'config.rb',
-          importPath: 'assets/fonts'
+          importPath: ['assets/fonts', 'assets/icons']
         }
       }
     },
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
       },
       icons: {
         files: ['assets/images/icons/{,*/}*.svg'],
-        tasks: ['exec:fontcustom']
+        tasks: ['webfont']
       },
       livereload: {
         options: {
@@ -76,9 +76,23 @@ module.exports = function(grunt) {
       },
       deploy: {
         cmd: 'git add . && git commit && git push'
-      },
-      fontcustom: {
-        cmd: 'fontcustom compile assets/images/icons/ -c ./_config/'
+      }
+    },
+
+    webfont: {
+      icons: {
+        src: 'assets/images/icons/*.svg',
+        dest: 'assets/fonts',
+        destCss: 'assets/icons',
+        options: {
+          stylesheet: 'scss',
+          relativeFontPath: '/fonts',
+          template: 'assets/icons/template.css',
+          syntax: 'bootstrap',
+          htmlDemo: false,
+          htmlDemoTemplate: 'assets/icons/template.html',
+          hashes: false
+        }
       }
     },
 

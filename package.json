@@ -13,6 +13,7 @@
     "load-grunt-tasks": "~0.1.0",
     "time-grunt": "~0.1.1",
     "grunt-pagespeed": "0.0.7",
-    "grunt-env": "~0.4.0"
+    "grunt-env": "~0.4.0",
+    "grunt-webfont": "~0.2.0"
   }
 }

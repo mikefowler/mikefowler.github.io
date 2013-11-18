@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Transitions in Backbone</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+  <script src="app.js"></script>
+  
+  <footer class="footer" role="contentinfo">
+    <p>This demo is part of a post by Mike Fowler titled <a href="/2013/11/18/page-transitions-in-backbone" target="page-transitions-in-backbone">“Page Transitions in Backbone”</a>.</p> 
+  </footer>
+
+  <script type="text/template" name="home">
+    <h1>Home</h1>
+    <p><a href="#/activity">Activity &rarr;</a></p>
+  </script>
+
+  <script type="text/template" name="activity">
+    <h1>Activity</h1>
+    <p><a href="#/">&larr; Home</a></p>
+  </script>
+
+</body>
+</html>
