@@ -485,6 +485,10 @@ code {
       font-size: 120px;
     }
   }
+
+  a {
+    text-decoration: none;
+  }
 }
   
 .about--fancy {
@@ -683,6 +687,10 @@ code {
 
 .center-text {
   text-align: center;
+}
+
+.justify-text {
+  text-align: justify;
 }
 
 .highlight {

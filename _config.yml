@@ -3,6 +3,8 @@ description: "Mike Fowler is a frontend developer living in San Francisco, Calif
 url: "http://mikefowler.me"
 rss: "http://feeds.feedburner.com/MikeFowler"
 
+port: 2362
+
 author:
   name: "Mike Fowler"
   twitter: "@michaelrfowler"
