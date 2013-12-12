@@ -28,6 +28,7 @@
 .icon-feed, 
 .icon-foursquare, 
 .icon-github, 
+.icon-info, 
 .icon-instagram, 
 .icon-lastfm, 
 .icon-linkedin, 
@@ -35,6 +36,7 @@
 .icon-menu, 
 .icon-point-left, 
 .icon-point-right, 
+.icon-thoughts, 
 .icon-twitter-square, 
 .icon-twitter { 
   @extend %icon;
@@ -68,64 +70,78 @@
   @extend %icon-github-glyph;
 }
 
-%icon-instagram-glyph {
+%icon-info-glyph {
   content:"\f104";
+}
+.icon-info::before {
+  @extend %icon-info-glyph;
+}
+
+%icon-instagram-glyph {
+  content:"\f105";
 }
 .icon-instagram::before {
   @extend %icon-instagram-glyph;
 }
 
 %icon-lastfm-glyph {
-  content:"\f105";
+  content:"\f106";
 }
 .icon-lastfm::before {
   @extend %icon-lastfm-glyph;
 }
 
 %icon-linkedin-glyph {
-  content:"\f106";
+  content:"\f107";
 }
 .icon-linkedin::before {
   @extend %icon-linkedin-glyph;
 }
 
 %icon-logomark-glyph {
-  content:"\f107";
+  content:"\f108";
 }
 .icon-logomark::before {
   @extend %icon-logomark-glyph;
 }
 
 %icon-menu-glyph {
-  content:"\f108";
+  content:"\f109";
 }
 .icon-menu::before {
   @extend %icon-menu-glyph;
 }
 
 %icon-point-left-glyph {
-  content:"\f109";
+  content:"\f10a";
 }
 .icon-point-left::before {
   @extend %icon-point-left-glyph;
 }
 
 %icon-point-right-glyph {
-  content:"\f10a";
+  content:"\f10b";
 }
 .icon-point-right::before {
   @extend %icon-point-right-glyph;
 }
 
+%icon-thoughts-glyph {
+  content:"\f10c";
+}
+.icon-thoughts::before {
+  @extend %icon-thoughts-glyph;
+}
+
 %icon-twitter-square-glyph {
-  content:"\f10b";
+  content:"\f10d";
 }
 .icon-twitter-square::before {
   @extend %icon-twitter-square-glyph;
 }
 
 %icon-twitter-glyph {
-  content:"\f10c";
+  content:"\f10e";
 }
 .icon-twitter::before {
   @extend %icon-twitter-glyph;

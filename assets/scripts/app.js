@@ -10,42 +10,82 @@
 
     app.$window = $(window);
     app.$body = $('body');
+    app.$masthead = $('.js-masthead');
+    app.$navlist = $('.js-navlist');
+    app.$toggleNav = $('.js-toggle-nav');
     app.$socialIcons = $('.js-social-icons');
 
-    // Run feature detects
-    detectFeatures();
+    app.mastheadHeight = app.$masthead.height();
+    app.scroll = 1;
 
+    // Make sure all external links open in a new context
+    externalLinks();
+
+    // Collapse the header when we scroll down, but only
+    // if our masthead is fixed.
+    collapseMasthead();
+
+    // If we have browser support for it, and if size of
+    // the window is wide enough for it to make sense,
+    // then enhance the social icons.
     if (app.$socialIcons && 
-        app.supports.filters && 
-        app.supports.transitions && 
-        app.supports.animations &&
-       !app.supports.touch &&
+        Modernizr.cssfilters && 
+        Modernizr.csstransitions && 
+        Modernizr.cssanimations &&
+        Modernizr.touch !== true &&
         app.$body.width() > 960) {
       app.$socialIcons.addClass('about--fancy');
     }
 
   };
 
-  function detectFeatures() {
+  function collapseMasthead () {
+    var mastheadToggleClass = 'masthead--collapsed';
 
-    var el;
+    // On any scroll event...
+    app.$window.on('scroll', function () {
+      
+      var offset = app.$window.scrollTop()
+        , fixedHeader = (app.$masthead.css('position') === 'fixed' ? true : false)
+        , direction = (app.scroll > offset ? 'up' : 'down')
+      
+      // After we check the scroll direction, update the stored scroll offset
+      app.scroll = offset;
 
-    // Filters
-    el = document.createElement('div');
-    el.style.cssText = '-webkit-filter:blur(2px); filter:blur(2px);';
-    app.supports.filters = !!el.style.length && ((document.documentMode === undefined || document.documentMode > 9));
+      // If:
+      //    1) the header is fixed
+      //    2) we've scrolled past the top of the page
+      //    3) we're scrolling DOWN the page
+      // Then:
+      //      
+      if (fixedHeader && offset > 0 && direction === 'down') {
+        app.$masthead.addClass(mastheadToggleClass);
+      }
 
-    // Transitions
-    el = app.$body[0].style;
-    app.supports.transitions = el.transition !== undefined || el.WebkitTransition !== undefined || el.MozTransition !== undefined || el.MsTransition !== undefined || el.OTransition !== undefined;
+      // Otherwise remove the class, uncollapsing the masthead
+      else {
+        app.$masthead.removeClass(mastheadToggleClass);
+      }
+    });
 
-    // Animations
-    el = app.$body[0].style;
-    app.supports.animations = el.animation !== undefined || el.WebkitAnimation !== undefined || el.MozAnimation !== undefined || el.MsAnimation !== undefined || el.OAnimation !== undefined;
+    // Uncollapse the masthead when we click on the nav toggle icon
+    app.$toggleNav.on('click', function () {
+      app.$masthead.removeClass(mastheadToggleClass);
+    });
 
-    // Touch
-    app.supports.touch = 'ontouchstart' in document.documentElement;
+  }
 
+  function externalLinks () {
+    $('a').each(function () {
+      var a = new RegExp('/' + window.location.host + '/');
+      if (!a.test(this.href)) {
+        $(this).click(function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          window.open(this.href, '_blank');
+        });
+      }
+    });
   }
 
 }(window.App = window.App || {}, $));

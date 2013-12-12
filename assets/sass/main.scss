@@ -51,6 +51,28 @@
 
 * {
   box-sizing: border-box;
+
+  @if $disable-transitions {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
+  @if $disable-transforms {
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    transform: none !important;
+  }
+  @if $disable-animations {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -ms-animation: none !important;
+    -o-animation: none !important;
+    animation: none !important;
+  }
 }
 
 html {
@@ -70,6 +92,10 @@ body {
   
   @include above('--') {
     font-size: 112.5%; // 18px
+  }
+
+  @include above($masthead-fixed-breakpoint) {
+    padding-top: rhythm($masthead-height-full) + $masthead-border-width;
   }
 
   @include above('----') {
@@ -104,7 +130,7 @@ a {
   color: $default-text-color;
   @include transition(0.25s color ease);
 
-  &:hover {
+  .no-touch &:hover {
     color: $color-primary;
   }
 }
@@ -180,18 +206,43 @@ code {
   padding: 0.125em 0.25em;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 ///////////////////////////////////////////////
 // MASTHEAD
 ///////////////////////////////////////////////
 
 .masthead {
-  background: #f5f5f5;
+  background: transparentize(#f1f1f1, 0.1);
   padding: 0 rhythm(1);
-  border-top: 10px solid $color-primary;
+  border-top: $masthead-border-width solid $color-primary;
   overflow: hidden;
   @include trailer;
-  @include adjust-leading-to(3);
+  @include adjust-leading-to($masthead-height-full);
+  @include transition-property(line-height, border-color, background);
+  @include transition-duration(0.25s);
   
+  &.masthead--collapsed {
+    border-color: transparent;
+    background: rgba(0, 0, 0, 0.05);
+    @include adjust-leading-to($masthead-height-collapsed);
+  }
+
+  @include above($masthead-fixed-breakpoint) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  @include below('-') {
+    padding: 0;
+    @include adjust-leading-to($masthead-height-collapsed);
+  }
+
   a {
     text-decoration: none;
   }
@@ -211,6 +262,12 @@ code {
     display: block;
   }
 
+  @include below('-') {
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+  }
+
 }
 
 .masthead__nav {
@@ -219,20 +276,85 @@ code {
   text-align: right;
   width: 80%;
   margin: 0 -4px 0 0;
+  overflow: hidden;
 
   h1 {
     @extend %hidden;
+  }
+
+  @include below('-') {
+    width: 100%;
+    text-align: center;
   }
 
 }
 
 .masthead__nav-list {
   @extend %unstyled-list;
+
+  @include above($masthead-fixed-breakpoint) {
+    @include transition-property(transform);
+    @include transition-duration(0.25s);
+    @include transform(translateX(8%));
+
+    .masthead--collapsed & {
+      @include transform(translateX(0));
+    }
+  }
+
+  @include below('-') {
+    text-align: center;
+  }
 }
 
 .masthead__nav-item {
   display: inline-block;
   margin: 0 0 0 8%;
+  @include transition-property(transform opacity, visibility);
+  @include transition-duration(0.25s);
+
+  @include below('-') {
+    margin: 0 4%;
+  }
+
+  .masthead--collapsed &:not(.nav-item__menu) {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .masthead--collapsed .navlist--visible & {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.nav-item__twitter,
+.nav-item__rss {
+  span {
+    @extend %hidden;
+  }
+}
+
+.nav-item__menu {
+  width: 8%;
+  margin: 0;
+  cursor: pointer;
+  display: none;
+  @include transition(0.25s color);
+  
+  @include above($masthead-fixed-breakpoint) {
+    display: inline-block;
+  }
+
+  .no-touch &:hover {
+    color: $color-primary;
+  }
+
+  .no-csstransforms & {
+    display: none;
+  }
+  .no-csstransforms .masthead--collapsed & {
+    display: inline-block;
+  }
 }
 
 ///////////////////////////////////////////////
@@ -241,6 +363,13 @@ code {
 
 #main {
   flex: 1;
+}
+
+.page {
+
+  @include above($masthead-fixed-breakpoint) {
+    @include padding-leader(2);
+  }
 }
 
 ///////////////////////////////////////////////
@@ -288,11 +417,11 @@ code {
 
 .article__content {
   
-  :first-child {
+  > :first-child {
     margin-top: 0;
   }
 
-  :last-child {
+  > :last-child {
     margin-bottom: 0;
   }
 
@@ -419,9 +548,11 @@ code {
     i {
       margin: 0;
       @include transform-origin(0, 50%);
-      &:hover {
+      
+      .no-touch &:hover {
         @include transform(rotateY(-35deg));
       }
+
     }
   }
 }
@@ -438,7 +569,7 @@ code {
     i {
       margin: 0;
       @include transform-origin(100%, 50%);
-      &:hover {
+      .no-touch &:hover {
         @include transform(rotateY(35deg));
       }
     }
@@ -455,7 +586,7 @@ code {
   margin: 0;
   padding: 0;
   
-  &:hover {
+  .no-touch &:hover {
     li {
       opacity: 0.5;
     }
@@ -469,7 +600,7 @@ code {
     @include transition-property(opacity);
     @include transition-timing-function(ease);
 
-    &:hover {
+    .no-touch &:hover {
       opacity: 1;
     }
   }
@@ -495,7 +626,7 @@ code {
   display: inline-block;
   @include perspective(1200px);
   
-  &:hover {
+  .no-touch &:hover {
     li {
       &:nth-child(1),
       &:nth-child(2),
@@ -530,7 +661,7 @@ code {
       @include transform(rotateY(35deg));
     }
 
-    &:hover {
+    .no-touch &:hover {
       z-index: 10;
       position: relative;
       &:nth-child(1),
@@ -588,7 +719,11 @@ code {
 
   }
 
-  > .highlight {
+  img {
+    @extend .aligncenter;
+  }
+
+  .highlight {
     @include trailer;
   }
 
@@ -610,11 +745,6 @@ code {
   width: 100%;
   @include leader;
   @include trailer;
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 }
 
 .push-right {

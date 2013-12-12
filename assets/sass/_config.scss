@@ -117,7 +117,10 @@ $base-line-height: $base-font-size * 1.5;
 // SITE CONFIG
 
 $debug: false;
-// $debug: true;
+
+$disable-transitions: false;
+$disable-transforms: false;
+$disable-animations: false;
 
 $body-padding: 1em;
 
@@ -143,3 +146,7 @@ $default-text-color: $color-black;
 
 $masthead-width: 80px;
 $masthead-width-open: 150px;
+$masthead-border-width: 0.25em;
+$masthead-height-full: 3;
+$masthead-height-collapsed: 1.5;
+$masthead-fixed-breakpoint: '---';

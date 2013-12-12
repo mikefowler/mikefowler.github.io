@@ -9,20 +9,9 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
-    app: {
-      dev: 'http://mikefowler.dev',
-      prod: 'http://mikefowler.me'
-    },
-
     site: {
+      src: '.',
       build: '_site'
-    },
-
-    uglify: {
-      dist: {
-        src: 'assets/js/app.js',
-        dest: 'assets/js/app.min.js'
-      }
     },
     
     jshint: {
@@ -39,43 +28,112 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      scripts: {
-        files: '<%= jshint.all %>',
-        tasks: ['jshint'/*, 'uglify'*/]
-      },
       compass: {
-        files: 'assets/sass/**/*',
-        tasks: ['compass']
+        files: [
+          '<%= site.src %>/assets/sass/*.scss',
+          '<%= site.src %>/assets/icons/*.scss'
+        ],
+        tasks: ['compass', 'copy:styles']
       },
-      icons: {
-        files: ['assets/images/icons/{,*/}*.svg'],
-        tasks: ['webfont']
+      scripts: {
+        files: '<%= site.src %>/assets/scripts/*.js',
+        tasks: ['jshint', 'copy:scripts']
       },
       livereload: {
         options: {
-          livereload: 35730
+          livereload: true
         },
         files: [
-          '<%= site.build %>/assets/css/**/*.css',
-          '<%= site.build %>/assets/js/**/*.js',
-          '<%= site.build %>/assets/images/*.{jpg,png,svg,webp}',
+          '<%= site.build %>/assets/**/*.{css,js}',
           '<%= site.build %>/**/*.html'
         ]
+      },
+      icons: {
+        files: ['<%= site.src %>/assets/images/icons/*.svg'],
+        tasks: ['webfont', 'copy:fonts']
+      },
+      jekyll: {
+        files: [
+          '<%= site.src %>/_drafts/*.md',
+          '<%= site.src %>/_includes/*.html',
+          '<%= site.src %>/_layouts/*.html',
+          '<%= site.src %>/_posts/*.md',
+          '<%= site.src %>/info/*.html',
+          '<%= site.src %>/thoughts/*.html',
+          '<%= site.src %>/labs/**/*',
+          '<%= site.src %>/index.html',
+          '<%= site.src %>/404.html',
+          '<%= site.src %>/_config.yml'
+        ],
+        tasks: ['jekyll:build']
       }
     },
 
-    exec: {
+    copy: {
+      styles: {
+        files: [{
+          expand: true,
+          cwd: '<%= site.src %>/assets/css',
+          src: '*.css',
+          dest: '<%= site.build %>/assets/css'
+        }]
+      },
+      fonts: {
+        files: [{
+          expand: true,
+          cwd: '<%= site.src %>/assets/fonts',
+          src: '*',
+          dest: '<%= site.build %>/assets/fonts'
+        }]
+      },
+      scripts: {
+        files: [{
+          expand: true,
+          cwd: '<%= site.src %>/assets/scripts',
+          src: '*.js',
+          dest: '<%= site.build %>/assets/scripts'
+        }]
+      }
+    },
+
+    jekyll: {
+      options: {
+        bundleExec: true,
+        src: '<%= site.src %>',
+        dest: '<%= site.build %>',
+        config: '_config.yml',
+        safe: true
+      },
+      server: {
+        options: {
+          port: 2362,
+          serve: true
+        }
+      },
       build: {
-        cmd: 'jekyll build'
+        options: {
+          drafts: true
+        }
       },
       staging: {
-        cmd: 'jekyll serve -w'
+        options: {
+          drafts: false
+        }
+      }
+    },
+
+    concurrent: {
+      server: {
+        options: {
+          logConcurrentOutput: true
+        },
+        tasks: ['jekyll:build', 'jekyll:server', 'watch']
       },
-      write: {
-        cmd: 'jekyll serve -w --drafts'
-      },
-      deploy: {
-        cmd: 'git add . && git commit && git push'
+      staging: {
+        options: {
+          logConcurrentOutput: true
+        },
+        tasks: ['jekyll:staging', 'jekyll:server', 'watch']
       }
     },
 
@@ -94,43 +152,15 @@ module.exports = function(grunt) {
           hashes: false
         }
       }
-    },
-
-    concurrent: {
-      options: {
-        logConcurrentOutput: true
-      },
-      write: {
-        tasks: ['exec:write', 'watch'],
-      },
-      staging: {
-        tasks: ['exec:staging', 'watch'],
-      }
-    },
-
-    pagespeed: {
-      prod: {
-        options: {
-          paths: ['/'],
-          locale: 'en_US',
-          strategy: 'desktop',
-          threshold: 80
-        }
-      },
-      options: {
-        key: '<%= process.env.GOOGLE_API_KEY %>',
-        url: 'http://mikefowler.me'
-      }
     }
 
   });
 
   // Tasks
   
-  grunt.registerTask('write', ['concurrent:write']);
+  grunt.registerTask('server', ['concurrent:server']);
   grunt.registerTask('staging', ['concurrent:staging']);
-  grunt.registerTask('deploy', ['exec:deploy']);
   grunt.registerTask('test', ['jshint']);
-  grunt.registerTask('default', ['write']);
+  grunt.registerTask('default', ['server']);
 
 };
