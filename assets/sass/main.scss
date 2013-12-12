@@ -50,6 +50,7 @@
 @include establish-baseline;
 
 * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 
   @if $disable-transitions {
@@ -217,7 +218,7 @@ img {
 
 .masthead {
   background: transparentize(#f1f1f1, 0.1);
-  padding: 0 rhythm(1);
+  padding-left: rhythm(1);
   border-top: $masthead-border-width solid $color-primary;
   overflow: hidden;
   @include trailer;
@@ -295,7 +296,7 @@ img {
   @include above($masthead-fixed-breakpoint) {
     @include transition-property(transform);
     @include transition-duration(0.25s);
-    @include transform(translateX(8%));
+    @include transform(translateX($masthead-menu-icon-width));
 
     .masthead--collapsed & {
       @include transform(translateX(0));
@@ -309,7 +310,8 @@ img {
 
 .masthead__nav-item {
   display: inline-block;
-  margin: 0 0 0 8%;
+  margin: 0 4%;
+  text-align: center;
   @include transition-property(transform opacity, visibility);
   @include transition-duration(0.25s);
 
@@ -335,7 +337,7 @@ img {
 }
 
 .nav-item__menu {
-  width: 8%;
+  width: $masthead-menu-icon-width;
   margin: 0;
   cursor: pointer;
   display: none;
