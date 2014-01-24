@@ -97,7 +97,7 @@ app.Extensions.View = Backbone.View.extend({
 
     var view = this;
 
-    view.$el.addClass('is-visible');
+    view.$el.removeClass('is-visible');
     view.$el.on('transitionend', function () {
       if (_.isFunction(callback)) {
         callback();
