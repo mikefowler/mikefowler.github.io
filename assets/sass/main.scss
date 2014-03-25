@@ -832,8 +832,8 @@ img {
 
   pre {
     margin: 0;
-    overflow-x: hidden;
-    overflow-x: scroll;
+    white-space: pre;
+    overflow-x: auto;
     overflow-y: hidden;
   }
 }
