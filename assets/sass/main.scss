@@ -838,6 +838,11 @@ img {
   }
 }
 
+.update {
+  background: transparentize(#37bcfa, 0.5);
+  padding: rhythm(0.5);
+}
+
 .hidden {
   @extend %hidden;
 }
