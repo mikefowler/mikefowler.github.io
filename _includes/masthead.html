@@ -6,16 +6,16 @@
     <h1>Navigation</h1>
     <ul class="masthead__nav-list js-navlist">
       <li class="masthead__nav-item nav-item__thoughts">
-        <a href="/thoughts" onclick="_gaq.push(['_trackEvent', 'Masthead', 'Clicked navigation link', 'Thoughts']);"><span>Thoughts</span></a>
+        <a href="/thoughts" onclick="ga('send', 'event', 'Masthead', 'Clicked navigation link', 'Thoughts');"><span>Thoughts</span></a>
       </li>
       <li class="masthead__nav-item nav-item__info">
-        <a href="/info" onclick="_gaq.push(['_trackEvent', 'Masthead', 'Clicked navigation link', 'Info']);"><span>Info</span></a>
+        <a href="/info" onclick="ga('send', 'event', 'Masthead', 'Clicked navigation link', 'Info');"><span>Info</span></a>
       </li>
       <li class="masthead__nav-item nav-item__twitter">
-        <a href="http://twitter.com/michaelrfowler" target="mike-on-twitter" onclick="_gaq.push(['_trackEvent', 'Masthead', 'Clicked navigation link', 'Twitter']);"><span>Twitter</span><i class="icon-twitter"></i></a>
+        <a href="http://twitter.com/michaelrfowler" target="mike-on-twitter" onclick="ga('send', 'event', 'Masthead', 'Clicked navigation link', 'Twitter');"><span>Twitter</span><i class="icon-twitter"></i></a>
       </li>
       <li class="masthead__nav-item nav-item__rss">
-        <a href="{{site.rss}}" onclick="_gaq.push(['_trackEvent', 'RSS', 'Clicked RSS link']); _gaq.push(['_trackEvent', 'Masthead', 'Clicked navigation link', 'RSS']);" target="feedburner"><span>RSS</span><i class="icon-feed"></i></a>
+        <a href="{{site.rss}}" onclick="ga('send', 'event', 'RSS', 'Clicked RSS link'); ga('send', 'event', 'Masthead', 'Clicked navigation link', 'RSS');" target="feedburner"><span>RSS</span><i class="icon-feed"></i></a>
       </li>
       <li class="masthead__nav-item nav-item__menu js-toggle-nav"><i class="icon-menu"></i></li>
     </ul>
