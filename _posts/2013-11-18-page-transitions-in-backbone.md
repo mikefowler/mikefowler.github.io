@@ -82,7 +82,7 @@ app.Extensions.View = Backbone.View.extend({
 
     var animateIn = function () {
       view.$el.addClass('is-visible');
-      view.$el.on('transitionend', function () {
+      view.$el.one('transitionend', function () {
         if (_.isFunction(callback)) {
           callback();
         }
@@ -98,7 +98,7 @@ app.Extensions.View = Backbone.View.extend({
     var view = this;
 
     view.$el.removeClass('is-visible');
-    view.$el.on('transitionend', function () {
+    view.$el.one('transitionend', function () {
       if (_.isFunction(callback)) {
         callback();
       }
