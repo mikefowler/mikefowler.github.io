@@ -2,6 +2,8 @@
 layout: article
 title: "Cached images and the “load” event"
 category: thoughts
+excerpt: "How to deal with cached images and their “load” event"
+keywords: image cache, image caching, image preloading, jquery image
 ---
 A quick bit here, but one that I spent enough time digging into that I feel is
 worth posting.

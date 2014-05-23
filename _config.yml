@@ -24,7 +24,7 @@ page:
 git:
   branch: master
 
-editor: atom
+editor: subl
 
 disqus:
   prod: 
