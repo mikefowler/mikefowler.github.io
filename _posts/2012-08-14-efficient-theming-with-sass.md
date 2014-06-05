@@ -98,7 +98,7 @@ Implementing this where appropriate will result in a more flexible theming envir
 Inline your @media queries
 -------------------------
 
-This concept has [been written about before](/thoughts/passing-content-to-mixins-in-sass/), but it's worth mentioning here and expanding upon a bit. First, an example. Below we have the beginnings of a file structure for a responsive design. Simplified, yes, but bare with me. Individual sections are defined for different areas of the page, segmented by docblock-style comments. We're using a custom mixin for our responsive queries, passing content in via ```@content``` blocks. Everything looks great.
+This concept has [been written about before](/thoughts/passing-content-to-mixins-in-sass/), but it's worth mentioning here and expanding upon a bit. First, an example. Below we have the beginnings of a file structure for a responsive design. Simplified, yes, but bear with me. Individual sections are defined for different areas of the page, segmented by docblock-style comments. We're using a custom mixin for our responsive queries, passing content in via ```@content``` blocks. Everything looks great.
 
 ``` scss
 
