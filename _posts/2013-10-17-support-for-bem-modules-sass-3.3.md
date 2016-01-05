@@ -23,7 +23,7 @@ possible to use at the beginning of a compound or descendant selector. Thus, one
 of our best options until now was using variable interpolation to construct BEM
 classes:
 
-``` scss
+```scss
 $module: 'note';
 
 .#{$module}__content {
@@ -60,7 +60,7 @@ part of a module, but I don't want it nested as a descendant class like ```.note
 
 Using Sass 3.3's reworked parent selector we can write something like this:
 
-``` sass
+```scss
 .note {
   color: #ffffff;
   

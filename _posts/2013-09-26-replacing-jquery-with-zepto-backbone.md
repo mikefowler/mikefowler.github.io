@@ -12,7 +12,7 @@ You probably know by now that jQuery 2.0 came out back in April, finally droppin
 
 I'm using RequireJS for file loading, so the code on this page reflects that. For those of you not using RequireJS or another file loader, doing a straight replace of jQuery for Zepto should do just fine, as both use the familiar ```$``` alias. For those of you using Require, it's going to look something like this. Because I'm using the [AMD version of Backbone](https://github.com/amdjs/backbone), I'm aliasing the path to Zepto as “jquery”, since Backbone specifically ```require```'s the “jquery” module.
 
-``` javascript
+```js
 require.config({
   paths: {
     jquery: 'vendor/zepto/zepto.min'
@@ -30,7 +30,7 @@ Even beyond creating a custom build of Zepto to account for some missing pieces,
 
 Absent entirely is any sort of deferred functionality, a handy bit of AJAX magic when you're writing a Backbone app that might be making multiple simultaneous requests to an API. Luckily, there are plenty of drop-in alternatives to jQuery's implementation. In my project I was able to painlessly switch to [Simply Deferred](https://github.com/sudhirj/simply-deferred), a vanilla solution with plugin support for Zepto. After adding Simply Deferred as a dependency in your RequireJS configuration, attaching it to Zepto is painless (again, leave out the RequireJS syntax here if you don't need it):
 
-``` javascript
+```js
 require(['jquery', 'deferred'], ($, Deferred) {
   
   Deferred.installInto( $ );

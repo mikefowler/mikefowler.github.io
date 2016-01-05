@@ -1,5 +1,5 @@
 ---
-layout: link
+layout: article
 link: https://speakerdeck.com/u/mikefowler/p/crafting-scalable-stylesheets
 title: Crafting scalable stylesheets
 category: thoughts

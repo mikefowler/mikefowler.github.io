@@ -9,7 +9,7 @@ If you're using Yeoman as a base for any of your projects, chances are good that
 
 The first thing you need to do is add an option to the Coffeescript task, directing it to generate source maps:
 
-``` javascript
+```js
 // ...
 coffee: {
   dist: {
@@ -29,7 +29,7 @@ Here's what we can do.
 
 Instead of compiling the Coffeescript files from their original source location, we'll copy all of them over into the ```.tmp``` directory first, and *then* compile them to JavaScript. We'll add a new target to the copy task in our Gruntfile that looks like this:
 
-``` javascript
+```js
 copy: {
   coffee: {
     files: [{
@@ -48,7 +48,7 @@ copy: {
 
 Then, in every task that runs the “coffee” task, we'll run “copy:coffee” just before it. Note that there are probably a few places where you will need to insert this additional copy task. Just look for instances of “coffee:dist”.
 
-``` javascript
+```js
 grunt.task.run([
   // ...
   'copy:coffee',
@@ -59,7 +59,7 @@ grunt.task.run([
 
 We also have to change our Coffeescript task to compile from the ```.tmp``` directory instead:
 
-``` javascript
+```js
 coffee: {
   dist: {
     options: {
@@ -79,7 +79,7 @@ coffee: {
 
 With that change we're pretty much set. There are a couple of additional small changes that you should make. In the portion of the “watch” task that watches Coffeescript files, we want to run the same combination of copy and compile tasks:
 
-``` javascript
+```js
 watch: {
   coffee: {
     files: ['<%= yeoman.app %>/scripts/**/*.coffee'],

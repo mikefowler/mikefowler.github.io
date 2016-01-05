@@ -12,7 +12,7 @@ Variable semantics
 
 Let's demonstrate a problem. Say you're developing a base stylesheet, and eventually you're going to create child themes that inherit from your base, overriding variables to change colors, dimensions, etcetera.
 
-``` scss
+```scss
 $grey: #ccc !default;
 $blue: #4169ff !default;
 
@@ -24,7 +24,7 @@ body {
 
 Great. Everything looks good. Now say we get a request in to make a child theme that has green body copy. Sure, no problem. We defined our variables with !default flags so we can easily override them.
 
-``` scss
+```scss
 $blue: #299126;
 
 @import 'base';
@@ -35,7 +35,7 @@ You've no doubt caught on by now that we've essentially just destroyed the seman
 
 Don't give your variables vague names assuming you'll be able to reuse them in multiple places. If you plan this out carefully, it could work. But in many cases, in my experience, you will eventually find yourself renaming variables or creating new variables anyways. Create variables with **purposeful, semantic names**:
 
-``` scss
+```scss
 $body-width: 960px;
 $body-background-color: #eee;
 $body-copy-color: #222;
@@ -62,20 +62,20 @@ The official Compass website does a decent job [explaining this concept](http://
 
 Say you're developing a theme, and you have a header bar that has a background gradient. You could define the two colors of the gradient as two variables:
 
-``` scss
+```scss
 $header-gradient-1: #000;
 $header-gradient-2: #fff;
 ```
 
 However, I find it much cleaner to store these as a list, since the naming of these two variables implies they will always be used together (and if not… rethink the semantics of your variable names):
 
-``` scss
+```scss
 $header-gradient: (#000, #fff);
 ```
 
 This reads much cleaner, and then you can use the native Sass ```nth``` function like such:
 
-```
+```scss
 @include background(
     linear-gradient(
         nth($header-gradient, 1),
@@ -84,7 +84,7 @@ This reads much cleaner, and then you can use the native Sass ```nth``` function
 
 However… this poses an issue. What happens when you have a theme to develop that SHOULDN'T use a gradient, but rather a solid color? This is when you can make good use of the built-in ```type-of``` function and some conditionals:
 
-``` scss
+```scss
 @if type-of($header-gradient) == "list" {
     // Code here for a gradient background
 }
@@ -100,7 +100,7 @@ Inline your @media queries
 
 This concept has [been written about before](/thoughts/passing-content-to-mixins-in-sass/), but it's worth mentioning here and expanding upon a bit. First, an example. Below we have the beginnings of a file structure for a responsive design. Simplified, yes, but bear with me. Individual sections are defined for different areas of the page, segmented by docblock-style comments. We're using a custom mixin for our responsive queries, passing content in via ```@content``` blocks. Everything looks great.
 
-``` scss
+```scss
 
 /**
  * Base Styles
@@ -131,7 +131,7 @@ Now imagine something else: imagine that for each of the three main sections, ``
 
 **Write your media queries inline with the base styles.** Seriously, do it. Keeping media queries in proximity to the base styles does two things: it reduces the obnoxious amount of scrolling between sections while writing styles for different breakpoints, and, maybe most importantly, *contextualizes the content being passed into the media queries*. Often times the styles being set at specific breakpoints are there to override or set properties not present at other resolutions. In other words… most of the styles we write in media queries are meaningless without seeing the base styles to compare.
 
-``` scss
+```scss
 
 /**
  * Header

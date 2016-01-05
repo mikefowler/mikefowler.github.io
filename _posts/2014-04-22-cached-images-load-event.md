@@ -16,7 +16,7 @@ the image fades in. Walla!
 
 The code looked something like this:
 
-```javascript
+```js
 {
    
   //...
@@ -49,7 +49,7 @@ destroyed and inserted again into the page.
 Here's the magic (read: feels hacky) bits to get this working the way I
 wanted:
 
-```javascript
+```js
 {
    
   //...

@@ -12,7 +12,7 @@ Version 3.2 of SASS adds this incredibly helpful piece of functionality: the abi
 
 What if we could easily keep our responsive media style rules grouped with the content it defines rules for, but not clutter our file with @media rules? Say, by doing something like this:
 
-{% highlight sass %}
+```scss
 #content {
   
   width: 960px;
@@ -26,13 +26,13 @@ What if we could easily keep our responsive media style rules grouped with the c
   }
   
 }
-{% endhighlight %}
+```
 
 Pretty nice, right? It makes much more sense to keep our media rules inline like this, rather than grouping them into a separate file or section of the document. For small sites it's not too big of a deal, but when you're dealing with stylesheets for larger sites, it's a pain to locate the associated @media rules and make changes in potentially 4 different locations (default, tablet, mobile, wide mobile).
 
 This is exactly what we **can** do with this new release of Sass. Here's what the mixin looks like on the other end:
 
-{% highlight sass %}
+```scss
 @mixin media($type) {
   
   @if $type == tablet {
@@ -51,7 +51,7 @@ This is exactly what we **can** do with this new release of Sass. Here's what th
   }
   
 }
-{% endhighlight %}
+```
 
 Everything looks pretty standard here except for the addition of our new keyword “@content”, which is equal to whatever content you pass into the mixin inside of the curly braces.
 

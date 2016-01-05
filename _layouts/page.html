@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% include masthead.html %}
+
+<main class="page{% if page.page_class %} {{page.page_class}}{% endif %}" itemprop="mainContentOfPage" role="main">
+  <div class="page-container">
+    {{ content }}
+  </div>
+</main>

@@ -1,55 +1,30 @@
-name: "Mike Fowler"
-description: "Mike Fowler is a frontend developer living in San Francisco, California."
+title: "Mike Fowler"
+description: "A New Englander out west. Engineer at Airbnb."
 url: "http://mikefowler.me"
-rss: "http://feeds.feedburner.com/MikeFowler"
-
 author:
   name: "Mike Fowler"
-  twitter: "@michaelrfowler"
   email: "mike@mikefowler.me"
-  avatar: "http://www.gravatar.com/avatar/6e4df57661fc4fa1a6d2bcc8d6f46273.png?s=80"
+  avatar: "http://gravatar.com/avatar/6e4df57661fc4fa1a6d2bcc8d6f46273?s=200"
+  twitter: michaelrfowler
 
-css: "/assets/css"
-js: "/assets/scripts"
-images: "/assets/images"
-
-post:
-  template: _templates/_post.txt
-  extension: md
-
-page:
-  template: _templates/_page.txt
-  extension: md
-
-git:
-  branch: master
-
-editor: subl
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - footnotes
 
 disqus:
-  prod: 
+  prod:
     shortname: mikefowler
   dev:
     shortname: mikefowler-dev
 
-markdown: redcarpet
-
-excerpt_separator: <!-- more -->
-
-pygments: true
+highlighter: pygments
 permalink: /:year/:month/:day/:title/
-
-exclude: [
-  'node_modules',
-  'assets/sass',
-  'Gruntfile.js',
-  'mikefowler.me.sublime-project',
-  'mikefowler.me.sublime-workspace',
-  'package.json',
-  'README.md',
-  'vendor',
-  'config.rb',
-  'Gemfile',
-  'Gemfile.lock',
-  'CNAME'
-]
+port: 4001
+safe: true
+gems:
+  - jekyll-redirect-from
+  - jekyll-gist
+whitelist:
+  - jekyll-redirect-from
+  - jekyll-gist

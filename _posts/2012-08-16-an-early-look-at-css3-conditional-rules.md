@@ -21,7 +21,7 @@ A major difference here is that Modernizr also adds test results to an object in
 
 Before reading these examples, note again that this spec is in flux, and furthermore **no browsers have implemented this**. These examples are pulled from the current version of the editor's draft, linked above. In our example, let us say we are testing support for flexbox. We want to specify some rules to apply if the browser supports the property, but we also want to be able to specify fallbacks in case the user agent does **not** support flexbox.
 
-``` css
+```css
 
 /**
  * Set our main sections to use flexbox
@@ -64,7 +64,7 @@ Before reading these examples, note again that this spec is in flux, and further
 
 Pretty straightforward. We would also (theoretically) be able to chain tests like we can with the ```@media rule``` using the ```and``` and ```or``` keywords:
 
-``` css
+```css
 
 @supports ( box-shadow: 2px 2px 2px black ) or
           ( -moz-box-shadow: 2px 2px 2px black ) or
@@ -90,7 +90,7 @@ I couldn't write this post without mentioning how elegant this functionality mig
 
 How about something like this?
 
-``` scss
+```scss
 
 /**
  * This would compile to the code in

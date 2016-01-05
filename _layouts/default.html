@@ -1,76 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-  
-  {% capture title %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}{% endcapture %}
-  
-  {% capture description %}{% if page.excerpt %}{{ page.excerpt | strip_html }}{% elsif page.home %}{{ site.description }}{% endif %}{% endcapture %}
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% include head.html %}
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:creator" content="{{ site.author.twitter }}">
-  <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ description }}">
-  
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
-  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+  <body class="no-transition" itemscope itemtype="http://schema.org/WebPage">
 
-  {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+    {{ content }}
 
-  <link rel="canonical" href="{{ canonical }}">
-  <link href="{{site.images}}/favicon.png" rel="icon">
+    <script src="{{ site.baseurl }}/js/main.js"></script>
 
-  <link href="/atom.xml" rel="alternate" title="{{site.title}}" type="application/atom+xml">
-  
-  <script src="{{site.js}}/modernizr.js"></script>
-  <script src="//use.typekit.net/jal3zqa.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-  
-  <link rel="stylesheet" href="{{ site.css }}/main.css">
-  {% for file in page.css %}
-    <link rel="stylesheet" href="{{ site.css }}/page/{{file}}">
-  {% endfor %}
-</head>
-<body itemscope itemtype="http://schema.org/WebPage">
-    
-  {% include masthead.html %}
-    
-  <div id="main" class="container{% if page.class %} {{page.class}}{% endif %}" itemprop="mainContentOfPage" role="main">{{ content }}</div>
+    <script type="text/javascript">
 
-  {% include footer.html %}
-  
-  {% for file in page.js %}
-    <script src="{{ site.js }}/page/{{file}}"></script>
-  {% endfor %}
-  
-  
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="{{site.js}}/app.js"></script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-10512170-10', 'mikefowler.me');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
 
-  <script type="text/javascript">
-    
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
 
-    ga('create', 'UA-10512170-10', 'mikefowler.me');
-    ga('require', 'displayfeatures');
-    ga('send', 'pageview');
-    
-    var disqus_shortname = '{{ site.disqus.prod.shortname }}';
-    (function () {
-      var s = document.createElement('script'); s.async = true;
-      s.type = 'text/javascript';
-      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-  
-  </script>
+  </body>
 
-</body>
 </html>

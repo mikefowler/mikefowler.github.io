@@ -8,7 +8,7 @@ keywords: backbone, backbone.view, backbone 1.1.0, backbone view options, javasc
 
 Before version 1.1.0 was released back in October, Backbone had a bit of sugar built into the `Backbone.View` constructor which automatically attached the initialization options to the instance:
 
-```javascript
+```js
 var view = new Backbone.View({ title: 'A Backbone View' });
 
 view.options.title === 'A Backbone View'; // TRUE
@@ -16,7 +16,7 @@ view.options.title === 'A Backbone View'; // TRUE
 
 As of 1.1.0, this functionality has been removed after a [huge](https://github.com/jashkenas/backbone/issues/2458) amount of discussion. Here's the most [relevant commit](https://github.com/jashkenas/backbone/commit/51eed189bf4d25877be4acdf51e0a4c6039583c5), which removes the `_configure` method from Backbone.View entirely. Here's the method as it was, where, as mentioned, the difference is that the options are no longer attached to the view:
 
-```js
+```css
 _configure: function(options) {
   
   // Mixes existing properties of 
@@ -37,7 +37,7 @@ _configure: function(options) {
 
 While the primary contributors have decided that this functionality should be eliminated to achieve better consistency with the other Backbone classes, it can easily be added back in. The way to reinstate this functionality is, as with the rest of the Backbone, open to interpretation, and you will find several recommendations in the thread linked above. My implementation (again, a subjective one) is here:
 
-```javascript
+```css
 app.View = Backbone.View.extend({
   
   constructor: function (options) {

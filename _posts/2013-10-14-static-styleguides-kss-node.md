@@ -16,7 +16,7 @@ My setup
 
 The Grunt module is well documented, but I thought I'd post my current setup.
 
-``` javascript
+```js
 grunt.initConfig({
 
   // ...

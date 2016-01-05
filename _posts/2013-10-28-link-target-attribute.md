@@ -12,13 +12,13 @@ Thus my delight when recently I was turned onto the other purpose for this attri
 
 Let's say I want to link to my Twitter profile and I want it to open in a new tab. Easy.
 
-``` html
+```html
 <a href="http://twitter.com/michaelrfowler" target="_blank">@michaelrfowler</a>
 ```
 
 Thing is, if the internet user clicking on my link clicks on it twice, whether intentionally or on accident, the result is two different tabs with my Twitter page open on it. Annoying. Well, as I've recently learned, the ```target``` attribute actually accepts several predefined keywords, like "_blank", **or any valid browsing context name**. In other words: any string that will represent a new browsing context. How about this instead:
 
-``` html
+```html
 <a href="http://twitter.com/michaelrfowler" target="mike-on-twitter">@michaelrfowler</a>
 ```
 
