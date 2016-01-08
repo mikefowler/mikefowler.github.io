@@ -29,3 +29,10 @@ gems:
 whitelist:
   - jekyll-redirect-from
   - jekyll-gist
+
+exclude: [
+  'vendor',
+  'Gemfile',
+  'Gemfile.lock',
+  'CNAME'
+]
