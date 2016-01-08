@@ -8,7 +8,7 @@ This is a super specific article topic, but I wasn't able to find a simple solut
 
 [Backbone.Marionette](http://marionettejs.com/) allows you to define an object in your view called `templateHelpers`. The keys of this object turn into helper names that you can then use in your template:
 
-```javascript
+```js
 Backbone.Marionette.ItemView.extend({
     
     title: 'My Page',
@@ -34,7 +34,7 @@ Since this feature was written with Underscore.js templates in mind, the expecta
 
 The method in question is part of Backbone.Marionette.ItemView and is called `mixinTemplateHelpers`. We're going to override the whole thing:
 
-```javascript
+```js
 Backbone.Marionette.ItemView.prototype.mixinTemplateHelpers = function (target) {
     var self = this;
     var templateHelpers = Marionette.getOption(self, "templateHelpers");

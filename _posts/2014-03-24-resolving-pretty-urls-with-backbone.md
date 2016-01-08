@@ -13,7 +13,7 @@ Given these constraints, the question is: how do we use Backbone to query these 
 
 Let's say that we hit a route in our application for a “user” resource. Our router might be set up like this:
 
-```javascript
+```js
 App.Router = Backbone.Router.extend({
   routes: {
     ':username': 'user'
@@ -31,7 +31,7 @@ In our router method, we want to:
 
 We'll modify our router method to read something like this (continued from above):
 
-```javascript
+```js
 user: function (username) {
   App.User.resolve(username).then(function (user) {
     App.$el.html(new App.ProfileView({
@@ -49,7 +49,7 @@ Things that we now know, based on the above:
 
 So… what does the `resolve` method look like? Let's take a look at that.
 
-```javascript
+```js
 App.User = Backbone.Model.extend({
   
   // Instance methods…
@@ -81,7 +81,7 @@ I intentionally cut out some extra cruft in the code samples for this article to
 
 If your app implements any sort of model store, whether something custom or provided by a module like [backbone-relational](https://github.com/PaulUithol/Backbone-relational), you have the option, in your `resolve` method, of checking to see whether the resource in question has already been stored locally. For example, I might modify my method above to read something like this:
 
-```javascript
+```js
 resolve: function (username) {
   var promise = new $.Deferred()
     , user = App.User.find({ username: username });
@@ -103,7 +103,7 @@ Before executing the `$.getJSON` call, we first use a model method to look up ex
 
 You may wish to further abstract the static `resolve` method to reduce duplicate code across models. For instance, we might implement a second `resolve` method in a base model:
 
-```javascript
+```js
 App.Model = Backbone.Model.extend({
   
   // Instance methods…
@@ -164,7 +164,7 @@ Now, each resource model needs only to call into the base `_resolve` method and 
 
 In your actual implementation, you might want to construct the URLs that you pass to `$.getJSON` dynamically. For instance, modify the base model above
 
-```javascript
+```js
 _resolve: function (...) {
   var apiHost = App.config.API_HOST // e.g. "http://api.app.com"
         

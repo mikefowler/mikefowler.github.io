@@ -14,7 +14,7 @@ In implementing page transitions, we want to be able to navigate from one route 
 
 In our app we have a router and an “app” view which handles adding & removing all other views from the DOM. In our router, rather than appending new views directly to the DOM, we're going to call a method in our app view, ```.goto()```, passing in an instance of the new view to display.
 
-``` javascript
+```js
 app.Router = Backbone.Router.extend({
   
   routes: {
@@ -37,7 +37,7 @@ app.Router = Backbone.Router.extend({
 
 Simple stuff here. ```app.instance``` is a reference to our instance of the main app view, and the important part is letting that main view handle anything related to the DOM. The router is doing its job by essentially saying, “Ok, we hit this route, which corresponds to this view. HEY APP! Here's a reference to the next view, make the magic happen!” So what is the app view doing with the reference to the new view? Let's check it out:
 
-``` javascript
+```js
 app.Views.App = app.Extensions.View.extend({
   
   // ...
@@ -71,7 +71,7 @@ At the same time, we render the next view to display, and append it to our app v
 
 The last piece that we need for this to make sense are the transition methods on the views. These methods are a part of *all* of our views thanks to our own base view. While there are varied ways to achieve this, the method I'm demonstrating here involves adding or removing classes to a view which in turn trigger transitions defined in our stylesheet. Here's a look at the relevant parts of our base view:
 
-``` javascript
+```js
 app.Extensions.View = Backbone.View.extend({
   
   // ...
@@ -129,7 +129,7 @@ For the ```.transitionIn()``` method, we're adding a class, ```is-visible```, to
 
 Additionally, in our base ```.render()``` method, we add a class called “page” to view's that we're rendering as pages. So what's the CSS for this look like?
 
-``` css
+```css
 .page {
   position: absolute;
   top: 0;

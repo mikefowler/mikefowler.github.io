@@ -41,7 +41,7 @@ bower install jquery underscore backbone es6-module-loader
 
 From here, things will work similarly to other module loaders you may have used (think Browserify or RequireJS). You'll specify a module to import as your “main” file. Your main file will then handle loading any dependencies it needs (and the dependencies will load *their* dependencies, and so on). Let's create our main file and load it using the ES6 Module Loader. We'll create `app/scripts/main.js` and then add the following below the `<script>` tags we wrote above.
 
-```bash
+```html
 <script>
     System.import('app/scripts/main');
 </script>
@@ -58,7 +58,7 @@ To illustrate the simple use of classes and modules, we're going to do the follo
 
 Let's create a second file, `app/scripts/router.js`:
 
-```javascript
+```js
 class Router extends Backbone.Router {
 
     constructor () {
@@ -86,7 +86,7 @@ For those of you who have written Backbone apps using Coffeescript before, this 
 
 We set the routes object as a property on the class inside of the constructor, and then call `super()` so that the default Backbone.Router constructor binds the routes properly. For a point of reference, recall that currently, in place of `super()` we would have to write:
 
-```javascript
+```js
 // Ooooooof.
 Backbone.Router.prototype.constructor.apply(this, arguments)
 ```
@@ -97,7 +97,7 @@ In addition to defining a class, we're “exporting” functionality from this m
 
 Back in our `app/scripts/main.js` file, we can now *import* the functionality we just *exported* above.
 
-```javascript
+```js
 import Router from './router';
 ```
 
@@ -105,7 +105,7 @@ When we import modules in ES6 we *import* the *exports* by name. In this case, s
 
 We'll now expand our main file by creating a class for our application. Inside this class we'll define a constructor which will be responsible for creating an instance of our imported router and starting Backbone's history.
 
-```javascript
+```js
 import Router from './router';
 
 class Application {
@@ -129,7 +129,7 @@ In addition to the `Application` class, we're also waiting for the DOM to be rea
 
 Let's add a couple of simple views to our application. We'll add `app/scripts/views.js` and define a couple of classes inside it:
 
-```javascript
+```js
 class HomeView extends Backbone.View {
 
     initialize () {
@@ -179,19 +179,19 @@ At the bottom, we're exporting, just like with the router, but this time we're e
 
 We'll switch back to `app/scripts/router.js` now and import our views. When a route method is called, we'll create a new instance of the appropriate view and render it into the DOM. At the top of the file, import the views we just created:
 
-```javascript
+```js
 import { HomeView, ResourcesView } from './views';
 ```
 
 Remember how I mentioned above that when importing “default” exports we can name the imported module whatever we want? We can do that when importing named exports as well. The above could easily be rewritten like this:
 
-```javascript
+```js
 import { HomeView as home, ResourcesView as resources } from './views';
 ```
 
 I think the names of the exports work just fine as import names here, so we'll leave it as in the first example. Now, in our router methods, we just need to create and render the views.
 
-```javascript
+```js
 class Router extends Backbone.Router {
 
     // constructor

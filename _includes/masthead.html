@@ -1,24 +1,14 @@
-<header id="masthead" class="masthead js-masthead" role="banner">
-  
-  <h1 class="masthead__branding"><a href="/">M<span class="hidden">ike Fowler</span></a></h1>
-
-  <nav role="navigation" class="masthead__nav">
-    <h1>Navigation</h1>
-    <ul class="masthead__nav-list js-navlist">
-      <li class="masthead__nav-item nav-item__thoughts">
-        <a href="/thoughts" onclick="ga('send', 'event', 'Masthead', 'Clicked navigation link', 'Thoughts');"><span>Thoughts</span></a>
-      </li>
-      <li class="masthead__nav-item nav-item__info">
-        <a href="/info" onclick="ga('send', 'event', 'Masthead', 'Clicked navigation link', 'Info');"><span>Info</span></a>
-      </li>
-      <li class="masthead__nav-item nav-item__twitter">
-        <a href="http://twitter.com/michaelrfowler" target="mike-on-twitter" onclick="ga('send', 'event', 'Masthead', 'Clicked navigation link', 'Twitter');"><span>Twitter</span><i class="icon-twitter"></i></a>
-      </li>
-      <li class="masthead__nav-item nav-item__rss">
-        <a href="{{site.rss}}" onclick="ga('send', 'event', 'RSS', 'Clicked RSS link'); ga('send', 'event', 'Masthead', 'Clicked navigation link', 'RSS');" target="feedburner"><span>RSS</span><i class="icon-feed"></i></a>
-      </li>
-      <li class="masthead__nav-item nav-item__menu js-toggle-nav"><i class="icon-menu"></i></li>
-    </ul>
-  </nav>
-  
+<header class="masthead">
+  <div class="page-container">
+    <a href="/" class="masthead__link">
+      <img
+        alt="My heyday, back in 1897"
+        src="{{ site.baseurl }}/images/actual-photograph.jpg"
+        srcset="{{ site.baseurl }}/images/actual-photograph.jpg 1x,
+                {{ site.baseurl }}/images/actual-photograph@2x.jpg 2x"
+        height="35"
+      />
+      <h1 class="masthead__title h2">{{ site.author.name }}</h1>
+    </a>
+  </div>
 </header>

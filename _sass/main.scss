@@ -1,0 +1,240 @@
+@import "normalize";
+@import "highlight";
+
+// -------------
+// Configuration
+
+$color-primary: #f3213b;
+$color-light-gray: #f1f1f1;
+$color-gray: #999999;
+$color-black: #222222;
+
+$viewport-sm: 32em; // 576px
+$viewport-lg: 66em; // 1008px
+
+// ------
+// Global
+
+body {
+  color: $color-black;
+  font-family: "SanFranciscoText-Light", "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 112.5%; // 18px
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+h1, .h1 {
+  font-size: 2.666666667em; // 48px
+}
+
+h2, .h2 {
+  font-size: 1.777777778em; // 32px
+}
+
+h3, .h3 {
+  font-size: 1.555555556em; // 28px
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    color: lighten($color-primary, 20%);
+  }
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $color-gray;
+  margin-left: 0;
+  width: 2em;
+}
+
+hr.centered {
+  margin: 0 auto;
+}
+
+// ---------
+// Utilities
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: $color-gray;
+}
+
+.link-muted {
+  color: $color-gray;
+
+  &:hover {
+    color: lighten($color-primary, 20%);
+  }
+}
+
+.small {
+  font-size: .777777778em;
+}
+
+.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// ----
+// Hero
+
+.hero {
+  margin: 2em auto; // 18px vertically, centered horizontally
+  text-align: center;
+}
+
+.hero__title {
+  font-family: "SwistblnkNeaments", serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+.hero__image {
+  height: 200px;
+  width: auto;
+
+  @media (min-width: $viewport-sm) {
+    height: auto;
+  }
+}
+
+// --------
+// Masthead
+
+.masthead {
+  padding: 0.5em 0; // 9px vertically
+  margin-bottom: 1em; // 18px
+  border-bottom: 1px solid $color-light-gray;
+}
+
+.masthead__link {
+  color: $color-black;
+  display: inline-block;
+
+  > * {
+    display: inline-block;
+    margin-right: 1em;
+    vertical-align: middle;
+  }
+
+  &:hover {
+    color: $color-black;
+  }
+}
+
+.masthead__title {
+  font-family: "SwistblnkNeaments", serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+// -------
+// Content
+
+.page {
+  margin: 0 auto;
+
+  p {
+    max-width: 32em;
+  }
+}
+
+.page__title {
+  margin-bottom: 0;
+}
+
+.page-container {
+  max-width: $viewport-lg; // 1008px
+  margin: 0 auto;
+  padding: 0 1em; // 18px on the sides
+
+  @media (min-width: $viewport-lg) {
+    padding: 0;
+  }
+}
+
+.page--home {
+  max-width: 22em; // 396px content width
+  padding: 0 1em;
+  text-align: center;
+}
+
+.colophon {
+  color: $color-gray;
+  display: block;
+  fill: currentColor;
+
+  a {
+    color: $color-gray;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  p {
+    margin: 2em 0;
+  }
+}
+
+.highlight {
+  font-size: 0.875em;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+
+  pre {
+    margin: 0;
+    padding: 0.5em;
+  }
+}
+
+
+// --------
+// Articles
+
+.article-list {
+
+}
+
+.article-list__item {
+  margin-bottom: 2em; // 36px on the bottom
+}
+
+.article {
+
+}
+
+.article__title {
+  margin: 0;
+  line-height: 1.1;
+}
+
+.article__timestamp {
+
+}
+
+.article__content,
+.article__comments {
+  max-width: 32em;
+}

@@ -23,7 +23,7 @@ So I wrote a plugin. My first Sublime Text plugin, in fact. I had been looking f
 
 For those using Package Control, you'll find it under 'SimpleClone', or you can [clone the plugin from the Github repo](http://github.com/mikefowler/simple-clone). Browse to your 'Packages' directory in Terminal and run:
 
-``` bash
+```bash
 git clone https://github.com/mikefowler/simple-clone.git
 ```
 
