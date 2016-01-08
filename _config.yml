@@ -1,6 +1,7 @@
 title: "Mike Fowler"
 description: "A New Englander out west. Engineer at Airbnb."
 url: "http://mikefowler.me"
+rss: "http://feeds.feedburner.com/MikeFowler"
 author:
   name: "Mike Fowler"
   email: "mike@mikefowler.me"

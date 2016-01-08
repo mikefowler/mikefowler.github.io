@@ -1,5 +1,5 @@
 <head>
-  {% capture title %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}{% endcapture %}
+  {% capture title %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{% endcapture %}
   {% capture description %}{% if page.excerpt %}{{ page.excerpt | strip_html }}{% elsif page.home %}{{ site.description }}{% endif %}{% endcapture %}
 
   <meta charset="utf-8">

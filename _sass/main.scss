@@ -46,9 +46,13 @@ a {
 
 hr {
   border: none;
-  width: 2em;
-  margin: 0 auto;
   border-top: 1px solid $color-gray;
+  margin-left: 0;
+  width: 2em;
+}
+
+hr.centered {
+  margin: 0 auto;
 }
 
 // ---------
@@ -149,6 +153,14 @@ hr {
 
 .page {
   margin: 0 auto;
+
+  p {
+    max-width: 32em;
+  }
+}
+
+.page__title {
+  margin-bottom: 0;
 }
 
 .page-container {
