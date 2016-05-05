@@ -5,7 +5,7 @@ redirect_from:
   - /info/
 ---
 
-A New Englander out west. Writing code at [Airbnb][1] in San Francisco. [Musing on life][2] and (soon to be) [blogging about vegan food][3]. You can get in touch with me [via email][4].
+A New Englander out west. Writing code at [Airbnb][1] in San Francisco, writing words on [Medium][2]. You can get in touch with me [via email][4].
 
 <small class="colophon" markdown="1">
 
