@@ -1,0 +1,12 @@
+.footer {
+
+}
+
+.footer__content {
+  border-top: 1px solid $border-light;
+  padding: $space-md 0;
+
+  @include md {
+    padding-bottom: $space-lg;
+  }
+}

@@ -1,0 +1,16 @@
+.post {
+  margin-top: $space-lg;
+
+  @include sm {
+    margin-top: $space-lg * 2;
+  }
+}
+
+.post__header {
+  margin-bottom: $space-md;
+}
+
+.post__image {
+  margin-bottom: $space-md;
+
+}

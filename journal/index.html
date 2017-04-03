@@ -1,0 +1,12 @@
+---
+layout: page
+title: Journal
+subtitle: Notes from the road.
+widescreen: true
+---
+
+{% for post in paginator.posts %}
+  {% include post/preview.html %}
+{% endfor %}
+
+{% include page/pagination.html %}

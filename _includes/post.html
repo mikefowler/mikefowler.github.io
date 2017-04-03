@@ -1,0 +1,21 @@
+<article class="post">
+
+  <header class="has-text-centered">
+
+    {% include post-map.html %}
+
+    <time>{{ page.date | date: "%B %e, %Y" }}</time>
+
+    <h1 class="is-display-type">{{ page.title }}</h1>
+
+  </header>
+
+  {% if page.soundcloud_id %}
+    {% include embed/soundcloud.html id=page.soundcloud_id %}
+  {% endif %}
+
+  <div class="content is-large">
+    {{ content }}
+  </div>
+
+</article>

@@ -1,0 +1,27 @@
+.post-preview {
+  margin-bottom: $space-lg;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration-line: underline;
+  }
+}
+
+.post-preview__header {
+  margin-bottom: $space-sm;
+}
+
+.post-preview__title {
+  margin-bottom: $space-xs;
+
+  @include md {
+    margin-bottom: 0;
+  }
+}
+
+.post-preview__date {
+  display: block;
+}

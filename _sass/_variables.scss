@@ -1,0 +1,83 @@
+// ---------------------------------------------------------------------------
+// Layout
+// ---------------------------------------------------------------------------
+
+$tablet: 760px;
+$desktop: 1000px;
+$widescreen: 1192px;
+
+$unit: 0.5rem; // 8px
+$grid-padding: $unit;
+
+$space-xs: $unit;     // 8px;
+$space-sm: $unit * 2; // 16px
+$space-md: $unit * 4; // 32px
+$space-lg: $unit * 8; // 64px
+
+$border-width: 2px;
+
+// ---------------------------------------------------------------------------
+// Typography
+// ---------------------------------------------------------------------------
+
+$family-display: "Regina";
+$family-serif: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+$family-primary: $family-serif;
+
+$body-size: 16px;
+
+$size-1: 2rem;      // 32px
+$size-2: 1.5rem;    // 24px
+$size-3: 1.375rem;  // 22px
+$size-4: 1.25rem;   // 20px
+$size-5: 1.125rem;  // 18px
+$size-6: 1rem;      // 16px
+$size-7: 0.75rem;   // 12px
+
+$size-small: $size-7;
+$size-normal: $size-6;
+$size-medium: $size-5;
+$size-large: $size-4;
+
+$weight-light: 300;
+$weight-normal: 400;
+$weight-semibold: 500;
+$weight-bold: 700;
+
+// ---------------------------------------------------------------------------
+// Colors
+// ---------------------------------------------------------------------------
+
+$black:        hsl(0, 0%, 4%);
+$black-bis:    hsl(0, 0%, 7%);
+$black-ter:    hsl(0, 0%, 14%);
+
+$grey-darker:  hsl(0, 0%, 21%);
+$grey-dark:    hsl(0, 0%, 29%);
+$grey:         hsl(0, 0%, 48%);
+$grey-light:   hsl(0, 0%, 71%);
+$grey-lighter: hsl(0, 0%, 86%);
+
+$white-ter:    hsl(0, 0%, 96%);
+$white-bis:    hsl(0, 0%, 98%);
+$white:        hsl(0, 0%, 100%);
+
+$background: #ffffff;
+$border: $grey;
+$border-light: $grey-lighter;
+
+// Text colors
+$text: $grey-dark;
+$text-light: $grey;
+$text-strong: $grey-darker;
+
+$primary: tomato;
+$primary: mediumslateblue;
+$light: $white-ter;
+$dark: $grey-darker;
+
+// ---------------------------------------------------------------------------
+// Stack order
+// ---------------------------------------------------------------------------
+
+$z-masthead: 10;

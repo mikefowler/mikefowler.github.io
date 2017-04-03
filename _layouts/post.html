@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<article class="post">
+
+  <header class="post__header container">
+    <div class="row center-sm">
+      <div class="col-xs-12 col-sm-8 col-md-6 start-xs">
+        <a href="{{ page.url }}">
+          <h1 class="post__title">{{ page.title }}</h1>
+        </a>
+        <time class="post__date subtitle is-6">
+          {{ page.date | date: "%B %e, %Y" }}
+        </time>
+      </div>
+    </div>
+  </header>
+
+  {% if page.image %}
+    <div class="container" aria-hidden="true">
+      <div class="row center-xs">
+        <div class="col-xs-12 col-sm-10 col-md-10">
+          <img
+            src="{{ page.image.src}}"
+            class="post__image"
+            alt="{{ page.image.caption}}"
+          />
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="container">
+    <div class="row center-xs">
+      <div class="col-xs-12 col-sm-8 col-md-6 start-xs">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+</article>
+
+{% include post/pagination.html %}

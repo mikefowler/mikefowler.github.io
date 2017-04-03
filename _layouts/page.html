@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% assign widescreen = page.widescreen %}
+
+<article class="page container">
+
+  {%
+    include page/header.html
+      title = page.title
+      subtitle = page.subtitle
+  %}
+
+  {% unless widescreen %}
+    <div class="row center-xs">
+      <div class="col-xs-12 col-sm-8 col-md-6 has-text-left">
+  {% endunless %}
+
+        {{ content }}
+
+  {% unless widescreen %}
+      </div>
+    </div>
+  {% endunless %}
+
+</article>

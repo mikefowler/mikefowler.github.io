@@ -1,0 +1,71 @@
+$masthead-height: 75px;
+
+.masthead {
+  @include xs {
+    padding: $unit 0;
+  }
+}
+
+.masthead--floating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: $z-masthead;
+}
+
+.masthead__link {
+  padding: $unit;
+  align-items: center;
+  display: flex;
+
+  &,
+  &:hover {
+    text-decoration-line: none;
+  }
+
+  @include sm {
+    height: $masthead-height;
+    justify-content: center;
+  }
+}
+
+.masthead__link-text {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    bottom: -$unit;
+    height: $border-width;
+    background: $border-light;
+    width: 50%;
+    left: 25%;
+  }
+
+  .masthead__link:hover &,
+  .masthead__link--active & {
+    &::after {
+      display: block;
+    }
+  }
+
+  .masthead__link--active & {
+    &::after {
+      background: $primary;
+    }
+  }
+
+}
+
+.masthead__logo {
+  font-size: 3rem;
+
+  @include xs {
+    width: 100%;
+    text-align: left;
+    flex: none;
+    order: -1;
+  }
+}

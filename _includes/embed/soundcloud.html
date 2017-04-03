@@ -1,0 +1,17 @@
+{% assign base_url = 'https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/' %}
+
+{% capture url %}
+  {{ base_url || append: include.id }}
+{% endcapture %}
+
+{% capture query %}
+  {% for option in site.soundcloud.options %}{{ option | join: '=' | prepend: '&amp;' }}{% endfor %}
+{% endcapture %}
+
+{% capture src %}
+  {{ url | strip }}{{ query | strip | prepend: '&amp;' }}
+{% endcapture %}
+
+<div class="soundcloud-embed">
+  <iframe width="100%" height="100" scrolling="no" frameborder="no" src="{{ src }}"></iframe>
+</div>

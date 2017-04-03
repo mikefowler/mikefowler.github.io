@@ -1,0 +1,61 @@
+{% capture masthead_class %}
+  {% if page.hero %}masthead--floating{% endif %}
+  {% if page.title == "Home" %}masthead--highlight{% endif %}
+{% endcapture %}
+
+{% assign active = "masthead__link--active" %}
+{% assign title = page.title %}
+
+{% capture writing_link_active %}
+  {% if page.title == "Essays" %}masthead__link--active{% endif %}
+{% endcapture %}
+
+<div class="masthead {{ masthead_class | strip }}">
+  <div class="container">
+    <nav class="row middle-xs">
+
+      <div class="col-sm has-text-centered-sm">
+        <a
+          href="/writing"
+          class="masthead__link {% if title == "Writing" %}{{ active }}{% endif %}"
+        >
+          <span class="masthead__link-text">Writing</span>
+        </a>
+      </div>
+
+      <div class="col-sm has-text-centered-sm">
+        <a
+          href="/journal"
+          class="masthead__link {% if title == "Journal" %}{{ active }}{% endif %}"
+        >
+          <span class="masthead__link-text">Journal</span>
+        </a>
+      </div>
+
+      <div class="col-sm masthead__logo is-1 has-text-centered-sm is-display-typeface">
+        <a aria-label="{{ site.author.name }}" href="/" class="masthead__link">
+          M
+        </a>
+      </div>
+
+      <div class="col-sm has-text-centered-sm">
+        <a
+          href="/projects"
+          class="masthead__link {% if title == "Projects" %}{{ active }}{% endif %}"
+        >
+          <span class="masthead__link-text">Projects</span>
+        </a>
+      </div>
+
+      <div class="col-sm has-text-centered-sm">
+        <a
+          href="/about"
+          class="masthead__link {% if title == "About" %}{{ active }}{% endif %}"
+        >
+          <span class="masthead__link-text">About</span>
+        </a>
+      </div>
+
+    </nav>
+  </div>
+</div>

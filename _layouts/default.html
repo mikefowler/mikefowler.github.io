@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="site">
+
+    {% unless page.hide_header %}
+      {% include masthead.html %}
+    {% endunless %}
+
+    <main class="site__content">
+      {{ content }}
+    </main>
+
+    {% unless page.hide_footer %}
+      {% include footer.html %}
+    {% endunless %}
+
+    {% include scripts.html %}
+
+  </body>
+</html>

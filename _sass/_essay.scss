@@ -1,0 +1,11 @@
+.essay {
+  margin-top: $space-lg;
+
+  @include sm {
+    margin-top: $space-lg * 2;
+  }
+}
+
+.essay__header {
+  margin-bottom: $space-md;
+}

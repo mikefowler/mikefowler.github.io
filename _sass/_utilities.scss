@@ -1,0 +1,96 @@
+.has-text-centered {
+  text-align: center;
+}
+
+.has-text-centered-sm {
+  @include sm {
+    text-align: center;
+  }
+}
+
+.has-text-right {
+  text-align: right;
+}
+
+.has-text-left {
+  text-align: left;
+}
+
+.is-display-typeface {
+  font-family: $family-display;
+}
+
+.is-bold {
+  font-weight: $weight-bold;
+}
+
+.is-1 {
+  font-size: $size-1;
+}
+
+.is-2 {
+  font-size: $size-2;
+}
+
+.is-3 {
+  font-size: $size-3;
+}
+
+.is-4 {
+  font-size: $size-4;
+}
+
+.is-5 {
+  font-size: $size-5;
+}
+
+.is-6 {
+  font-size: $size-6;
+}
+
+.is-visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.is-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.is-marginless {
+  margin: 0;
+}
+
+p a,
+a.paragraph-link {
+  text-decoration-line: underline;
+  text-decoration-color: $primary;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.col-margin-left-sm {
+  @include sm {
+    position: absolute;
+    transform: translateX(-100%);
+    padding-right: $space-md;
+  }
+}
+
+.col-margin-left-md {
+  @include md {
+    position: absolute;
+    transform: translateX(-100%);
+    padding-right: $space-md;
+  }
+}

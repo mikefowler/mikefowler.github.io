@@ -1,0 +1,13 @@
+.level {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    flex-direction: row;
+  }
+}
+
+.level__item {
+  flex: 1;
+}

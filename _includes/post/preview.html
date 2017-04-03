@@ -1,0 +1,41 @@
+<section class="post-preview">
+
+  <header class="post-preview__header row center-sm start-md middle-md">
+
+    <div class="col-xs-12 col-sm-8 col-md-6 has-text-left">
+
+      <h1 class="post-preview__title is-4 is-marginless">
+        <a href="{{ post.url }}" class="paragraph-link">
+          {{ post.title }}
+        </a>
+      </h1>
+
+    </div>
+
+    <div class=" col-xs-12 col-sm-8 col-md-2 col-md-offset-1 first-md has-text-left">
+
+      <time class="post-preview__date subtitle is-6">
+        {{ post.date | date: "%B %e, %Y" }}
+      </time>
+
+    </div>
+
+  </header>
+
+  <div class="row">
+
+    <div class=" col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+
+      {% if post.soundcloud %}
+        {% include soundcloud.html id=post.soundcloud %}
+      {% endif %}
+
+      {{ post.excerpt | markdownify }}
+
+      <p><small><a href="{{ post.url }}">Continue reading…</a></small></p>
+
+    </div>
+
+  </div>
+
+</section>

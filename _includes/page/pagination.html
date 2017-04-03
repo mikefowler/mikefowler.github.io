@@ -1,0 +1,75 @@
+{% assign first_page = '/journal/' | prepend: site.baseurl | replace: '//', '/' %}
+{% assign last_page = site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages %}
+{% assign range_visible_count = 5 %}
+{% assign total_pages = paginator.total_pages %}
+{% assign range_start = paginator.page | minus:2 %}
+{% assign range_end = paginator.page | plus:2 %}
+{% assign current_page = paginator.page %}
+
+{% if total_pages > 1 %}
+<div class="pagination row middle-xs center-xs">
+
+  {% if paginator.previous_page %}
+    <a
+      class="pagination__previous"
+      href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+      &laquo; Prev
+    </a>
+  {% else %}
+    <span class="pagination__previous">&laquo; Prev</span>
+  {% endif %}
+
+  {% if range_start > 1 and current_page != 1 %}
+    <a class="pagination__page" href="{{ first_page }}">1</a>
+    <span class="paginator__page">…</span>
+  {% endif %}
+
+  {% for page in (range_start..current_page) %}
+    {% capture url %}
+      {% if page == 1 %}
+        {{ first_page }}
+      {% else %}
+        {{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}
+      {% endif %}
+    {% endcapture %}
+    {% if page >= 1 and forloop.last != true %}
+      <a
+        class="pagination__page"
+        href="{{ url | strip }}"
+      >
+        {{ page }}
+      </a>
+    {% endif %}
+  {% endfor %}
+
+  <em class="pagination__page pagination__page--active">{{ current_page }}</em>
+
+  {% for page in (current_page..range_end) %}
+    {% if forloop.first != true and page <= total_pages %}
+      <a
+        class="pagination__page"
+        href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"
+      >
+        {{ page }}
+      </a>
+    {% endif %}
+  {% endfor %}
+
+  {% if range_end < total_pages and current_page != total_pages %}
+    <span class="paginator__page">…</span>
+    <a class="pagination__page" href="{{ last_page }}">{{ total_pages }}</a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a
+      class="pagination__next"
+      href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+    >
+      Next &raquo;
+    </a>
+  {% else %}
+    <span class="pagination__next">Next &raquo;</span>
+  {% endif %}
+
+</div>
+{% endif %}

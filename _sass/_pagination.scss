@@ -1,0 +1,14 @@
+.pagination {
+  margin-top: $space-md;
+}
+
+.pagination__previous,
+.pagination__next,
+.pagination__page {
+  display: inline-block;
+  padding: $unit;
+}
+
+.pagination__page--active {
+  color: $primary;
+}

@@ -1,0 +1,32 @@
+.page {
+  margin-top: $unit * 8;
+}
+
+.page__header {
+  padding-bottom: $space-sm;
+  margin-bottom: $space-md;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: $border-width;
+    bottom: 0;
+    left: 0;
+    background: $border-light;
+  }
+}
+
+.page__title {
+  margin-bottom: 0;
+}
+
+.page__subtitle {
+  margin: 0;
+
+  .page__title + & {
+    margin-top: $unit / 2;
+  }
+
+}

@@ -1,0 +1,90 @@
+# Metadata
+title:          Mike Fowler
+tagline:        Notes from the road by Mike Fowler
+logo:           /assets/icons/favicon-192x192.png
+url:            http://mikefowler.me
+repository:     mikefowler/mikefowler.github.io
+rss:            http://feeds.feedburner.com/MikeFowler
+
+author:
+  name:         Mike Fowler
+  first_name:   Mike
+  last_name:    Fowler
+  email:        mike@mikefowler.me
+  location:     burlington
+  twitter:      michaelrfowler
+
+social:
+  name: Mike Fowler
+  links:
+    - https://twitter.com/michaelrfowler
+    - https://www.facebook.com/michaelfowler
+    - https://medium.com/@michaelrfowler
+    - https://github.com/mikefowler
+    - https://www.goodreads.com/michaelfowler
+    - http://instagram.com/michaelrfowler
+    - https://www.linkedin.com/in/michaelrfowler/
+
+twitter:
+  username: michaelrfowler
+
+github:
+  url: http://mikefowler.me
+
+# Collections
+collections:
+  essays:
+    output: true
+    permalink: /writing/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "essays"
+    values:
+      layout: essay
+
+# Soundcloud embed options
+soundcloud:
+  options:
+    color: cccccc
+    theme_color: ffffff
+    auto_play: false
+    hide_related: true
+    show_comments: false
+    show_user: false
+    show_reposts: false
+    show_artwork: false
+
+# Paths
+baseurl:        ""
+asset_path:     "assets"
+
+# Conversion
+markdown:       kramdown
+sass:
+  sass_dir:     _sass
+  style:        :compressed
+
+# Output
+permalink:      /journal/:year/:month/:day/:title
+paginate:       5
+paginate_path:  "/journal/:num/"
+
+# Plugins
+gems:
+  - jekyll-feed
+  - jekyll-pagination
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# Reading
+exclude:
+  - Gemfile
+  - Gemfile.lock

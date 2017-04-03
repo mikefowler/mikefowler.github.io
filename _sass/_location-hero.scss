@@ -1,0 +1,29 @@
+.location-hero {
+  margin: 0 auto;
+  width: 60vh;
+  height: 60vh;
+  border-radius: 50%;
+  background: $light; // @TODO: replace with map
+  text-align: center;
+  position: relative;
+}
+
+.location-hero__content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.location-hero__prefix {
+  display: inline-block;
+  font-style: italic;
+  margin-bottom: 0.5em;
+}
+
+.location-hero__location {
+  display: block;
+  font-family: $family-display;
+  color: $primary;
+}
