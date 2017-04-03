@@ -71,10 +71,13 @@
 
 p a,
 a.paragraph-link {
-  text-decoration-line: underline;
+  text-decoration: underline;
+  text-decoration-skip: ink;
   text-decoration-color: $primary;
+  -webkit-text-decoration-skip: ink;
+  -webkit-text-decoration-color: $primary;
 
-  &:hover {
+  .no-touch &:hover {
     color: $primary;
   }
 }

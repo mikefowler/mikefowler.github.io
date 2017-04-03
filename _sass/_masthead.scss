@@ -20,8 +20,8 @@ $masthead-height: 75px;
   display: flex;
 
   &,
-  &:hover {
-    text-decoration-line: none;
+  .no-touch &:hover {
+    text-decoration: none;
   }
 
   @include sm {
@@ -44,7 +44,7 @@ $masthead-height: 75px;
     left: 25%;
   }
 
-  .masthead__link:hover &,
+  .no-touch .masthead__link:hover &,
   .masthead__link--active & {
     &::after {
       display: block;

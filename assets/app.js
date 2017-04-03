@@ -5,6 +5,7 @@
   function App() {
     this.el = {};
 
+    this.detectFeatures();
     this.bindElements();
     this.setupMapbox();
     this.initMaps();
@@ -14,6 +15,14 @@
     this.el = {
       maps: document.querySelectorAll('.js-map'),
     };
+  };
+
+  App.prototype.detectFeatures = function() {
+    var hasTouchSupport = 'ontouchstart' in window;
+
+    if (!hasTouchSupport) {
+      document.documentElement.classList.add('no-touch');
+    }
   };
 
   App.prototype.setupMapbox = function() {
