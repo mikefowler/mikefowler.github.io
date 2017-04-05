@@ -1,12 +1,20 @@
 {% assign title = page.title %}
 
 {% capture masthead_class %}
-  {% if page.hero %}masthead--floating{% endif %}
+  {% if page.layout_options.fullscreen %}masthead--floating{% endif %}
   {% if title == "Home" %}masthead--highlight{% endif %}
 {% endcapture %}
 
 {% capture writing_link_active %}
   {% if title == "Essays" %}masthead__link--active{% endif %}
+{% endcapture %}
+
+{% capture logo_content %}
+  {% if page.title == "Home" %}
+    {{ site.author.first_name }}
+  {% else %}
+    M
+  {% endif %}
 {% endcapture %}
 
 <div class="masthead {{ masthead_class | strip }}">
@@ -15,7 +23,7 @@
 
       <div class="col-sm masthead__logo is-1 has-text-centered-sm is-display-typeface">
         <a aria-label="{{ site.author.name }}" href="/" class="masthead__link">
-          M
+          {{ logo_content | strip }}
         </a>
       </div>
 

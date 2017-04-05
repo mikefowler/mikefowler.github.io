@@ -1,7 +1,8 @@
 ---
 title: About
 layout: page
-widescreen: true
+layout_options:
+  container: false
 subtitle: Biography and contact information
 permalink: "/about/"
 ---

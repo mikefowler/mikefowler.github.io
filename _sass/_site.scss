@@ -2,9 +2,14 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 50%;
 }
 
 .site__content {
+  display: flex;
   flex: 1;
-  padding-bottom: $unit * 4;
+  flex-direction: column;
 }

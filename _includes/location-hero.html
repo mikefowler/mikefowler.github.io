@@ -1,8 +1,7 @@
-{% assign location = site.data.locations[site.author.location] %}
-
 <div class="location-hero">
-  <div class="location-hero__content">
-    <span class="location-hero__prefix is-5">is currently in</span>
-    <span class="location-hero__location is-1">{{ location.name }}</span>
-  </div>
+
+  <p class="location-hero__prefix">
+    is currently in <span class="is-visually-hidden">{{ site.author.location }}</span>
+  </p>
+
 </div>
