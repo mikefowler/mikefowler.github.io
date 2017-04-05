@@ -1,11 +1,9 @@
 ---
-image:
-  New field 33: https://cdn-images-1.medium.com/max/1600/1*9JNJwGlzSE_-5ArI_tEsZg.png
-  attribution: 'https://unsplash.com/jaywennington
-
-'
-  caption: Photo by Jay Wennington
 title: He ran into the room panting
+image:
+  image: https://cdn-images-1.medium.com/max/1600/1*9JNJwGlzSE_-5ArI_tEsZg.png
+  attribution: https://unsplash.com/jaywennington
+  caption: Photo by Jay Wennington
 ---
 
 He ran into the room panting and I could tell right off he wasn’t happy. I was

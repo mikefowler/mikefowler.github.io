@@ -1,7 +1,7 @@
 ---
+title: Frosted in light
 image:
   src: https://cdn-images-1.medium.com/max/2000/1*CSJTPosbrMfSnxuMEdPTQQ.jpeg
-title: Frosted in light
 ---
 
 My apartment in San Francisco has a living room with several large windows. They
