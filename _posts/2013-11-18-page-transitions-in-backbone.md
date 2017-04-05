@@ -1,7 +1,9 @@
 ---
 title: "Page Transitions in Backbone"
 excerpt: Implementing page transitions in Backbone can seem non-trivial given the overall lack of opinion that Backbone provides. Here's an opinionated way to implement transitions by adding/removing CSS classes and leveraging CSS transitions.
-redirect_from: /2013/11/18/page-transitions-in-backbone/
+redirect_from:
+  - /2013/11/18/page-transitions-in-backbone/
+  - /thoughts/page-transitions-in-backbone/
 ---
 While page transitions aren't typically something you think of in the context of the web, this changes the first time you work on a webapp where the goal is a *native* feel. The precedent set by native apps on iOS and Android devices all but mandate a user experience that includes smooth transitions. With regard to animations and adding/removing elements from the DOM, Backbone gives almost zero opinions. The documentation refers only to using a view's render method to append content to the view itself, and makes no reference to the concept of a “global” application view.
 

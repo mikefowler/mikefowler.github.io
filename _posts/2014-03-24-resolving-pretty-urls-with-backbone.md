@@ -2,7 +2,9 @@
 title: "Resolving pretty URLs with Backbone (like Soundcloud!)"
 excerpt: "Using Backbone Models to resolve “pretty” resource URLs into RESTful resource URLs"
 keywords: Backbone.Model, API permalinks
-redirect_from: /2014/03/24/resolving-pretty-urls-with-backbone/
+redirect_from:
+  - /2014/03/24/resolving-pretty-urls-with-backbone/
+  - /thoughts/resolving-pretty-urls-with-backbone/
 ---
 Recently I've been working on implementing “clean” URLs in a Backbone app where our backing API doesn't support direct querying of resources by their slugs.  Why no slug querying? A matter of opinion, but the philosophy goes that a REST API should be stateless and largely unaware of what the data it provides is used for. A resource slug, on the other hand, is largely implementation-dependent. For example, your web application might leverage them but a native iOS app disregard them altogether.
 

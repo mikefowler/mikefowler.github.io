@@ -2,7 +2,9 @@
 title: "JavaScript in your Terminal"
 excerpt: "Sometimes you just need to test a piece of JavaScript, ya dig?"
 keywords: nodejs, javascript, terminal, devtools
-redirect_from: /2014/01/14/javascript-in-your-terminal/
+redirect_from:
+  - /2014/01/14/javascript-in-your-terminal/
+  - /thoughts/javascript-in-your-terminal/
 ---
 I've noticed recently that, while working heavily in NodeJS, I often want to evaluate a snippet of JavaScript without having to run it in my app and verify its output via a log. Usually this wouldn't impede my workflow because I'd have my browser DevTools open and could just run it there. Working in Node, though, I don't usually have DevTools, or even a browser, open.
 

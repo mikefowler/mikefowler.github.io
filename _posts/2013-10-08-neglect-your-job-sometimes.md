@@ -1,7 +1,9 @@
 ---
 title: Neglect your job (sometimes).
 excerpt: Embracing the inspiration and motivation that comes from spending valuable time with friends and family.
-redirect_from: /2013/10/08/neglect-your-job-sometimes/
+redirect_from:
+  - /2013/10/08/neglect-your-job-sometimes/
+  - /thoughts/neglect-your-job-sometimes/
 ---
 
 If you're the kind of great human being that makes things, you probably make a *lot* of things. If you're a developer, you code a lot. If you're an illustrator, you draw a lot. Designer: you design. Painter: you paint. Poet: you craft words. Maybe you do two of those things, or all of them, and a bunch of things more. You make things, you learn about new *ways* to make things, you're inspired by other people who make things, and subsequently use what you learned to make *more* things. You go to work and make things, and then you leave work, go home, and keep making things.

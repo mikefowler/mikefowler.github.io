@@ -2,7 +2,9 @@
 title: "Reinstating attached view options in Backbone 1.1.0"
 excerpt: "In Backbone 1.1, the options hash you pass into a new View is no longer automatically attached to the view. For those that like this pattern, here's how to reinstate the functionality."
 keywords: backbone, backbone.view, backbone 1.1.0, backbone view options, javascript
-redirect_from: /2013/12/17/reinstating-attached-view-options-in-backbone-1.1.0/
+redirect_from:
+  - /2013/12/17/reinstating-attached-view-options-in-backbone-1.1.0/
+  - /thoughts/reinstating-attached-view-options-in-backbone-1.1.0/
 ---
 
 Before version 1.1.0 was released back in October, Backbone had a bit of sugar built into the `Backbone.View` constructor which automatically attached the initialization options to the instance:

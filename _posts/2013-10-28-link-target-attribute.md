@@ -1,7 +1,9 @@
 ---
 title: The anchor “target” attribute
 excerpt: Did you know that the "target" attribute of the anchor tag accepts more than just preset keywords like "_blank"? If you too have been kept in the dark, allow me to share my delightful new discovery.
-redirect_from: /2013/10/28/link-target-attribute/
+redirect_from:
+  - /2013/10/28/link-target-attribute/
+  - /thoughts/link-target-attribute/
 ---
 One of the first bits of HTML I remember learning is the anchor tag, and along with it the ```target``` attribute. Because let's get real: if you wanted to put a link in your Myspace profile, this was *crucial* knowledge, and what's more is that you wanted that link to open in a new window. No *way* am I letting this link pull people away from my handcrafted, artisinal social network profile, just oozing with pertinent personal information and the A-to-Z of my taste in film, music and books.
 

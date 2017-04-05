@@ -1,7 +1,9 @@
 ---
 title: "Handlebars template helpers in Backbone.Marionette"
 excerpt: "Backbone.Marionette has an incredibly helpful feature: being able to define View-specific template helpers right in the view. Unfortunately, they don't work with Handlebars out of the box. Let's change that."
-redirect_from: /2014/02/20/template-helpers-handlebars-backbone-marionette/
+redirect_from:
+  - /2014/02/20/template-helpers-handlebars-backbone-marionette/
+  - /thoughts/template-helpers-handlebars-backbone-marionette/
 ---
 This is a super specific article topic, but I wasn't able to find a simple solution after looking around for a while, so here's what I worked out.
 

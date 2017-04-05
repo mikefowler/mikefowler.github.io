@@ -2,7 +2,9 @@
 title: An early look at CSS3 Conditional Rules
 excerpt: Feature detection in CSS? Yes, and soon. Let's take a look.
 keywords: "@supports, css3, css conditional rules, feature detection"
-redirect_from: /2012/08/16/an-early-look-at-css3-conditional-rules/
+redirect_from:
+  - /2012/08/16/an-early-look-at-css3-conditional-rules/
+  - /thoughts/an-early-look-at-css3-conditional-rules/
 ---
 In a [recent episode of Shop Talk Show](http://shoptalkshow.com/episodes/029-with-tab-atkins/), Tab Atkins briefly mentioned a draft of a spec that includes feature querying in CSS. The feature, ```@supports```, is part of the “[CSS Conditional Rules](http://dev.w3.org/csswg/css3-conditional/)” module, and while the working draft has existed since September of 2011, it was my first time hearing about this proposal. Bear in mind, nothing about this spec is even close to final, and the editors draft specifically mentions that the ```@supports``` rule is at risk.
 

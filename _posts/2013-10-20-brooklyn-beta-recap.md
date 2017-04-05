@@ -2,7 +2,9 @@
 title: "Brooklyn Beta Recap"
 excerpt: My first year attending Brooklyn Beta was a wonderful experience and left me with a lot to think about, especially with regard to the type of work I choose to spend time on in my career.
 keywords: brooklyn beta, conference, tim o'reilly, joe gebbia, katherine pope, frank chimero
-redirect_from: /2013/10/20/brooklyn-beta-recap/
+redirect_from:
+  - /2013/10/20/brooklyn-beta-recap/
+  - /thoughts/brooklyn-beta-recap/
 ---
 Like many people, I attended the main event of Brooklyn Beta this year with very little in the way of expectations. Not in the sense of expecting a letdown, but more in the sense of not knowing what would be happening, or who would be speaking. Chris and Cameron, the two responsible for starting and hosting the event, are intentionally hush-hush about the specifics of the schedule. For a first-timer this was new, and very atypical of the standard conference. Be here and be present, the vague schedule said. We're here first and foremost to be among each other, and to talk.
 

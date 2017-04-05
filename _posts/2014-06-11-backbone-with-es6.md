@@ -2,7 +2,9 @@
 title: "Backbone with ES6"
 keywords: backbone, ecmascript6, es6, es6-module-loader, traceur, modules
 excerpt: "Let's make a simple Backbone app to get familiarized with ES6 module and class syntax."
-redirect_from: /2014/06/11/backbone-with-es6/
+redirect_from:
+  - /2014/06/11/backbone-with-es6/
+  - /thoughts/backbone-with-es6/
 ---
 For those living under large, flat rocks, some news! The countdown to using ECMAScript 6 in your apps continues, and we're getting closer and closer to that reality. You might have read an article or two (thousand) about neat new language additions, but have you started building with them yet? Well… me neither. Until right now!
 

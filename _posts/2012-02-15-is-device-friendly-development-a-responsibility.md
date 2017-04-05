@@ -2,7 +2,9 @@
 title: Is device-friendly development a responsibility?
 excerpt: "Something to think about: is developing device-friendly websites a responsibility of the developer?"
 keywords: responsive design
-redirect_from: /2012/02/15/is-device-friendly-development-a-responsibility/
+redirect_from:
+  - /2012/02/15/is-device-friendly-development-a-responsibility/
+  - /thoughts/is-device-friendly-development-a-responsibility/
 ---
 I got to thinking the other day: is developing device-friendly websites a responsibility of the developer? If it's not now, will it ever be?
 

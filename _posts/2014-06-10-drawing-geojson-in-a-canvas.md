@@ -2,7 +2,9 @@
 title: "Drawing with GeoJSON"
 excerpt: "A simple overview of how to draw GeoJSON into HTML Canvas"
 keywords: geojson, canvas, javascript
-redirect_from: /2014/06/10/drawing-geojson-in-a-canvas/
+redirect_from:
+  - /2014/06/10/drawing-geojson-in-a-canvas/
+  - /thoughts/drawing-geojson-in-a-canvas/
 ---
 GeoJSON, as defined by its spec, is “a format for encoding a variety of geographic data structures”. Vague, certainly. In layperson's terms, GeoJSON defines a format for storing data you might find on a map: a point (latitude/longitude), a line between two points, a polygonal shape, etc. The specification has been around since 2008 but didn't appear on my radar until the past half year, notably when Github started supporting [rendering GeoJSON files](https://help.github.com/articles/mapping-geojson-files-on-github) in repositories.
 

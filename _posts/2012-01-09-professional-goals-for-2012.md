@@ -1,7 +1,9 @@
 ---
 title: Professional goals for 2012
 excerpt: I don't make New Years resolutions. But let's talk about the year to come.
-redirect_from: /2012/01/09/professional-goals-for-2012/
+redirect_from:
+  - /2012/01/09/professional-goals-for-2012/
+  - /thoughts/professional-goals-for-2012/
 ---
 I don't make New Years resolutions. I've always felt like the changing of a year is a lame excuse to decide to make a change in ones life. When I decide to do something (resolve to, if you will) I just do it. That being said, I've decided that this year, for my own benefit, I wanted to write out a list of things that I want to accomplish professionally in the next year.
 

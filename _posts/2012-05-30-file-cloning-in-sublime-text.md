@@ -2,7 +2,9 @@
 title: File cloning in Sublime Text
 excerpt: One of the handiest pieces of functionality that many code editors implement is the ability to split, or clone, files into a new tab or window. As one might expect, Sublime Text has this functionality built in, albeit somewhat hidden.
 keywords: sublime text, sublime text package, sublime text plugin, sublime text clone file
-redirect_from: /2012/05/30/file-cloning-in-sublime-text/
+redirect_from:
+  - /2012/05/30/file-cloning-in-sublime-text/
+  - /thoughts/file-cloning-in-sublime-text/
 ---
 One of the handiest pieces of functionality that many code editors implement is the ability to split, or clone, files into a new tab or window. As one might expect, Sublime Text has this functionality built in, albeit somewhat hidden. The wording of the menu item isn't immediately clear, resulting in my not knowing the feature even existed until I did some digging around.
 

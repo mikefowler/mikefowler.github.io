@@ -2,7 +2,9 @@
 title: Our obligation as developers
 excerpt: There's no doubt that semantics are an oft-spoken about topic, especially recently. But let's address a different issue.
 keywords: code semantics, web development, html5
-redirect_from: /2011/12/20/our-obligation-as-developers/
+redirect_from:
+  - /2011/12/20/our-obligation-as-developers/
+  - /thoughts/our-obligation-as-developers/
 ---
 There's no doubt that semantics are an oft-spoken about topic, especially recently. But let's address a different issue.
 

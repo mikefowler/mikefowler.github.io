@@ -1,7 +1,9 @@
 ---
 title: "Testing your webapp with device emulators"
 excerpt: Unless you've got a truckload of physical devices to test your webapp on, device emulators are the easiest option to get started testing on different platforms. Here are a few.
-redirect_from: /2014/01/23/testing-webapp-on-device-emulators/
+redirect_from:
+  - /2014/01/23/testing-webapp-on-device-emulators/
+  - /thoughts/testing-webapp-on-device-emulators/
 ---
 
 As mentioned in a previous post about [page transitions in Backbone]({% post_url 2013-11-18-page-transitions-in-backbone %}), I've been working a lot lately on a [webapp](http://css-tricks.com/poll-results-sites-vs-apps/). Because of this, I have a need to test on a bunch of (read: as many as I possibly can) devices. And while it would be ideal to have a dump truck of Android and iOS devices at my disposal, always charged and pointed at my local development URL, it's not entirely feasible for a single developer or a small team.

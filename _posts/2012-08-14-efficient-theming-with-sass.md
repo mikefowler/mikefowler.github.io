@@ -2,7 +2,9 @@
 title: Efficient theming with Sass
 excerpt: Some personal techniques I've been using for efficiently managing your stylesheets with Sass.
 keywords: sass, sass techniques, best practices
-redirect_from: /2012/08/14/efficient-theming-with-sass/
+redirect_from:
+  - /2012/08/14/efficient-theming-with-sass/
+  - /thoughts/efficient-theming-with-sass/
 ---
 Even after a full year of writing stylesheets almost exclusively with Sass and Compass, I continue to find solutions to common problems that further convince me that I will never write vanilla CSS again. Creating theme sets is something I've worked heavily on in the past three to four months, and it's there that I've honed my Sass-fu and started to establish some of the material I present here. None of this is what I would consider “best practice”, but rather possible solutions that I find rather elegant. Some of this may be useful for others, and some of it may not be.
 

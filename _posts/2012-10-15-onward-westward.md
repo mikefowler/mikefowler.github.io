@@ -1,7 +1,9 @@
 ---
 title: Onward. Westward.
 excerpt: In only four weeks I will be both living and working in a new place.
-redirect_from: /2012/10/15/onward-westward/
+redirect_from:
+  - /2012/10/15/onward-westward/
+  - /thoughts/onward-westward/
 ---
 In only four weeks I will be both living and working in a new place. Sure, I've made these changes before: new job, new apartment. But this is different, because both of these new places are further than across town. They're further than across the border into another familiar New England state and further even than a long drive to Philadelphia or a short plane ride to Chicago.
 

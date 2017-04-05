@@ -2,7 +2,9 @@
 title: Font-face syntax in Compass
 excerpt: Since the documentation on the Compass website is a tad confusing I thought I'd clarify the basic usage of the @font-face mixin included in Compass.
 keywords: compass, sass, @font-face, font-face, css
-redirect_from: /2012/07/23/compass-font-face-syntax/
+redirect_from:
+  - /2012/07/23/compass-font-face-syntax/
+  - /thoughts/compass-font-face-syntax/
 ---
 Since the documentation on the Compass website is a tad confusing I thought I'd clarify the basic usage of the @font-face mixin included in Compass.
 

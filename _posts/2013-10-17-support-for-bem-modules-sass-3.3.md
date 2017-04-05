@@ -2,7 +2,9 @@
 title: "Support for BEM modules in Sass 3.3"
 excerpt: The next major release of Sass is poised for release and with it comes real support for BEM-style modules!
 keywords: sass, sass 3.3, @at-root, bem, oocss, smacss, css, stylesheets
-redirect_from: /2013/10/17/support-for-bem-modules-sass-3.3/
+redirect_from:
+  - /2013/10/17/support-for-bem-modules-sass-3.3/
+  - /thoughts/support-for-bem-modules-sass-3.3/
 ---
 
 ## The next major release of Sass is poised for release and with it comes real support for BEM-style modules! Celebrate!
