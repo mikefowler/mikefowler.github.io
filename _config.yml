@@ -14,6 +14,18 @@ author:
   location:     burlington
   twitter:      michaelrfowler
 
+navigation:
+  - text: Writing
+    url: /writing/
+    position: left
+  - text: Journal
+    url: /journal/
+    position: left
+  - text: Projects
+    url: /projects/
+  - text: About
+    url: /about/
+
 social:
   name: Mike Fowler
   links:

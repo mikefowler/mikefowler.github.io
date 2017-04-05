@@ -64,8 +64,5 @@ $masthead-height: 75px;
 
   @include xs {
     width: 100%;
-    text-align: left;
-    flex: none;
-    order: -1;
   }
 }
