@@ -2,6 +2,8 @@
 title: The shadows move
 image:
   src: https://cdn-images-1.medium.com/max/2000/1*vaxqB2abUj6WRSSk_hzBMQ.jpeg
+  attribution: https://unsplash.com/@hammy
+  caption: Photo by Joshua Gresham
 ---
 
 In the house where I grew up I had the front bedroom, my sister the back; she

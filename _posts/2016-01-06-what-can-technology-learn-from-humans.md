@@ -2,7 +2,8 @@
 title: What can technology learn from humans?
 image:
   src: https://cdn-images-1.medium.com/max/1600/1*BiTsiIMJ-kCtiWqXj-q38w.jpeg
-  attribution: https://unsplash.com/photos/V0zxMzW_-e0
+  attribution: https://unsplash.com/@jmarko_smith
+  caption: Photo by John-Mark Kuznietsov
 ---
 
 Laura Cogan is editor of [Zyzzyva](http://www.zyzzyva.org/)*, *a* *San Francisco

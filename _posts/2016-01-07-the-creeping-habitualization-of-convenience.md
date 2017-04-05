@@ -1,8 +1,9 @@
 ---
 title: The creeping habitualization of convenience
 image:
-  attribution: https://unsplash.com/photos/G3yehBKxcMM
   src: https://cdn-images-1.medium.com/max/2000/1*maC21tHvby7dVBzfNQv1AQ.jpeg
+  attribution: https://unsplash.com/@jessebowser
+  caption: Photo by Jesse Bowser
 ---
 
 I pull my jacket on, trudging up the stairs from BART to emerge onto Market

@@ -2,6 +2,8 @@
 title: Johnny Appleseed, you’re drunk.
 image:
   src: https://cdn-images-1.medium.com/max/2000/1*jjL_UuS-TdYFkpaa5mip_w.jpeg
+  attribution: https://unsplash.com/@timmossholder
+  caption: Photo by Tim Mossholder
 ---
 
 I spent the night in Oakland at a cooking class taught by [Phil

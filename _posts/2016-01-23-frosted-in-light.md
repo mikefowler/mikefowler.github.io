@@ -2,6 +2,8 @@
 title: Frosted in light
 image:
   src: https://cdn-images-1.medium.com/max/2000/1*CSJTPosbrMfSnxuMEdPTQQ.jpeg
+  attribution: https://unsplash.com/@aaronburden
+  caption: Photo by Aaron Burden
 ---
 
 My apartment in San Francisco has a living room with several large windows. They

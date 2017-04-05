@@ -2,6 +2,8 @@
 title: The desire for the journey
 image:
   src: https://cdn-images-1.medium.com/max/2000/1*Qk6AyXMkx0azNuHmvgSYVg.jpeg
+  attribution: https://unsplash.com/@sebas_m04
+  caption: Photo by Sébastien Marchand
 ---
 
 I’m keeping my entry brief tonight in lieu of finishing Gloria Steinem’s new

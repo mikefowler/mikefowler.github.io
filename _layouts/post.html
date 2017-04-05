@@ -2,6 +2,16 @@
 layout: default
 ---
 
+{% assign image = page.image %}
+{% capture image_caption %}
+  {% if image.caption %}
+    {{ image.caption }}
+  {% else if image.attribution %}
+    {{ image.attribution }}
+  {% endif %}
+{% endcapture %}
+{% assign image_caption = image_caption | strip %}
+
 <article class="post">
 
   <header class="post__header container">
@@ -17,15 +27,27 @@ layout: default
     </div>
   </header>
 
-  {% if page.image %}
-    <div class="container" aria-hidden="true">
+  {% if image and image.src %}
+    <div class="post__image container" aria-hidden="true">
       <div class="row center-xs">
         <div class="col-xs-12 col-sm-10 col-md-10">
-          <img
-            src="{{ page.image.src}}"
-            class="post__image"
-            alt="{{ page.image.caption}}"
-          />
+          <figure>
+            <img
+              src="{{ image.src}}"
+              alt="{{ image_caption }}"
+            />
+            {% if image_caption %}
+              <figcaption>
+                {% if image.attribution %}
+                  <a href="{{ image.attribution }}" target="_blank" rel="nofollow">
+                    {{ image_caption }}
+                  </a>
+                {% else %}
+                  {{ image_caption }}
+                {% endif %}
+              </figcaption>
+            {% endif %}
+          </figure>
         </div>
       </div>
     </div>

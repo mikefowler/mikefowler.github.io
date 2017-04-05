@@ -2,7 +2,8 @@
 title: The implicit beauty of trust
 image:
   src: https://cdn-images-1.medium.com/max/1600/1*L-fLWDSy1KPCNhp54uJ7MA.jpeg
-  attribution: https://unsplash.com/photos/56D1nt0dxhk
+  attribution: https://unsplash.com/@arnoldlee
+  caption: Photo by Arnold Lee
 ---
 
 Follow me: we are walking down the jet bridge to our plane, which will take us

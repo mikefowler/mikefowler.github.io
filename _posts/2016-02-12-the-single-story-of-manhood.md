@@ -12,7 +12,7 @@ Immediately after finishing, I watched Adichie’s 2009 TED talk, “The Danger 
 Single Story”. If you have 20 minutes to spare, I encourage you to watch it. It
 will inspire, educate and amuse you.
 
-<iframe src="https://embed.ted.com/talks/chimamanda_adichie_the_danger_of_a_single_story" width="100%" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<iframe src="https://embed.ted.com/talks/chimamanda_adichie_the_danger_of_a_single_story" width="100%" height="400" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 The gist of the talk—for those of you unable to watch it at present—is of the
 negative consequences of hearing only a “single story” of a group of people.

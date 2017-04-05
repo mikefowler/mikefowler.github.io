@@ -3,7 +3,7 @@ title: Growing older with acceptance
 image:
   src: https://cdn-images-1.medium.com/max/2000/1*0t6N_HGaVJ4gnzS_6qLGVw.jpeg
   attribution: https://unsplash.com/photos/o1PKM7-8AH4
-  caption: Photo taken by Ismael Nieto
+  caption: Photo by Ismael Nieto
 ---
 
 Inspiration seeks you out in the strangest of places.

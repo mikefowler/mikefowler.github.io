@@ -62,7 +62,8 @@ ol,
 ul,
 blockquote,
 table,
-pre {
+pre,
+iframe {
   &:not(:last-child) {
     margin-bottom: $space-md;
   }
@@ -221,4 +222,12 @@ table {
 pre {
   padding: $space-sm;
   overflow-x: scroll;
+}
+
+figure {
+  figcaption {
+    font-size: $size-7;
+    font-style: italic;
+    margin-top: $space-sm;
+  }
 }

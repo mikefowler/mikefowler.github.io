@@ -3,6 +3,7 @@ title: Optimism is a choice
 image:
   src: https://cdn-images-1.medium.com/max/1600/1*Qqzwfg9A_7rzHTs6fhyLJQ.jpeg
   attribution: https://www.instagram.com/p/BAeIiyhCHF8/
+  caption: Photo by Stephen Wyatt Bush
 ---
 
 Tonight I went out to see some bluegrass. Honest-to-pete bluegrass, with
