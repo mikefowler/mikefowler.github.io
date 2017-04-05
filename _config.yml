@@ -75,6 +75,8 @@ sass:
 permalink:      /journal/:year/:month/:day/:title
 paginate:       5
 paginate_path:  "/journal/:num/"
+incremental:    true
+livereload:     true
 
 # Plugins
 gems:
