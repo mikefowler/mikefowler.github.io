@@ -87,7 +87,6 @@ sass:
 permalink:      /journal/:year/:month/:day/:title
 paginate:       5
 paginate_path:  "/journal/:num/"
-incremental:    true
 livereload:     true
 
 # Plugins
@@ -97,6 +96,7 @@ gems:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-github-metadata
 
 # Reading
 exclude:

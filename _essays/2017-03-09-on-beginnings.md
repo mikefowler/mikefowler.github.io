@@ -1,9 +1,9 @@
 ---
 title: On Beginnings
+excerpt: On Friday I left my apartment. Moved out. It was a hard decision to leave that place, a home I spent two incredible years living in.
 soundcloud: 311548719
-location:
-  latitude: 37.776119
-  longitude: -122.442843
+image:
+  src: /assets/images/on-beginnings.jpg
 ---
 
 On Friday I left my apartment. Moved out. It was a hard decision to leave that place, a home I spent two incredible years living in. Two years during which the walls came to know intimately the faces of those dear to me. My ear, placed to the wall as if it were a plaster conch, would hear love, made audible, and my happiness now runs in the marrow of that majestic Painted Lady’s bones. It’s hard to leave any place when your memories of it are good ones.
@@ -49,5 +49,3 @@ In *Garden State*, the main characters, cozied up in a steamy, heated pool lit f
 The more time I’ve spent away from Connecticut and my earliest friends, or from Vermont and the amazing people I know there, the more I’ve come to know that those places do exist, and that what I’m homesick for isn’t a place; it’s those people.
 
 And so it is, stepping out into the infinite abyss of *whatever* it is I’m doing, that I look forward to exploring this idea. The idea of home: what is it? Where do people find it? And, at least in the physical sense, what does it feel like to not have one?
-
-Stay tuned.

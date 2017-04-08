@@ -1,15 +1,25 @@
 ---
 layout: page
+layout_options:
+  container: false
 title: Writing
 subtitle: Essays, fiction, and other longform writing.
 ---
 
-<p>Almost done! Check back soon.</p>
+{% assign essays = site.essays | sort: 'date' | reverse %}
 
-<!--
 <div class="tile is-ancestor">
-{% for essay in site.essays %}
-  <a href={{ essay.url }} class="tile">{{ essay.title }}</a>
-{% endfor %}
+  {% for essay in essays limit: 2 %}
+    <div class="tile is-parent">
+      {% include essay/preview.html size="large" %}
+    </div>
+  {% endfor %}
 </div>
--->
+
+<div class="tile is-ancestor">
+  {% for essay in essays offset: 2 %}
+    <div class="tile is-parent">
+      {% include essay/preview.html %}
+    </div>
+  {% endfor %}
+</div>

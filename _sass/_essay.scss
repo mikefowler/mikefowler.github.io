@@ -1,5 +1,6 @@
 .essay {
   margin-top: $space-lg;
+  margin-bottom: $space-md;
 
   @include sm {
     margin-top: $space-lg * 2;
@@ -7,5 +8,9 @@
 }
 
 .essay__header {
+  margin-bottom: $space-md;
+}
+
+.essay__image {
   margin-bottom: $space-md;
 }

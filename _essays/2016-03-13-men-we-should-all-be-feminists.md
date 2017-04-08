@@ -1,10 +1,9 @@
 ---
 title: Men, we should all be feminists
+excerpt: A personal appeal to my male friends
 image:
   src: https://cdn-images-1.medium.com/max/1600/1*116pzBjXoeWqu-beei1PyA.png
 ---
-
-## A personal appeal to my male friends
 
 Until I moved to San Francisco, I thought very little about gender. Not in a
 malicious way, as if I’d made a conscious effort to ignore the statistical
@@ -62,8 +61,7 @@ To understand what Chimamanda is saying about the distinction between “feminis
 and “human rights”, replace “all lives matter” with “all genders matter” in the
 first pane of the comic.
 
-## But I’m a man. Why should I call myself a feminist? Isn’t it sexist to assume
-that I, too, can be a feminist?
+## But I’m a man. Why should I call myself a feminist? Isn’t it sexist to assume that I, too, can be a feminist?
 
 > Some men feel threatened by the idea of feminism. This comes, I think, from the
 > insecurity triggered by how boys are brought up, how their sense of self-worth

@@ -1,5 +1,11 @@
 .page {
-  margin-top: $unit * 8;
+  padding-top: $space-lg;
+  padding-bottom: $space-md;
+  width: 100%;
+}
+
+.page--home {
+  padding: 0;
 }
 
 .page__header {

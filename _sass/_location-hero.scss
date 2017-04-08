@@ -1,29 +1,29 @@
 .location-hero {
-  margin: 0 auto;
-  width: 60vh;
-  height: 60vh;
-  border-radius: 50%;
-  background: $light; // @TODO: replace with map
+  margin: $space-md auto 0;
   text-align: center;
   position: relative;
-}
 
-.location-hero__content {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  transform: translateY(-50%);
+  @include sm {
+    margin-top: -$space-xs;
+  }
 }
 
 .location-hero__prefix {
-  display: inline-block;
   font-style: italic;
-  margin-bottom: 0.5em;
+
+  @include xs {
+    font-size: $size-2;
+    margin-bottom: $space-sm;
+  }
 }
 
-.location-hero__location {
+.location-hero__image {
   display: block;
-  font-family: $family-display;
-  color: $primary;
+  width: auto;
+  max-height: 50vh;
+  margin: 0 auto;
+
+  @include sm {
+    max-height: 75vh;
+  }
 }

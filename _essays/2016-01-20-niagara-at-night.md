@@ -1,5 +1,6 @@
 ---
 title: Niagara at night
+excerpt: In June 2012, Robert Haverly and I drove from Vermont to Fort Collins, Colorado in two days.
 image:
   src: https://cdn-images-1.medium.com/max/2000/1*mO5SNRE-MSdw1CVTINmLEQ.jpeg
 ---
@@ -97,9 +98,8 @@ down.
 We left the park and found our way back to the highway. I couldn’t shake the
 sense of being in the right place at the right time. Years later I smile in
 appreciation of the opportunity, the sheer luck, to see a setting few will ever
-see: a deserted Niagara Falls, lit eerily in the night. Remember: [it’s the
-detours that make
-memories](https://medium.com/@michaelrfowler/we-ripped-out-of-the-city-going-south-the-sun-in-the-east-and-the-whole-day-lying-in-wait-6b2bfdf56021#.c7bdnni1m).
+see: a deserted Niagara Falls, lit eerily in the night. Remember: it’s the
+detours that make memories.
 
 {%
   include figure.html
