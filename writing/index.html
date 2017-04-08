@@ -11,7 +11,9 @@ subtitle: Essays, fiction, and other longform writing.
 <div class="tile is-ancestor">
   {% for essay in essays limit: 2 %}
     <div class="tile is-parent">
-      {% include essay/preview.html size="large" %}
+      <div class="tile is-child">
+        {% include essay/preview.html size="large" %}
+      </div>
     </div>
   {% endfor %}
 </div>
@@ -19,7 +21,9 @@ subtitle: Essays, fiction, and other longform writing.
 <div class="tile is-ancestor">
   {% for essay in essays offset: 2 %}
     <div class="tile is-parent">
-      {% include essay/preview.html %}
+      <div class="tile is-child">
+        {% include essay/preview.html %}
+      </div>
     </div>
   {% endfor %}
 </div>
