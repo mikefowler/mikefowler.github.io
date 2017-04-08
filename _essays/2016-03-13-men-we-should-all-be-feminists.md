@@ -1,8 +1,9 @@
 ---
-title: Men, we should all be feminists
+title: 'Men, we should all be feminists'
 excerpt: A personal appeal to my male friends
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*116pzBjXoeWqu-beei1PyA.png
+  src: 'https://cdn-images-1.medium.com/max/1600/1*116pzBjXoeWqu-beei1PyA.png'
+published: true
 ---
 
 Until I moved to San Francisco, I thought very little about gender. Not in a
@@ -116,8 +117,7 @@ that sting the most.
 
 ## My appeal to you
 
-Firstly, [read the essay](http://jackiewhiting.net/AmStudies/Units1415/Texts/We
-Should All Be Feminists (Kin - Chimamanda Ngozi  Adichie.pdf). It’s short, and
+Firstly, [read the essay](http://jackiewhiting.net/AmStudies/Units1415/Texts/We%20Should%20All%20Be%20Feminists%20(Kin%20-%20Chimamanda%20Ngozi%20%20Adichie.pdf). It’s short, and
 will take you about an hour. If reading isn’t for you, you can also watch it, as
 the essay is very nearly a transcript of what was originally presented as a TEDx
 talk given by Chimamanda. It is thirty minutes long. Watch it. Pay attention;
