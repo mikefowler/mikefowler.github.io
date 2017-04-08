@@ -117,7 +117,7 @@ that sting the most.
 
 ## My appeal to you
 
-Firstly, [read the essay](http://jackiewhiting.net/AmStudies/Units1415/Texts/We%20Should%20All%20Be%20Feminists%20(Kin%20-%20Chimamanda%20Ngozi%20%20Adichie.pdf). It’s short, and
+Firstly, [read the essay](http://goo.gl/gIeYLJ). It’s short, and
 will take you about an hour. If reading isn’t for you, you can also watch it, as
 the essay is very nearly a transcript of what was originally presented as a TEDx
 talk given by Chimamanda. It is thirty minutes long. Watch it. Pay attention;
