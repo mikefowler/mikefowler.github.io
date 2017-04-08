@@ -1,7 +1,17 @@
+{{ assign location = site.data.locations[site.author.location] }}
 <div class="location-hero">
 
-  <p class="location-hero__prefix">
-    is currently in <span class="is-visually-hidden">{{ site.author.location }}</span>
-  </p>
+  <div class="location-hero__prefix is-4">
+    <span class="is-visually-hidden-sm">{{ site.author.first_name }}</span>
+    <span>is currently in</span>
+    <span class="is-visually-hidden">{{ location.city }}</span>
+  </div>
+
+  <img
+    src="/assets/images/brrrlington.jpg"
+    class="location-hero__image"
+    alt=""
+    aria-hidden
+  />
 
 </div>

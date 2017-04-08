@@ -1,5 +1,6 @@
 .post {
   margin-top: $space-lg;
+  margin-bottom: $space-md;
 
   @include sm {
     margin-top: $space-lg * 2;

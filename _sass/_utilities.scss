@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------
+// Alignment
+// ----------------------------------------------------------------------------
+
 .has-text-centered {
   text-align: center;
 }
@@ -15,6 +19,10 @@
 .has-text-left {
   text-align: left;
 }
+
+// ----------------------------------------------------------------------------
+// Typography
+// ----------------------------------------------------------------------------
 
 .is-display-typeface {
   font-family: $family-display;
@@ -48,14 +56,9 @@
   font-size: $size-6;
 }
 
-.is-visually-hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
+// ----------------------------------------------------------------------------
+// Layout
+// ----------------------------------------------------------------------------
 
 .is-overlay {
   position: absolute;
@@ -65,12 +68,22 @@
   left: 0;
 }
 
+@for $i from 1 through 8 {
+  .space-#{$i} {
+    margin-bottom: $unit * $i;
+  }
+
+  .space-top-#{$i} {
+    margin-top: $unit * $i;
+  }
+}
+
 .is-marginless {
   margin: 0;
 }
 
 p a,
-a.paragraph-link {
+.paragraph-link {
   text-decoration: underline;
   text-decoration-skip: ink;
   text-decoration-color: $primary;
@@ -82,18 +95,26 @@ a.paragraph-link {
   }
 }
 
-.col-margin-left-sm {
-  @include sm {
-    position: absolute;
-    transform: translateX(-100%);
-    padding-right: $space-md;
+// ----------------------------------------------------------------------------
+// Visibility
+// ----------------------------------------------------------------------------
+
+.is-visually-hidden {
+  @include visually-hidden;
+}
+
+.is-visually-hidden-xs {
+  @include xs {
+    @include visually-hidden;
   }
 }
 
-.col-margin-left-md {
-  @include md {
-    position: absolute;
-    transform: translateX(-100%);
-    padding-right: $space-md;
+.is-visually-hidden-sm {
+  @include sm {
+    @include visually-hidden;
   }
+}
+
+.is-hidden {
+  display: none;
 }

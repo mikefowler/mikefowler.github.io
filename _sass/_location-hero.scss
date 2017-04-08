@@ -1,18 +1,29 @@
 .location-hero {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  margin: 0 auto;
+  margin: $space-md auto 0;
   text-align: center;
   position: relative;
+
+  @include sm {
+    margin-top: -$space-xs;
+  }
 }
 
 .location-hero__prefix {
-  display: inline-block;
   font-style: italic;
-  margin-bottom: 0.5em;
+
+  @include xs {
+    font-size: $size-2;
+    margin-bottom: $space-sm;
+  }
 }
 
 .location-hero__image {
-  flex: 1;
+  display: block;
+  width: auto;
+  max-height: 50vh;
+  margin: 0 auto;
+
+  @include sm {
+    max-height: 75vh;
+  }
 }

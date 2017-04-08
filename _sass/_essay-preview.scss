@@ -1,0 +1,43 @@
+.essay-preview {
+
+}
+
+.essay-preview__link {
+  .no-touch &,
+  .no-touch &:hover {
+    text-decoration: none;
+  }
+}
+
+.essay-preview__cover {
+  height: $space-lg * 2;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: $space-md;
+
+  .essay-preview__link:hover & {
+    :only-child {
+      transform: translate3d(-50%, -50%, 0) scale(1.05);
+    }
+  }
+
+  :only-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: translate3d(-50%, -50%, 0) scale(1.0);
+    transition: 1s transform ease;
+  }
+
+  .essay-preview--large & {
+    height: $space-lg * 4;
+  }
+}
+
+.essay-preview__header {
+  margin-bottom: $space-sm;
+}

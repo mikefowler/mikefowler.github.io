@@ -9,6 +9,13 @@
   padding: $unit;
 }
 
+.pagination__previous,
+.pagination__next {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .pagination__page--active {
   color: $primary;
 }

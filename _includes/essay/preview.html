@@ -1,0 +1,30 @@
+<section class="essay-preview {% if include.size == "large" %}essay-preview--large{% endif %}">
+
+  <a href="{{ essay.url }}" class="essay-preview__link">
+
+    {% if essay.image %}
+      <div
+        aria-hidden
+        class="essay-preview__cover"
+      >
+        <div style="background-image: url({{ essay.image.src }})"></div>
+      </div>
+    {% endif %}
+
+    <header class="essay-preview__header">
+
+      <h1 class="essay-preview__title paragraph-link is-4">
+        {{ essay.title }}
+      </h1>
+
+    </header>
+
+    <div class="essay-preview__content">
+
+      <p>{{ essay.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+
+    </div>
+
+  </a>
+
+</section>

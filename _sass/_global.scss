@@ -63,7 +63,8 @@ ul,
 blockquote,
 table,
 pre,
-iframe {
+iframe,
+figure {
   &:not(:last-child) {
     margin-bottom: $space-md;
   }
@@ -157,13 +158,13 @@ li + li {
 }
 
 hr {
-  margin: ($unit * 4) auto;
+  margin: ($unit * 6) auto;
   border: 0;
   text-align: center;
 
   &::before {
     content: "…";
-    font-size: $size-3;
+    font-size: $size-1;
     line-height: 0;
     color: $grey-light;
   }
@@ -229,6 +230,7 @@ figure {
     font-size: $size-7;
     font-style: italic;
     margin-top: $space-sm;
+    text-align: center;
   }
 }
 

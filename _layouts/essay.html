@@ -6,15 +6,53 @@ layout: default
   {% if page.hide_title %}is-visually-hidden{% endif %}
 {% endcapture %}
 
+{% assign image = page.image %}
+{% capture image_caption %}
+  {% if image.caption %}
+    {{ image.caption }}
+  {% else if image.attribution %}
+    {{ image.attribution }}
+  {% endif %}
+{% endcapture %}
+{% assign image_caption = image_caption | strip %}
+
 <article class="essay">
 
   <header class="essay__header container">
     <div class="row center-sm">
       <div class="col-xs-12 col-sm-8 col-md-6 start-xs">
-        <h1 class="essay__title">{{ page.title }}</h1>
+        <a href="{{ page.url }}">
+          <h1 class="essay__title">{{ page.title }}</h1>
+        </a>
       </div>
     </div>
   </header>
+
+  {% if image and image.src %}
+    <div class="essay__image container" aria-hidden="true">
+      <div class="row center-xs">
+        <div class="col-xs-12 col-sm-10 col-md-10">
+          <figure>
+            <img
+              src="{{ image.src}}"
+              alt="{{ image_caption }}"
+            />
+            {% if image_caption %}
+              <figcaption>
+                {% if image.attribution %}
+                  <a href="{{ image.attribution }}" target="_blank" rel="nofollow">
+                    {{ image_caption }}
+                  </a>
+                {% else %}
+                  {{ image_caption }}
+                {% endif %}
+              </figcaption>
+            {% endif %}
+          </figure>
+        </div>
+      </div>
+    </div>
+  {% endif %}
 
   {% if page.soundcloud %}
     <div class="container">

@@ -7,7 +7,7 @@ $desktop: 1000px;
 $widescreen: 1192px;
 
 $unit: 0.5rem; // 8px
-$grid-padding: $unit;
+$grid-padding: $unit * 2;
 
 $space-xs: $unit;     // 8px;
 $space-sm: $unit * 2; // 16px

@@ -1,18 +1,18 @@
 <div class="pagination container">
   <div class="row middle-xs center-xs">
 
-    <div class="col-xs-6 col-sm-4 col-md-3 start-xs">
+    <div class="col-xs-12 col-sm-5 col-md-5 start-xs">
       {% if page.previous.url %}
         <a class="pagination__previous" href="{{page.previous.url}}">
-          &laquo; {{ page.previous.title }}
+          &laquo; {{ page.previous.title | truncate: 40 }}
         </a>
       {% endif %}
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-3 end-xs">
+    <div class="col-xs-12 col-sm-5 col-md-5 end-xs">
       {% if page.next.url %}
         <a class="pagination__next" href="{{page.next.url}}">
-          {{ page.next.title }} &raquo;
+          {{ page.next.title | truncate: 40 }} &raquo;
         </a>
       {% endif %}
     </div>

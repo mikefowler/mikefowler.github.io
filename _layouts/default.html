@@ -1,17 +1,9 @@
-{% assign background_image = page.layout_options.background_image %}
-
-{% capture body_styles %}
-  {% if background_image %}
-    background-image: url({{ background_image }});
-  {% endif %}
-{% endcapture %}
-
 <!DOCTYPE html>
 <html>
 
   {% include head.html %}
 
-  <body class="site" style="{{ body_styles | strip }}">
+  <body class="site">
 
     {% unless page.layout_options.hide_header %}
       {% include masthead.html %}
