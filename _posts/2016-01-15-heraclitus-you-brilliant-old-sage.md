@@ -1,7 +1,7 @@
 ---
 title: Heraclitus, you brilliant old sage
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*V1kkDtJPM8k41wR_YmQOGA.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*V1kkDtJPM8k41wR_YmQOGA.jpeg
   caption: Heraclitus, praying for rain in California.
 ---
 

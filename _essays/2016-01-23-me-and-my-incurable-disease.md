@@ -2,7 +2,7 @@
 title: Me and my incurable disease
 excerpt: This is a story about accepting what cannot be changed. About growing older and learning to understand that the minor setbacks of your largely picturesque life pale in comparison to the hardships of others.
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*MvrXyOgFfqN-761xTgHchg.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*MvrXyOgFfqN-761xTgHchg.jpeg
 ---
 
 This is a story about accepting what cannot be changed. About growing older and

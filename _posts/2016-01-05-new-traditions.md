@@ -1,7 +1,7 @@
 ---
 title: New traditions
 image:
-  src: https://cdn-images-1.medium.com/max/1200/1*axzIFNffrhDHD3PGd-Dy7Q.png
+  path: https://cdn-images-1.medium.com/max/1200/1*axzIFNffrhDHD3PGd-Dy7Q.png
 ---
 
 I fly tomorrow, back to San Francisco over the Great Lakes and frigid plains of

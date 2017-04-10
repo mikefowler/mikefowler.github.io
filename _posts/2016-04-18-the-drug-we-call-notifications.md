@@ -1,7 +1,7 @@
 ---
 title: The drug we call “notifications”
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*1lXVRfiSM8YHOlK-G9eTnA.png
+  path: https://cdn-images-1.medium.com/max/1600/1*1lXVRfiSM8YHOlK-G9eTnA.png
 ---
 
 In the golden days of social networks—Friendster, Myspace, the early days of

@@ -2,7 +2,7 @@
 title: We Ripped Out of the City
 excerpt: We ripped out of the city going south, the sun in the east and the whole day lying in wait. That’s the way you always envision it, anyways. In reality we slept late and rented a car on a whim.
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*dz3ZJrtopkgGqypVVe8_JQ.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*dz3ZJrtopkgGqypVVe8_JQ.jpeg
 ---
 
 *We ripped out of the city going south, the sun in the east and the whole day lying in wait.* That’s the way you always envision it, anyways. In reality we slept late and rented a car on a whim, an adorable small thing with a rollback roof, and spent thirty minutes navigating out of the city, red lights and green lights all the way through foggy West Portal neighborhoods over to the Great Highway, the Pacific glittering in the distance.

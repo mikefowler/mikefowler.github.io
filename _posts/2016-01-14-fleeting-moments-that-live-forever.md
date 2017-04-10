@@ -1,7 +1,7 @@
 ---
 title: The fleeting moments that live forever
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*1R5qPkphfGKg7gK5i6fs4Q.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*1R5qPkphfGKg7gK5i6fs4Q.jpeg
 ---
 
 When I moved to San Francisco in 2012, I lived out my first six months in a

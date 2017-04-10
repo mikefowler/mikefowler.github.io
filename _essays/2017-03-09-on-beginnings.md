@@ -3,7 +3,7 @@ title: On Beginnings
 excerpt: On Friday I left my apartment. Moved out. It was a hard decision to leave that place, a home I spent two incredible years living in.
 soundcloud: 311548719
 image:
-  src: /assets/images/on-beginnings.jpg
+  path: /assets/images/on-beginnings.jpg
 ---
 
 On Friday I left my apartment. Moved out. It was a hard decision to leave that place, a home I spent two incredible years living in. Two years during which the walls came to know intimately the faces of those dear to me. My ear, placed to the wall as if it were a plaster conch, would hear love, made audible, and my happiness now runs in the marrow of that majestic Painted Lady’s bones. It’s hard to leave any place when your memories of it are good ones.

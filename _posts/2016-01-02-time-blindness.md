@@ -1,7 +1,7 @@
 ---
 title: Time blindness
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*uPZbMFTV9sJjkokQbD7oPA.jpeg
+  path: https://cdn-images-1.medium.com/max/1600/1*uPZbMFTV9sJjkokQbD7oPA.jpeg
 ---
 
 I’m here for the weekend; a small pond on the elbow of the Cape. A beautiful

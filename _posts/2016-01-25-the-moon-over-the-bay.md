@@ -1,7 +1,7 @@
 ---
 title: The moon over the Bay
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*pll--DW4vaWdcyEbNDGjIg.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*pll--DW4vaWdcyEbNDGjIg.jpeg
 ---
 
 Saturday night I took a short walk with friends, crawling out from the bustle of

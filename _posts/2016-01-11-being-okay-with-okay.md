@@ -1,7 +1,7 @@
 ---
 title: Being okay with okay
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*MDNp045GRFl1pqgouBIM3g.jpeg
+  path: https://cdn-images-1.medium.com/max/1600/1*MDNp045GRFl1pqgouBIM3g.jpeg
   attribution: https://unsplash.com/@vidar
   caption: Photo by Vidar Kristiansen
 ---

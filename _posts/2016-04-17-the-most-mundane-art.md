@@ -1,7 +1,7 @@
 ---
 title: The most mundane art
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*W38c8I9LM7vImB-OUfALTA.jpeg
+  path: https://cdn-images-1.medium.com/max/1600/1*W38c8I9LM7vImB-OUfALTA.jpeg
 ---
 
 Who drove those cars? Who built that house? Who lived in it? Did the owners

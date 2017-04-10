@@ -1,7 +1,7 @@
 ---
 title: Sand castle metaphors
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*uZ8IDyZ4AcMla0N5myGotQ.png
+  path: https://cdn-images-1.medium.com/max/2000/1*uZ8IDyZ4AcMla0N5myGotQ.png
   attribution: http://craigwinslow.com/
   caption: Photo by Craig Winslow
 ---

@@ -2,7 +2,7 @@
 title: Niagara at night
 excerpt: In June 2012, Robert Haverly and I drove from Vermont to Fort Collins, Colorado in two days.
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*mO5SNRE-MSdw1CVTINmLEQ.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*mO5SNRE-MSdw1CVTINmLEQ.jpeg
 ---
 
 In June 2012, [Robert Haverly](https://medium.com/u/9810664f1239) and I drove

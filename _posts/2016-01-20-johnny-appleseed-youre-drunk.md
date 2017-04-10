@@ -1,7 +1,7 @@
 ---
 title: Johnny Appleseed, you’re drunk.
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*jjL_UuS-TdYFkpaa5mip_w.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*jjL_UuS-TdYFkpaa5mip_w.jpeg
   attribution: https://unsplash.com/@timmossholder
   caption: Photo by Tim Mossholder
 ---

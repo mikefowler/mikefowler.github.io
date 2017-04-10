@@ -1,7 +1,7 @@
 ---
 title: We go place to place
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*afT-TzwvXTZwrX6TRD9trg.jpeg
+  path: https://cdn-images-1.medium.com/max/1600/1*afT-TzwvXTZwrX6TRD9trg.jpeg
 ---
 
 Wake up in Napa. There is a cat on your lap. The cat purrs in time to the

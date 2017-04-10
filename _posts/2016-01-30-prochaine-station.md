@@ -1,7 +1,7 @@
 ---
 title: "“Prochaine station…”"
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*Moe3-ZKa2fKUM5SNgPW5bQ.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*Moe3-ZKa2fKUM5SNgPW5bQ.jpeg
   attribution: https://www.flickr.com/photos/fredisonfire/15996115815
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Wandering, writing
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*KjQAbT0COU0Y5IrqT1aabw.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*KjQAbT0COU0Y5IrqT1aabw.jpeg
 ---
 
 Tomorrow evening I fly first to Los Angeles, then to Sydney, Australia, and

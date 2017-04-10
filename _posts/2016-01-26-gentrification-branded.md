@@ -1,7 +1,7 @@
 ---
 title: Gentrification, branded
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*MQbQN5JSMk-EpFrnHFCKUA.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*MQbQN5JSMk-EpFrnHFCKUA.jpeg
   attribution: https://unsplash.com/photos/1Fm_k4Ip7jM
   caption: Photo by Jared Erondu
 ---

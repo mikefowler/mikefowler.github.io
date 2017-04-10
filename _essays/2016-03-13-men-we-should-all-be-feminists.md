@@ -2,7 +2,7 @@
 title: 'Men, we should all be feminists'
 excerpt: A personal appeal to my male friends
 image:
-  src: 'https://cdn-images-1.medium.com/max/1600/1*116pzBjXoeWqu-beei1PyA.png'
+  path: https://cdn-images-1.medium.com/max/1600/1*116pzBjXoeWqu-beei1PyA.png
 published: true
 ---
 
@@ -33,7 +33,7 @@ To understand what Chimamanda is saying about the distinction between “feminis
 > Some men feel threatened by the idea of feminism. This comes, I think, from the insecurity triggered by how boys are brought up, how their sense of self-worth is diminished if they are not ‘naturally’ in charge as men.
 >
 > Other men might respond by saying, ‘Okay, this is interesting, but I don’t think like that. I don’t even think about gender.’
-> 
+>
 > Maybe not.
 >
 > And that is part of the problem. That many men do not actively think about gender or notice gender. That many men say […] that things might have been bad in the past but everything is fine now. And that many men do nothing to change it. If you are a man and you walk into a restaurant and the waiter greets just

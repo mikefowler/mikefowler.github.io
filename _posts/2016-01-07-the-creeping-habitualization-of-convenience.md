@@ -1,7 +1,7 @@
 ---
 title: The creeping habitualization of convenience
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*maC21tHvby7dVBzfNQv1AQ.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*maC21tHvby7dVBzfNQv1AQ.jpeg
   attribution: https://unsplash.com/@jessebowser
   caption: Photo by Jesse Bowser
 ---

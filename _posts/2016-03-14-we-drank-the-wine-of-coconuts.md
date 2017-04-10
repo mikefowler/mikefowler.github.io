@@ -1,9 +1,9 @@
 ---
+title: We drank the wine of coconuts
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*2h4FfmQiD4pH3b1bLxU3TA.png
+  path: https://cdn-images-1.medium.com/max/1600/1*2h4FfmQiD4pH3b1bLxU3TA.png
   attribution: https://www.flickr.com/photos/britishlibrary/11072482355
   caption: Via the British Library collection on Flickr
-title: We drank the wine of coconuts
 ---
 
 Tell me what comes to mind as you read these next words: types of wine. Red.

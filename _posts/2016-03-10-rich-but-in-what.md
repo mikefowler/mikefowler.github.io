@@ -1,7 +1,7 @@
 ---
 title: Rich, but in what?
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*1N2EsB9i-hqgfxinLA5GxA.png
+  path: https://cdn-images-1.medium.com/max/1600/1*1N2EsB9i-hqgfxinLA5GxA.png
 ---
 
 The fantastical fruit pictured above is *rambutan*, but in Bali I was introduced

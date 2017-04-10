@@ -1,7 +1,7 @@
 ---
 title: The death of places that never were
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*FBKLvt2prJHG4QsU2f3SfQ.png
+  path: https://cdn-images-1.medium.com/max/2000/1*FBKLvt2prJHG4QsU2f3SfQ.png
   attribution: https://unsplash.com/pierrick
   caption: Photo by Pierrick Le Cunff
 ---

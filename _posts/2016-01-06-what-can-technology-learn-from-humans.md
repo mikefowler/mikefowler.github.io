@@ -1,7 +1,7 @@
 ---
 title: What can technology learn from humans?
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*BiTsiIMJ-kCtiWqXj-q38w.jpeg
+  path: https://cdn-images-1.medium.com/max/1600/1*BiTsiIMJ-kCtiWqXj-q38w.jpeg
   attribution: https://unsplash.com/@jmarko_smith
   caption: Photo by John-Mark Kuznietsov
 ---

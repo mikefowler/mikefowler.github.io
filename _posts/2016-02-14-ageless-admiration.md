@@ -1,7 +1,7 @@
 ---
 title: Ageless admiration
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*Sug-FzD1EEyNzi8mvIRVrA.jpeg
+  path: https://cdn-images-1.medium.com/max/1600/1*Sug-FzD1EEyNzi8mvIRVrA.jpeg
 ---
 
 I’m standing on a rock overlooking the ocean, just south of Jenner on Highway 1.

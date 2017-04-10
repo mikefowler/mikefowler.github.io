@@ -1,6 +1,6 @@
 ---
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*qi-A7uqd_Y1HA3x_95KfoQ.png
+  path: https://cdn-images-1.medium.com/max/1600/1*qi-A7uqd_Y1HA3x_95KfoQ.png
   attribution: https://unsplash.com/jakejules
   caption: Photo by Jacques Perreault
 title: At an intersection near my house
