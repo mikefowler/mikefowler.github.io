@@ -2,7 +2,6 @@
 
 {% capture masthead_class %}
   {% if page.layout_options.fullscreen %}masthead--floating{% endif %}
-  {% if page.homepage %}masthead--highlight{% endif %}
 {% endcapture %}
 
 {% capture writing_link_active %}
@@ -13,7 +12,7 @@
   <div class="container">
     <nav class="row middle-xs">
 
-      <div class="col-sm masthead__logo is-1 has-text-centered-sm is-display-typeface">
+      <div class="col-sm masthead__logo {% unless page.homepage %}masthead__logo--dimmed{% endunless %} is-1 has-text-centered-sm is-display-typeface">
         <a aria-label="{{ site.author.name }}" href="/" class="masthead__link">
           {% include wordmark.html home = page.homepage %}
         </a>

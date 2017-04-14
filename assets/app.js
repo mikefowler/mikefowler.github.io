@@ -7,7 +7,6 @@
 
     this.detectFeatures();
     this.bindElements();
-    this.setupMapbox();
     this.initMaps();
   }
 
@@ -23,10 +22,6 @@
     if (!hasTouchSupport) {
       document.documentElement.classList.add('no-touch');
     }
-  };
-
-  App.prototype.setupMapbox = function() {
-    mapboxgl.accessToken = 'pk.eyJ1IjoibWljaGFlbHJpY2hhcmRmb3dsZXIiLCJhIjoiY2loNmp2OWNwMDBrOHVqa2xmam5uMTVobyJ9.Oup8io9UbstOxb2LfSG_ow';
   };
 
   App.prototype.initMaps = function() {

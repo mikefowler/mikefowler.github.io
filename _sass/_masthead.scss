@@ -60,9 +60,18 @@ $masthead-height: 75px;
 }
 
 .masthead__logo {
-  font-size: 3rem;
-
   @include xs {
     width: 100%;
+  }
+}
+
+.masthead__logo--dimmed {
+  .masthead__link {
+    color: $text-light;
+    transition: 0.25s color;
+
+    .no-touch &:hover {
+      color: $primary;
+    }
   }
 }

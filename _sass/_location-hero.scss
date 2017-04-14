@@ -10,20 +10,20 @@
 
 .location-hero__prefix {
   font-style: italic;
+  margin-bottom: $space-sm;
 
   @include xs {
     font-size: $size-2;
-    margin-bottom: $space-sm;
   }
 }
 
 .location-hero__image {
   display: block;
   width: auto;
-  max-height: 50vh;
+  max-height: 75vh;
   margin: 0 auto;
 
   @include sm {
-    max-height: 75vh;
+    max-height: 90vh;
   }
 }
