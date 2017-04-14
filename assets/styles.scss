@@ -1,11 +1,4 @@
 ---
 # Jekyll, please transform this file.
 ---
-
-@font-face {
-  font-family: "Regina";
-  src: url('{{ "/assets/fonts/ReginaBlack-Hilite.woff2" | relative_url }}') format('woff2'),
-       url('{{ "/assets/fonts/ReginaBlack-Hilite.woff"  | relative_url }}') format('woff');
-}
-
 @import "main";

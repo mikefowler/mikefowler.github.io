@@ -1,0 +1,12 @@
+.wordmark {
+  width: 110px;
+
+  svg {
+    display: block;
+  }
+}
+
+.wordmark--abbreviated {
+  fill: $text-light;
+  width: 50px;
+}
