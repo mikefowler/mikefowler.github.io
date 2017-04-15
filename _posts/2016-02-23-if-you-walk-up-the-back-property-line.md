@@ -1,6 +1,6 @@
 ---
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*XLsoNNnSP-qgldBH8449ng.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*XLsoNNnSP-qgldBH8449ng.jpeg
   attribution: https://unsplash.com/photos/jiO7wXlWnmk
   caption: Photo by Stephen Arnold
 title: If you walk up the back property line

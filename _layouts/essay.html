@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% capture hide_title %}
-  {% if page.hide_title %}is-visually-hidden{% endif %}
+  {% if page.layout_options.hide_title %}is-visually-hidden{% endif %}
 {% endcapture %}
 
 {% assign image = page.image %}
@@ -18,12 +18,15 @@ layout: default
 
 <article class="essay">
 
-  <header class="essay__header container">
+  <header class="essay__header container {{ hide_title }}">
     <div class="row center-sm">
       <div class="col-xs-12 col-sm-8 col-md-6 start-xs">
         <a href="{{ page.url }}">
           <h1 class="essay__title">{{ page.title }}</h1>
         </a>
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: '%B %Y' }}
+        </time>
       </div>
     </div>
   </header>

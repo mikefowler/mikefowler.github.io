@@ -1,7 +1,7 @@
 ---
 title: Frosted in light
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*CSJTPosbrMfSnxuMEdPTQQ.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*CSJTPosbrMfSnxuMEdPTQQ.jpeg
   attribution: https://unsplash.com/@aaronburden
   caption: Photo by Aaron Burden
 ---

@@ -1,7 +1,7 @@
 ---
 title: Qualifying a life
 image:
-  src: https://cdn-images-1.medium.com/max/1200/1*ZhM1UuysvQshW3qvhUK9xQ.jpeg
+  path: https://cdn-images-1.medium.com/max/1200/1*ZhM1UuysvQshW3qvhUK9xQ.jpeg
   attribution: https://unsplash.com/@grakozy
   caption: Photo by Greg Rakozy
 ---

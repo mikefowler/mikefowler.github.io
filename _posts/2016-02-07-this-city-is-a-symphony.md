@@ -1,7 +1,7 @@
 ---
 title: This city is a symphony
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*AaL6aoOunJc4LBmHpXaz8Q.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*AaL6aoOunJc4LBmHpXaz8Q.jpeg
   attribution: https://unsplash.com/@peppe
   caption: Photo by Peppe Ragusa
 ---

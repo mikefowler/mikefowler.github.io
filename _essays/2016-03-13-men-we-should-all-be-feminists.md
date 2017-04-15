@@ -1,5 +1,7 @@
 ---
 title: 'Men, we should all be feminists'
+layout_options:
+  hide_title: true
 excerpt: A personal appeal to my male friends
 image:
   path: https://cdn-images-1.medium.com/max/1600/1*116pzBjXoeWqu-beei1PyA.png

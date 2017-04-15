@@ -5,7 +5,7 @@ image:
   path: https://cdn-images-1.medium.com/max/2000/1*mO5SNRE-MSdw1CVTINmLEQ.jpeg
 ---
 
-In June 2012, [Robert Haverly](https://medium.com/u/9810664f1239) and I drove
+In June 2012, [Robert Haverly](http://roberthaverly.com/) and I drove
 from Vermont to Fort Collins, Colorado in two days. We cut west across New York
 and then south through Ohio, passing through each of its major cities: Cleveland
 to Columbus to Cincinnati. We made a brief detour into Kentucky, stopping in
@@ -103,6 +103,7 @@ detours that make memories.
 
 {%
   include figure.html
-	  src="https://cdn-images-1.medium.com/max/1600/1*OOkwvdNZ6LBT8-MAqFPz9Q.jpeg"
-		caption="https://www.flickr.com/photos/dpape/7378176600"
+    src="https://cdn-images-1.medium.com/max/1600/1*OOkwvdNZ6LBT8-MAqFPz9Q.jpeg"
+    attribution="https://www.flickr.com/photos/dpape/7378176600"
+    caption="Photo by Dave Pape"
 %}

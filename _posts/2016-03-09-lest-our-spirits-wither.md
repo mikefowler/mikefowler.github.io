@@ -1,7 +1,7 @@
 ---
 title: Lest our spirits wither
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*xxl-5uRxA-EpFAYciKeRtg.jpeg
+  path: https://cdn-images-1.medium.com/max/1600/1*xxl-5uRxA-EpFAYciKeRtg.jpeg
 ---
 
 With each temporary departure from a culture of media — one of timeliness and

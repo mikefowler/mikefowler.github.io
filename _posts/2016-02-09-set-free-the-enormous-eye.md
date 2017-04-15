@@ -1,7 +1,7 @@
 ---
 title: Set free the enormous eye
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*vRSvMXTOREQ8nRq5JACIQw.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*vRSvMXTOREQ8nRq5JACIQw.jpeg
   attribution: https://unsplash.com/photos/RA5ntyyDHlw
   caption: Photo by Anubhav Saxena
 ---

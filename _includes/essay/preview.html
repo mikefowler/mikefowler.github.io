@@ -17,13 +17,11 @@
         {{ essay.title }}
       </h1>
 
+      <time datetime="{{ essay.date | date_to_xmlschema }}">
+        {{ essay.date | date: '%B %Y' }}
+      </time>
+
     </header>
-
-    <div class="essay-preview__content">
-
-      <p>{{ essay.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-
-    </div>
 
   </a>
 

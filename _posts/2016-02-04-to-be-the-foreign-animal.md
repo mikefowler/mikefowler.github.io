@@ -1,7 +1,7 @@
 ---
 title: To be the foreign animal
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*1mmFSyVm9yDViXoPzkWcJg.png
+  path: https://cdn-images-1.medium.com/max/2000/1*1mmFSyVm9yDViXoPzkWcJg.png
 ---
 
 In 2008 I slept at Hornet Lookout in Montana. This quaint cabin perched atop

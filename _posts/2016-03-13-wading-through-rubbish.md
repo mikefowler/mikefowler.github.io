@@ -1,6 +1,6 @@
 ---
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*GlXykksWgSw1fceC-adb2w.png
+  path: https://cdn-images-1.medium.com/max/1600/1*GlXykksWgSw1fceC-adb2w.png
   caption: A beach in Seraya, Bali, littered with plastic debris.
 title: Wading through rubbish
 ---

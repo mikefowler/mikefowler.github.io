@@ -1,7 +1,7 @@
 ---
 title: The better realities we see
 image:
-  src: https://cdn-images-1.medium.com/max/1600/1*bLMefwnoCY3F-Z0fyRa_YQ.jpeg
+  path: https://cdn-images-1.medium.com/max/1600/1*bLMefwnoCY3F-Z0fyRa_YQ.jpeg
   attribution: https://unsplash.com/@issara
   caption: Photo by Issara Willenskomer
 ---

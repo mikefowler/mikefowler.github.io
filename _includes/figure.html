@@ -1,4 +1,12 @@
 <figure>
   <img src="{{ include.src }}" />
-  <figcaption>{{ include.caption }}</figcaption>
+  <figcaption>
+    {% if include.attribution and include.caption %}
+      <a href="{{ include.attribution }}">
+        {{ include.caption }}
+      </a>
+    {% else %}
+      {{ include.caption }}
+    {% endif %}
+  </figcaption>
 </figure>

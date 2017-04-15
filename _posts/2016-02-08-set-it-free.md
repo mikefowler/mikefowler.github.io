@@ -1,6 +1,6 @@
 ---
 image:
-  src: https://cdn-images-1.medium.com/max/2000/1*OvMjO3fCQ9HWn96aXhoBBA.jpeg
+  path: https://cdn-images-1.medium.com/max/2000/1*OvMjO3fCQ9HWn96aXhoBBA.jpeg
   attribution: https://unsplash.com/photos/vq7YhYI0NoI
   caption: Photo by Kyle Richner
 title: Set it free
