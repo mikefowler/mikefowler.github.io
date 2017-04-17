@@ -9,3 +9,9 @@ brooklyn:
   state: NY
   latitude: 40.678178
   longitude: -73.944158
+
+san_francisco:
+  city: San Francisco
+  state: CA
+  latitude: 37.7749
+  longitude: -122.4194

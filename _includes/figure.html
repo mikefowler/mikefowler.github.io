@@ -6,7 +6,7 @@
         {{ include.caption }}
       </a>
     {% else %}
-      {{ include.caption }}
+      {{ include.caption | strip }}
     {% endif %}
   </figcaption>
 </figure>

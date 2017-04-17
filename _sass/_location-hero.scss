@@ -8,6 +8,14 @@
   }
 }
 
+.location-hero__link {
+  text-decoration: none;
+
+  .no-touch &:hover {
+    text-decoration: none;
+  }
+}
+
 .location-hero__prefix {
   font-style: italic;
   margin-bottom: $space-sm;
@@ -20,10 +28,9 @@
 .location-hero__image {
   display: block;
   width: auto;
-  max-height: 75vh;
   margin: 0 auto;
 
   @include sm {
-    max-height: 90vh;
+    max-width: 50vw;
   }
 }

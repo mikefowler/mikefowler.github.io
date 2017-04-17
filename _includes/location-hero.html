@@ -1,17 +1,20 @@
-{{ assign location = site.data.locations[site.author.location] }}
+{% assign name = site.author.first_name %}
+{% assign event = site.data.events | first %}
+{% assign location = site.data.locations[event.location] %}
+
 <div class="location-hero">
+  <a class="location-hero__link" href="/is-in">
+    <div class="location-hero__prefix is-4">
+      <span class="is-visually-hidden-sm">{{ name }}</span>
+      <span>is currently in</span>
+      <span class="is-visually-hidden">{{ location.city }}</span>
+    </div>
 
-  <div class="location-hero__prefix is-4">
-    <span class="is-visually-hidden-sm">{{ site.author.first_name }}</span>
-    <span>is currently in</span>
-    <span class="is-visually-hidden">{{ location.city }}</span>
-  </div>
-
-  <img
-    src="/assets/images/brrrlington.jpg"
-    class="location-hero__image"
-    alt=""
-    aria-hidden
-  />
-
+    <img
+      src="{{ event.image }}"
+      class="location-hero__image"
+      alt=""
+      aria-hidden
+    />
+  </a>
 </div>

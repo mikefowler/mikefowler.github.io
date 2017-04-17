@@ -2,9 +2,9 @@
 title: Home
 layout: page
 homepage: true
+image: /assets/images/location/sunfunfrisco.jpg
 layout_options:
   container: false
-  background_image: /assets/images/brrrlington.jpg
   hide_page_title: true
 ---
 

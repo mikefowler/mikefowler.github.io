@@ -1,0 +1,21 @@
+{% assign events = site.data.events | where: "type", "living" %}
+
+{% for event in events %}
+
+  {% assign location = site.data.locations[event.location] %}
+
+  {% capture dates %}
+    {{ event.starts_at | date: '%B %e' }}–{{ event.ends_at | date: '%B %e' }}
+  {% endcapture %}
+
+  {% capture caption %}
+    {{ location.city }}, {{ location.state }} ({{ dates | strip }})
+  {% endcapture %}
+
+  {%
+    include figure.html
+      src = event.image
+      caption = caption
+  %}
+
+{% endfor %}
