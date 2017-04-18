@@ -13,7 +13,7 @@
   height: $space-lg * 2;
   overflow: hidden;
   position: relative;
-  margin-bottom: $space-md;
+  margin-bottom: $space-sm;
 
   .essay-preview__link:hover & {
     :only-child {
@@ -39,5 +39,5 @@
 }
 
 .essay-preview__header {
-  margin-bottom: $space-sm;
+  margin-bottom: $space-md;
 }
