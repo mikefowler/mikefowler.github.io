@@ -1,5 +1,6 @@
 ---
 title: On the process of unlearning apathy
+image: /assets/images/location/sunfunfrisco.jpg
 ---
 
 It’s been 47 days since I moved out of my apartment on Lyon Street. Since then I’ve spent time in Portland, Oregon; Brooklyn, New York; and Burlington, Vermont. Last Wednesday, I arrived back in San Francisco, where I’ll be living for the next three weeks.
@@ -12,7 +13,7 @@ Apathy wends its way into our lives in myriad, often small, ways. Ordering deliv
 
 In February, as I gradually parted with the accumulated possessions of my life in San Francisco, I made a conscious decision to keep a set of watercolor paints. I don’t remember *when* I purchased the paints, but I do know that I had not often *used* them. In all likelihood, they were an idealistic purchase, made with enthusiasm but without the followthrough to actually dedicate time to.
 
-While in Burlington, I started painting regularly, and decided to make it a part of my travel routine: *for each new city, I’ll paint a picture*. Since then, the paints have come to represent more than their practical value: they’re an embodiment of an attempt to unlearn apathy. At the very least, painting will be a fun, visual record of the cities I’m spending time in. At best, it becomes an activity which inspires me to avoid doing things out of boredom, or laziness. 
+While in Burlington, I started painting regularly, and decided to make it a part of my travel routine: *for each new city, I’ll paint a picture*. Since then, the paints have come to represent more than their practical value: they’re an embodiment of an attempt to unlearn apathy. At the very least, painting will be a fun, visual record of the cities I’m spending time in. At best, it becomes an activity which inspires me to avoid doing things out of boredom, or laziness.
 
 And with that: hi, San Francisco!
 
