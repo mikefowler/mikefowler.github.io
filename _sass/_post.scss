@@ -1,9 +1,8 @@
 .post {
-  margin-top: $space-lg;
-  margin-bottom: $space-md;
+  padding-top: $space-lg;
 
   @include sm {
-    margin-top: $space-lg * 2;
+    padding-top: $space-lg * 2;
   }
 }
 

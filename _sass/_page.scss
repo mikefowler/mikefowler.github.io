@@ -1,7 +1,10 @@
 .page {
   padding-top: $space-lg;
-  padding-bottom: $space-md;
   width: 100%;
+
+  @include sm {
+    padding-top: $space-lg * 2;
+  }
 }
 
 .page--home {
