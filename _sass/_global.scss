@@ -124,6 +124,10 @@ blockquote {
   padding-left: $space-sm;
   margin-left: -$space-sm;
   font-style: italic;
+
+  em {
+    font-style: normal;
+  }
 }
 
 ol {
