@@ -1,0 +1,36 @@
+{
+  "name": "mikefowler.github.io",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Mike Fowler's website",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-preset-airbnb": "^2.2.3",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0"
+  },
+  "devDependencies": {
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-plugin-hash": "^1.2.0",
+    "rollup-plugin-uglify": "^1.0.2"
+  },
+  "scripts": {
+    "build": "npm run --silent test && rollup -c",
+    "dev": "rollup -c -w",
+    "test": "npm run --silent eslint -- --quiet _javascripts",
+    "eslint": "eslint --format=\"${FORMAT:-stylish}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikefowler/mikefowler.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikefowler/mikefowler.github.io/issues"
+  },
+  "homepage": "https://github.com/mikefowler/mikefowler.github.io#readme"
+}
