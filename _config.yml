@@ -103,3 +103,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - rollup.config.js
+  - package.json
+  - scripts
+  - vendor
