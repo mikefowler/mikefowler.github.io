@@ -11,7 +11,12 @@ permalink: "/about/"
 
 <div class="col-sm-8 col-md-4" markdown="1">
 
-![me]
+{%
+  include lazy-image.html
+    src = "/assets/images/me.jpg"
+    alt = "A photo of Mike"
+    height = "200px"
+%}
 
 </div>  
 

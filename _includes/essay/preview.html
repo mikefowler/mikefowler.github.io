@@ -7,7 +7,12 @@
         aria-hidden
         class="essay-preview__cover"
       >
-        <div style="background-image: url({{ essay.image.path }})"></div>
+        {%
+          include lazy-image.html
+            src = essay.image.path
+            width = "100%"
+            height = "100%"
+        %}
       </div>
     {% endif %}
 

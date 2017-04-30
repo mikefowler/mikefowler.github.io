@@ -16,12 +16,12 @@
   margin-bottom: $space-sm;
 
   .essay-preview__link:hover & {
-    :only-child {
+    > :only-child {
       transform: translate3d(-50%, -50%, 0) scale(1.05);
     }
   }
 
-  :only-child {
+  > :only-child {
     position: absolute;
     top: 50%;
     left: 50%;
