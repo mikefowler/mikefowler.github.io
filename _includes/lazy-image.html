@@ -3,6 +3,11 @@
   {% if include.height %} height: {{ include.height }}; {% endif %}
 {% endcapture %}
 
+{% capture background_styles %}
+  {% if include.background_size %}background-size: {{ include.background_size | default: 'cover' }}; {% endif %}
+  {% if include.background_position %}background-position: {{ include.background_position | deafult: 'center' }}; {% endif %}
+{% endcapture %}
+
 <div
   class="lazy-image js-lazy-image {{ include.class }}"
   data-src="{{ include.src }}"
@@ -10,7 +15,7 @@
 >
   <div
     class="lazy-image__background js-lazy-image-background"
-    style="{{ size_styles }}"
+    style="{{ background_styles }}{{ size_styles }}"
   >
   </div>
 
