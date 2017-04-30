@@ -10,11 +10,13 @@
       <span class="is-visually-hidden">{{ location.city }}</span>
     </div>
 
-    <img
-      src="{{ event.image }}"
-      class="location-hero__image"
-      alt=""
-      aria-hidden
-    />
+    {%
+      include lazy-image.html
+        src = event.image
+        alt = ""
+        height = "60vh"
+        background_size = "contain"
+        class = "location-hero__image"
+    %}
   </a>
 </div>

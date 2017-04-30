@@ -1,0 +1,28 @@
+{% capture size_styles %}
+  {% if include.width %} width: {{ include.width }}; {% endif %}
+  {% if include.height %} height: {{ include.height }}; {% endif %}
+{% endcapture %}
+
+<div
+  class="lazy-image js-lazy-image {{ include.class }}"
+  data-src="{{ include.src }}"
+  style="{{ size_styles }}"
+>
+  <div
+    class="lazy-image__background js-lazy-image-background"
+    style="{{ size_styles }}"
+  >
+  </div>
+
+  {% if include.alt %}
+    <span class="is-visually-hidden">{{ include.alt }}</span>
+  {% endif %}
+
+  <noscript>
+    <div
+      class="lazy-image__background"
+      style="opacity: 1; background-image: url({{ include.src }})"
+    >
+    </div>
+  </noscript>
+</div>

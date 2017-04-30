@@ -1,0 +1,47 @@
+.lazy-image {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: none;
+    @include cover-parent;
+  }
+
+  noscript img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.lazy-image--loading {
+  &::after {
+    animation: pulse 1s ease-in-out infinite alternate forwards;
+    background-color: $grey-light;
+    display: block;
+  }
+}
+
+.lazy-image--loaded {
+  &::after {
+    animation: fadeOut 0.25s ease-out both;
+    display: block;
+  }
+}
+
+.lazy-image__background {
+  opacity: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include cover-parent;
+
+  .lazy-image--loaded & {
+    animation-name: fadeIn;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+  }
+}
