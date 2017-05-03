@@ -1,5 +1,10 @@
 <figure>
-  <img src="{{ include.src }}" />
+  {%
+    include lazy-image.html
+      src = include.src
+      height = include.height
+      background_size = "contain"
+  %}
   <figcaption>
     {% if include.attribution and include.caption %}
       <a href="{{ include.attribution }}">

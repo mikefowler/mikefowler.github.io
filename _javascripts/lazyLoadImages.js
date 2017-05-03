@@ -49,12 +49,12 @@ function loadImage(el) {
 }
 
 function loadImagesInViewport() {
-  images.forEach((image, i) => {
-    if (isElementInViewport(image)) {
-      loadImage(image);
+  for (let i = images.length - 1; i >= 0; i -= 1) {
+    if (isElementInViewport(images[i])) {
+      loadImage(images[i]);
       images.splice(i, 1);
     }
-  });
+  }
 }
 
 export default function lazyLoadImages() {

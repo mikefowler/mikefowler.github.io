@@ -1,3 +1,9 @@
+berkeley:
+  city: Berkeley
+  state: CA
+  latitude: 37.8716
+  longitude: -122.2727
+
 burlington:
   city: Burlington
   state: VT

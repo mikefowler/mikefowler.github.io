@@ -1,8 +1,14 @@
 - type: living
+  location: berkeley
+  image: /assets/images/location/berkeley.jpg
+  starts_at: 2017-04-19
+  ends_at: 2017-05-01
+
+- type: living
   location: san_francisco
   image: /assets/images/location/sunfunfrisco.jpg
   starts_at: 2017-04-12
-  ends_at: 2017-05-11
+  ends_at: 2017-04-18
 
 - type: living
   location: burlington
