@@ -5,10 +5,10 @@
 {% endcapture %}
 
 <div
-  class="image-card"
+  class="image-block"
   style="{{ styles | strip }}"
 >
-  <div class="image-card__children">
+  <div class="image-block__children">
     {%
       include lazy-image.html
         src = include.src

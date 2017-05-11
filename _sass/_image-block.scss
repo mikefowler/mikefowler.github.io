@@ -1,9 +1,9 @@
-.image-card {
+.image-block {
   box-sizing: border-box;
   position: relative;
   width: 100%;
 }
 
-.image-card__children {
+.image-block__children {
   @include cover-parent;
 }
