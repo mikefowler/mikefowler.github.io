@@ -1,0 +1,19 @@
+- name: Instajam
+  description: Instajam is a wrapper for the Instagram API.
+  link: /instajam
+  image: /assets/images/projects/instajam.jpg
+
+- name: Smallworld.js
+  description: smallworld.js is a utility for generating map overviews using GeoJSON and HTML Canvas. It was created out of a need to render simple map previews, quickly and efficiently, without strict Terms of Use and without heavy client libraries.
+  link: /smallworld.js
+  image: /assets/images/projects/smallworld.js
+
+- name: Crossfade.js
+  description: Crossfade.js is a tiny (~3kb) jQuery plugin for crossfading images as you scroll down a page.
+  link: /crossfade.js
+  image: /assets/images/projects/crossfade.jpg
+
+- name: Those Green Mountains
+  description:
+  link: /those-green-mountains
+  image: /assets/images/projects/thosegreenmountains.jpg
