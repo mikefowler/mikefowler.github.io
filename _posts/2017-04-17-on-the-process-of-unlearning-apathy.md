@@ -21,5 +21,5 @@ And with that: hi, San Francisco!
   include figure.html
     src = "/assets/images/location/sunfunfrisco.jpg"
     alt = "A watercolor painting that reads 'Sun Fun Frisco'"
-    aspect_ratio = 1.0
+    aspect_ratio = 0.78875
 %}
