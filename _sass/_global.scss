@@ -1,5 +1,4 @@
 html {
-  box-sizing: border-box;
   font-size: $body-size;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -32,11 +31,11 @@ body {
 }
 
 * {
-  box-sizing: inherit;
+  box-sizing: border-box;
 
   &::before,
   &::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
   }
 }
 
@@ -233,8 +232,15 @@ figure {
   figcaption {
     font-size: $size-7;
     font-style: italic;
-    margin-top: $space-sm;
     text-align: center;
+
+    &:first-child {
+      margin-bottom: $space-sm;
+    }
+
+    &:last-child {
+      margin-top: $space-sm;
+    }
   }
 }
 

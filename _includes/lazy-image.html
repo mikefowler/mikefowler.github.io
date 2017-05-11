@@ -15,19 +15,7 @@
 >
   <div
     class="lazy-image__background js-lazy-image-background"
-    style="{{ background_styles }}{{ size_styles }}"
+    style="{{ background_styles }}"
   >
   </div>
-
-  {% if include.alt %}
-    <span class="is-visually-hidden">{{ include.alt }}</span>
-  {% endif %}
-
-  <noscript>
-    <div
-      class="lazy-image__background"
-      style="opacity: 1; background-image: url({{ include.src }})"
-    >
-    </div>
-  </noscript>
 </div>

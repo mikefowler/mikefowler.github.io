@@ -3,14 +3,6 @@ layout: default
 ---
 
 {% assign image = page.image %}
-{% capture image_caption %}
-  {% if image.caption %}
-    {{ image.caption }}
-  {% else if image.attribution %}
-    {{ image.attribution }}
-  {% endif %}
-{% endcapture %}
-{% assign image_caption = image_caption | strip %}
 
 <article class="post">
 
@@ -31,23 +23,13 @@ layout: default
     <div class="post__image container" aria-hidden="true">
       <div class="row center-xs">
         <div class="col-xs-12 col-sm-10 col-md-10">
-          <figure>
-            <img
-              src="{{ image.path }}"
-              alt="{{ image_caption }}"
-            />
-            {% if image_caption %}
-              <figcaption>
-                {% if image.attribution %}
-                  <a href="{{ image.attribution }}" target="_blank" rel="nofollow">
-                    {{ image_caption }}
-                  </a>
-                {% else %}
-                  {{ image_caption }}
-                {% endif %}
-              </figcaption>
-            {% endif %}
-          </figure>
+          {%
+            include figure.html
+              src = image.path
+              aspect_ratio = 0.6
+              caption = image.caption
+              attribution = image.attribution
+          %}
         </div>
       </div>
     </div>

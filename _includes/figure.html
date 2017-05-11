@@ -1,17 +1,34 @@
+{% assign aspect_ratio = include.aspect_ratio | default: 1.0 %}
+{% assign background_size = inclue.background_size | default: 'cover' %}
+{% assign caption_position = include.caption_position | default: 'after' %}
+
+{% capture caption %}
+<figcaption>
+  {% if include.attribution and include.caption %}
+    <a href="{{ include.attribution }}">
+      {{ include.caption }}
+    </a>
+  {% else %}
+    {{ include.caption | strip }}
+  {% endif %}
+</figcaption>
+{% endcapture %}
+
 <figure>
+
+  {% if caption_position == 'before' %}
+    {{ caption }}
+  {% endif %}
+
   {%
-    include lazy-image.html
+    include image-card.html
       src = include.src
-      height = include.height
-      background_size = "contain"
+      aspect_ratio = aspect_ratio
+      background_size = background_size
   %}
-  <figcaption>
-    {% if include.attribution and include.caption %}
-      <a href="{{ include.attribution }}">
-        {{ include.caption }}
-      </a>
-    {% else %}
-      {{ include.caption | strip }}
-    {% endif %}
-  </figcaption>
+
+  {% if caption_position == 'after' %}
+    {{ caption }}
+  {% endif %}
+
 </figure>

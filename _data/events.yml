@@ -1,17 +1,35 @@
 - type: living
+  location: san_francisco
+  image:
+    src: /assets/images/location/noevalley.jpg
+    width: 1600
+    height: 2003
+  starts_at: 2017-05-02
+  ends_at: 2017-05-08
+
+- type: living
   location: berkeley
-  image: /assets/images/location/berkeley.jpg
+  image:
+    src: /assets/images/location/berkeley.jpg
+    width: 1600
+    height: 1222
   starts_at: 2017-04-19
   ends_at: 2017-05-01
 
 - type: living
   location: san_francisco
-  image: /assets/images/location/sunfunfrisco.jpg
+  image:
+    src: /assets/images/location/sunfunfrisco.jpg
+    width: 1600
+    height: 1262
   starts_at: 2017-04-12
   ends_at: 2017-04-18
 
 - type: living
   location: burlington
-  image: /assets/images/location/brrrlington.jpg
+  image:
+    src: /assets/images/location/brrrlington.jpg
+    width: 1200
+    height: 1114
   starts_at: 2017-03-28
   ends_at: 2017-04-12

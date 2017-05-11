@@ -18,9 +18,8 @@ While in Burlington, I started painting regularly, and decided to make it a part
 And with that: hi, San Francisco!
 
 {%
-  include lazy-image.html
+  include figure.html
     src = "/assets/images/location/sunfunfrisco.jpg"
     alt = "A watercolor painting that reads 'Sun Fun Frisco'"
-    height = "430px"
-    width = "100%"
+    aspect_ratio = 1.0
 %}

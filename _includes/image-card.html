@@ -1,0 +1,21 @@
+{% assign ratio = include.aspect_ratio | times: 100.0 | round: 4 %}
+
+{% capture styles %}
+  padding-top: {{ ratio }}%;
+{% endcapture %}
+
+<div
+  class="image-card"
+  style="{{ styles | strip }}"
+>
+  <div class="image-card__children">
+    {%
+      include lazy-image.html
+        src = include.src
+        width = "100%"
+        height = "100%"
+        background_size = include.background_size
+        background_position = include.background_position
+    %}
+  </div>
+</div>

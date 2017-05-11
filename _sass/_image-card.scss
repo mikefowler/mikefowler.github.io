@@ -1,0 +1,9 @@
+.image-card {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+
+.image-card__children {
+  @include cover-parent;
+}

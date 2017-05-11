@@ -4,17 +4,10 @@
 
 <div class="location-hero">
   <a class="location-hero__link" href="/is-in">
-    <div class="location-hero__prefix is-4">
-      <span class="is-visually-hidden-sm">{{ name }}</span>
-      <span>is currently in</span>
-      <span class="is-visually-hidden">{{ location.city }}</span>
-    </div>
-
     {%
-      include lazy-image.html
-        src = event.image
-        alt = ""
-        height = "60vh"
+      include image-card.html
+        src = event.image.src
+        aspect_ratio = 1.0
         background_size = "contain"
         background_position = "center top"
         class = "location-hero__image"

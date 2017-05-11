@@ -1,4 +1,12 @@
-<section class="essay-preview {% if include.size == "large" %}essay-preview--large{% endif %}">
+{% capture aspect_ratio %}
+  {% if include.size == "large" %}
+    0.6
+  {% else %}
+    0.4
+  {% endif %}
+{% endcapture %}
+
+<section class="essay-preview">
 
   <a href="{{ essay.url }}" class="essay-preview__link">
 
@@ -8,10 +16,9 @@
         class="essay-preview__cover"
       >
         {%
-          include lazy-image.html
+          include image-card.html
             src = essay.image.path
-            width = "100%"
-            height = "100%"
+            aspect_ratio = aspect_ratio
         %}
       </div>
     {% endif %}

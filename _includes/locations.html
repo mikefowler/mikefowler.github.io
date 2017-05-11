@@ -3,6 +3,10 @@
 {% for event in events %}
 
   {% assign location = site.data.locations[event.location] %}
+  {% assign image = event.image %}
+  {% assign width = image.width | times: 1.0 %}
+  {% assign height = image.height | times: 1.0 %}
+  {% assign aspect_ratio = height | divided_by: width %}
 
   {% capture dates %}
     {{ event.starts_at | date: '%B %e' }}–{{ event.ends_at | date: '%B %e' }}
@@ -14,9 +18,11 @@
 
   {%
     include figure.html
-      src = event.image
+      src = image.src
       caption = caption
-      height = "400px"
+      caption_position = "before"
+      aspect_ratio = aspect_ratio
+      background_size = "contain"
   %}
 
 {% endfor %}
