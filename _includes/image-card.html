@@ -1,0 +1,40 @@
+{% assign aspect_ratio =  0.4 %}
+
+{% if include.size == "large" %}
+  {% assign aspect_ratio =  0.6 %}
+{% elsif include.size == "small" %}
+  {% assign aspect_ratio =  0.2 %}
+{% endif %}
+
+<div class="image-card">
+
+  {% if include.link %}<a href="{{ include.link }}" class="image-card__link">{% endif %}
+
+    {% if include.image %}
+      <div
+        aria-hidden
+        class="image-card__cover"
+      >
+        {%
+          include image-block.html
+            src = include.image
+            aspect_ratio = aspect_ratio
+        %}
+      </div>
+    {% endif %}
+
+    <div class="image-card__header">
+
+      <div class="{% if include.link %}paragraph-link{% endif %} is-4">
+        {{ include.title }}
+      </div>
+
+      {% if include.subtitle %}
+        <div class="space-top-1">{{ include.subtitle }}</div>
+      {% endif %}
+
+    </div>
+
+  {% if include.link %}</a>{% endif %}
+
+</div>

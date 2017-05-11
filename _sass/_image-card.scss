@@ -1,20 +1,20 @@
-.essay-preview {
+.image-card {
 
 }
 
-.essay-preview__link {
+.image-card__link {
   .no-touch &,
   .no-touch &:hover {
     text-decoration: none;
   }
 }
 
-.essay-preview__cover {
+.image-card__cover {
   overflow: hidden;
   position: relative;
   margin-bottom: $space-sm;
 }
 
-.essay-preview__header {
+.image-card__header {
   margin-bottom: $space-md;
 }

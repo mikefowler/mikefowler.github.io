@@ -10,9 +10,23 @@ subtitle: Essays, fiction, and other longform writing.
 
 <div class="tile is-ancestor">
   {% for essay in essays limit: 2 %}
+
+    {% capture subtitle %}
+      <time datetime="{{ essay.date | date_to_xmlschema }}">
+        {{ essay.date | date: '%B %Y' }}
+      </time>
+    {% endcapture %}
+
     <div class="tile is-parent">
       <div class="tile is-child">
-        {% include essay/preview.html size="large" %}
+        {%
+          include image-card.html
+            size = "large"
+            title = essay.title
+            subtitle = subtitle
+            image = essay.image.path
+            link = essay.url
+        %}
       </div>
     </div>
   {% endfor %}
@@ -20,9 +34,22 @@ subtitle: Essays, fiction, and other longform writing.
 
 <div class="tile is-ancestor">
   {% for essay in essays offset: 2 %}
+
+    {% capture subtitle %}
+      <time datetime="{{ essay.date | date_to_xmlschema }}">
+        {{ essay.date | date: '%B %Y' }}
+      </time>
+    {% endcapture %}
+
     <div class="tile is-parent">
       <div class="tile is-child">
-        {% include essay/preview.html %}
+        {%
+          include image-card.html
+            title = essay.title
+            subtitle = subtitle
+            image = essay.image.path
+            link = essay.url
+        %}
       </div>
     </div>
   {% endfor %}
