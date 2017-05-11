@@ -1,136 +1,62 @@
 ---
 layout: page
-title: History
+title: CHANGELOG
 subtitle: A brief history of my life
-permalink: /history
+permalink: /changelog
 sitemap: false
 ---
 
 ## 2017
 
-Moved out of my apartment in San Francisco and didn't sign a new lease. Working remotely ⅔ of my time and living with friends & family.
-
-
-## 2016
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 2015
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+I move out of my apartment in San Francisco and don't sign a new lease. I start working remotely for Airbnb, spending ⅔ of my time on the road living with friends, family, and strangers.
 
 ## 2014
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 2013
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
 
 ## 2012
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 2013
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 2012
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+I settle into my job at Findery. I meet Kathy, we date for three months. I write a lot of letters back and forth with Cait. She moves to San Francisco, and we're dating before she's finished unpacking.
 
 ## 2011
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+During a one week vacation in San Francisco, I attend two job interviews for the fun of it. I leave the city with two offers and a tangle of thoughts. Two weeks later I leave my job at MyWebGrocer and move to San Francisco with one suitcase and two boxes. I meet [Jim](http://jimwhimpey.com/)—whom I will later steal the idea for this page from—on Craigslist, and we move into an overpriced apartment in NOPA. It has no living room and a kooky old landlord named Bill.
 
 ## 2010
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+I graduate from Champlain College with a Bachelors of Science in Electronic Game and Interactive Development: Art & Animation. I land my first post-collegiate job as a web developer for Red Barn Media Group.
 
 ## 2009
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+I take a semester abroad in Montreal, making a game with my closest friends. I become vegan.
 
 ## 2008
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 2007
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+I lose 30 pounds running a mile every night. I realize I've subconsciously stopped eating meat; I become vegetarian.
 
 ## 2006
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+I'm accepted, early admission, to Champlain College. I graduate from high school. Kristen teaches me the soul-crushing pain of infidelity; we break up. I move to Burlington, Vermont to study art.
 
 ## 2005
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+I meet Kristen; we start dating.
 
 ## 2004
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 2003
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+I pirate a copy of Dreamweaver and start teaching myself to make websites.
 
 ## 2002
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+I start high school in Hebron, Connecticut. I am quiet and shy; I am a nerd.
 
 ## 2001
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+I play Starcraft for many, many hours. Middle school is terrible; everything is awkward.
 
 ## 2000
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 1999
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 1998
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 1997
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 1996
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 1995
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 1994
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 1993
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 1992
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 1991
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 1990
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-
-## 1989
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+I finish elementary school. I muster the courage to ask Jen to dance at the end-of-year dance. Vitamin C's "Graduation (Friends Forever)" plays at our graduation ceremony; my peers sob. We will not be friends forever; we are naive. Jen breaks up with me the first week of middle school.
 
 ## 1988
 
-Hello, world. Born Michael Richard Fowler at Hartford Hospital. Coming in heavy at 8lbs.
+Hello, world. I am born, Michael Richard Fowler, in Hartford, Connecticut. Coming in heavy at 8lbs 8oz.
