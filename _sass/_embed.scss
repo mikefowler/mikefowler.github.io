@@ -1,0 +1,8 @@
+.embed {
+  margin-bottom: $space-md;
+  position: relative;
+
+  :first-child {
+    @include cover-parent;
+  }
+}

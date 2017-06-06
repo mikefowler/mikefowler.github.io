@@ -12,6 +12,12 @@
   {{ url | strip }}{{ query | strip | prepend: '&amp;' }}
 {% endcapture %}
 
-<div class="soundcloud-embed">
-  <iframe width="100%" height="100" scrolling="no" frameborder="no" src="{{ src }}"></iframe>
+{% assign ratio = include.aspect_ratio | default: 0.25 | times: 100.0 | round: 4 %}
+
+{% capture styles %}
+  padding-top: {{ ratio }}%;
+{% endcapture %}
+
+<div class="embed embed--soundcloud" style="{{ styles | strip }}">
+  <iframe width="100%" height="100%" scrolling="no" frameborder="no" src="{{ src }}"></iframe>
 </div>

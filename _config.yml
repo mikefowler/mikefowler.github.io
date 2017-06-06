@@ -73,6 +73,13 @@ soundcloud:
     show_reposts: false
     show_artwork: false
 
+# YouTube embed options
+youtube:
+  options:
+    rel: 0
+    controls: 1
+    showinfo: 0
+
 # Paths
 baseurl:        ""
 asset_path:     "assets"
