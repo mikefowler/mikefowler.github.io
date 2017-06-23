@@ -8,6 +8,16 @@
   ends_at: 2017-06-18
 
 - type: living
+  location: camp_mendocino
+  featured: true
+  image:
+    src: /assets/images/location/grounded.jpg
+    width: 1600
+    height: 1241
+  starts_at: 2017-05-19
+  ends_at: 2017-05-21
+
+- type: living
   location: san_francisco
   image:
     src: /assets/images/location/noevalley.jpg
