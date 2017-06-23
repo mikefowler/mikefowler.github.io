@@ -5,6 +5,9 @@ layout_options:
   container: false
 subtitle: Biography and contact information
 permalink: "/about/"
+redirect_from:
+  - "/info/"
+  - "/info"
 ---
 
 <div class="row center-xs">
