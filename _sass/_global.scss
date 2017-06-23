@@ -231,6 +231,7 @@ figure {
     font-size: $size-7;
     font-style: italic;
     text-align: center;
+    line-height: 2;
 
     &:first-child {
       margin-bottom: $space-sm;
@@ -240,6 +241,10 @@ figure {
       margin-top: $space-sm;
     }
   }
+}
+
+figure + figure {
+  margin-top: $space-lg;
 }
 
 iframe {

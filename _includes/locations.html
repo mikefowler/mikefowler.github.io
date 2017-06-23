@@ -13,6 +13,7 @@
   {% endcapture %}
 
   {% capture caption %}
+    {% if location.name %}<strong>{{ location.name }}</strong><br />{% endif %}
     {{ location.city }}, {{ location.state }} ({{ dates | strip }})
   {% endcapture %}
 
