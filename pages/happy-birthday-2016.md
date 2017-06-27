@@ -6,6 +6,7 @@ layout_options:
   hero: true
   hide_footer: true
   hide_page_title: true
+image: /assets/images/birthday/hero.jpg
 stylesheets:
   - /assets/styles/birthday.css
 permalink: /happy-birthday/2016
