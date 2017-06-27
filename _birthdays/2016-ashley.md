@@ -1,5 +1,5 @@
 ---
-person: Ashley
+person: Ashleigh
 year: 2016
 background_color: dovegray
 image:
