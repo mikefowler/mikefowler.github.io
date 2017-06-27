@@ -3,7 +3,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
 
-  <link rel="stylesheet" href="{{ "assets/styles.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "assets/styles/main.css" | relative_url }}">
+  {% if page.stylesheets %}
+    {% for stylesheet_url in page.stylesheets %}
+      <link rel="stylesheet" href="{{ stylesheet_url | relative_url }}">
+    {% endfor %}
+  {% endif %}
   <link rel="manifest" href="/manifest.json">
 
   {% seo %}
