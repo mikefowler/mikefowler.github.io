@@ -1,0 +1,57 @@
+---
+# Jekyll, please transform this file.
+---
+@import "variables";
+@import "functions";
+
+$section-colors: (
+  "arrowtown": #857B65,
+  "blackhaze": #F7F7F7,
+  "bombay": #AFAFAF,
+  "coffee": #6D655A,
+  "dovegray": #787871,
+  "logan": #989AB1,
+  "lightgray": #ADA9A9,
+  "lynch": #647796,
+  "martini": #B59FA6,
+  "masala": #413E3A,
+  "mirage": #1E182E,
+  "olivehaze": #8F866F,
+  "pablo": #7A7265,
+  "pampas": #EBE1DE,
+  "romancoffee": #7F6351,
+  "silk": #BCB3A5,
+  "tapa": #7D7670,
+  "toolbox": #7373B6,
+  "yellowmetal": #7A643F,
+);
+
+.birthday-hero {
+  height: 90vw;
+  max-height: 100vh;
+}
+
+.birthday-entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: $space-lg;
+  padding-bottom: $space-lg;
+  padding-right: $grid-padding * 2;
+  padding-left: $grid-padding * 2;
+}
+
+@each $color-name, $color-value in $section-colors {
+  $background-color: rgba($color-value, 0.75);
+  $text-color: contrast($background-color, $light, $dark);
+
+  .birthday-entry--#{$color-name} {
+    background-image: linear-gradient(
+      to bottom right,
+      $background-color,
+      darken($background-color, 20%)
+    );
+    color: $text-color;
+  }
+}

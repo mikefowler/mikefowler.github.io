@@ -12,6 +12,11 @@ $masthead-height: 75px;
   left: 0;
   width: 100%;
   z-index: $z-masthead;
+
+  .masthead__link,
+  .masthead__logo--dimmed .masthead__link {
+    color: white;
+  }
 }
 
 .masthead__link {

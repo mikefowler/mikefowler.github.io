@@ -16,8 +16,10 @@
 
 <figure>
 
-  {% if caption_position == 'before' %}
-    {{ caption }}
+  {% if include.caption %}
+    {% if caption_position == 'before' %}
+      {{ caption }}
+    {% endif %}
   {% endif %}
 
   {%
@@ -27,8 +29,10 @@
       background_size = background_size
   %}
 
-  {% if caption_position == 'after' %}
-    {{ caption }}
+  {% if include.caption %}
+    {% if caption_position == 'after' %}
+      {{ caption }}
+    {% endif %}
   {% endif %}
 
 </figure>

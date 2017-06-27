@@ -48,6 +48,8 @@ collections:
   essays:
     output: true
     permalink: /writing/:title/
+  birthdays:
+    output: false
 
 defaults:
   - scope:
