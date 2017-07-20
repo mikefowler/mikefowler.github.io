@@ -1,3 +1,10 @@
+benson:
+  name: Perch Pond
+  city: Benson
+  state: VT
+  latitude: 43.7099
+  longitude: -73.3001
+
 berkeley:
   city: Berkeley
   state: CA

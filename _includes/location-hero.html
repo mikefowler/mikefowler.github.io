@@ -1,7 +1,8 @@
 {% assign events = site.data.events %}
 {% assign featured_events = events | where: "featured", true %}
+{% assign number_of_featured_events = featured_events | size %}
 
-{% if featured_events %}
+{% if number_of_featured_events != 0 %}
   {% assign event = featured_events | first %}
 {% else %}
   {% assign event = events | first %}
