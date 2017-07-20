@@ -1,8 +1,9 @@
 ---
-layout: page
 title: CHANGELOG
 subtitle: A brief history of my life
 permalink: /changelog
+
+layout: page
 sitemap: false
 ---
 

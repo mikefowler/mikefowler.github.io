@@ -50,6 +50,7 @@ collections:
     permalink: /writing/:title/
   birthdays:
     output: false
+    archive: false
 
 defaults:
   - scope:

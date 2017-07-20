@@ -1,5 +1,10 @@
 ---
 title: Happy Birthday, Mike!
+permalink: /happy-birthday/2016
+redirect_from:
+- /happy-birthday/
+- /happy-birthday
+
 layout: default
 layout_options:
   fullscreen: true
@@ -9,10 +14,6 @@ layout_options:
 image: /assets/images/birthday/hero.jpg
 stylesheets:
   - /assets/styles/birthday.css
-permalink: /happy-birthday/2016
-redirect_from:
-  - /happy-birthday/
-  - /happy-birthday
 ---
 
 {% assign entries = site.birthdays | where: "year", "2016" %}
