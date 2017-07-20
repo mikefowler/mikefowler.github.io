@@ -2,15 +2,15 @@
 title: Wiretap our heads
 ---
 
-If you wiretapped our heads<br />
-and ferreted through the threads,<br />
-of worries and sorrows,<br />
-our hopes for tomorrow,<br />
-and projected the sound,<br />
-made audible, profound,<br />
-we’d hear in each other<br />
-the fear that we smother,<br />
-of failure and loneliness<br />
-and death and unhappiness,<br />
-a cacophony of dread<br />
+If you wiretapped our heads  
+and ferreted through the threads,  
+of worries and sorrows,  
+our hopes for tomorrow,  
+and projected the sound,  
+made audible, profound,  
+we’d hear in each other  
+the fear that we smother,  
+of failure and loneliness  
+and death and unhappiness,  
+a cacophony of dread  
 just locked in our head.
