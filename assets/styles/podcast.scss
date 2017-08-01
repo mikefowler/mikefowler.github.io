@@ -1,0 +1,29 @@
+---
+# Jekyll, please transform this file.
+---
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "fonts";
+
+.podcast-hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 50vw;
+  justify-content: center;
+  max-height: 75vh;
+  position: relative;
+}
+
+.podcast-hero__image {
+  @include cover-parent;
+}
+
+.podcast-hero__title {
+  color: $white;
+  font-family: "Regina", serif;
+  font-size: 4em;
+  font-weight: normal;
+  position: relative;
+}

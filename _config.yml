@@ -51,6 +51,8 @@ collections:
   birthdays:
     output: false
     archive: false
+  podcasts:
+    output: false
 
 defaults:
   - scope:
@@ -82,6 +84,21 @@ youtube:
     rel: 0
     controls: 1
     showinfo: 0
+
+# Podcast metadata
+podcast:
+  title: An Irrevocable Condition
+  subtitle: Essays by Mike Fowler
+  summary: An Irrevocable Condition is a series of essays and field recordings, exploring the idea of home, travel, and happiness.
+  url: /an-irrevocable-condition
+  explicit: "no"
+  image: /assets/images/podcast/cover.jpg
+  categories:
+    "Society & Culture":
+      - "Personal Journals"
+      - "Places & Travel"
+    "Arts":
+      - "Literature"
 
 # Paths
 baseurl:        ""
