@@ -5,15 +5,21 @@
 @import "functions";
 @import "mixins";
 @import "fonts";
+@import "player";
+
+$player-offset: 150px;
 
 .podcast-hero {
   align-items: center;
   display: flex;
   flex-direction: column;
   height: 50vw;
-  justify-content: center;
   max-height: 75vh;
+  min-height: 50vh;
+  justify-content: center;
   position: relative;
+  padding: 75px 2em $player-offset;
+  text-align: center;
 }
 
 .podcast-hero__image {
@@ -23,7 +29,26 @@
 .podcast-hero__title {
   color: $white;
   font-family: "Regina", serif;
-  font-size: 4em;
   font-weight: normal;
+  margin: 0 !important;
+  position: relative;
+
+  @include sm {
+    font-size: $size-1 * 1.5;
+  }
+
+  @include md {
+    font-size: $size-1 * 2;
+  }
+}
+
+.podcast-hero__subtitle {
+  position: relative;
+  color: $white;
+}
+
+.podcast-player {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin: -$player-offset auto $space-lg;
   position: relative;
 }

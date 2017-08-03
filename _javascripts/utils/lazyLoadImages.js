@@ -2,13 +2,19 @@ const LOADING_CLASS = 'lazy-image--loading';
 const LOADED_CLASS = 'lazy-image--loaded';
 const images = [];
 
+// An element is considered to be "in the viewport"
+// if any part of it is visible.
 function isElementInViewport(el) {
   const bounds = el.getBoundingClientRect();
+  const html = document.documentElement;
 
   return (
-    bounds.top >= 0 &&
     bounds.left >= 0 &&
-    bounds.top <= window.innerHeight
+    bounds.right <= (window.innerWidth || html.clientWidth) &&
+    (
+      bounds.top >= 0 ||
+      bounds.bottom <= (window.innerHeight || html.clientHeight)
+    )
   );
 }
 

@@ -1,0 +1,49 @@
+<div class="player">
+  <div class="player__meta">
+
+    <div class="player__art">
+      <img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" />
+    </div>
+
+    <div class="player__controls">
+
+      <div class="player-time">
+        <div class="player-time__current">
+          <span class="amplitude-current-minutes" amplitude-main-current-minutes="true"></span>:<span class="amplitude-current-seconds" amplitude-main-current-seconds="true"></span>
+        </div>
+        <input type="range" class="player-time__slider amplitude-song-slider" amplitude-main-song-slider="true" />
+        <div class="player-time__duration">
+          <span class="amplitude-duration-minutes" amplitude-main-duration-minutes="true"></span>:<span class="amplitude-duration-seconds" amplitude-main-duration-seconds="true"></span>
+        </div>
+      </div>
+
+      <div class="player-buttons">
+        <div class="player-buttons__item player-buttons__prev amplitude-prev">
+          {% include icon.html type="previous" size="32" %}
+        </div>
+        <div class="player-buttons__item player-buttons__playpause amplitude-play-pause" amplitude-main-play-pause="true">
+          {% include icon.html type="play" size="48" %}
+          {% include icon.html type="pause" size="48" %}
+        </div>
+        <div class="player-buttons__item player-buttons__next amplitude-next">
+          {% include icon.html type="next" size="32" %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="player__tracks">
+    {% for song in include.songs %}
+    <div class="player-track amplitude-song-container amplitude-play-pause" amplitude-song-index="{{ forloop.index }}">
+      <div>
+        <div class="player-track__name">{{ song.title }}</div>
+        <div class="player-track__date">{{ song.date | date: '%b%e,%Y' }}</div>
+      </div>
+      <div class="player-track__now-playing">
+        {% include icon.html type="volume-up" size="24" %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

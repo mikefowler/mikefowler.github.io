@@ -1,5 +1,5 @@
-import detectFeatures from './detectFeatures';
-import lazyLoadImages from './lazyLoadImages';
+import detectFeatures from './utils/detectFeatures';
+import lazyLoadImages from './utils/lazyLoadImages';
 
 function init() {
   detectFeatures();

@@ -1,0 +1,26 @@
+{% assign size = 32 %}
+
+{% if include.size %}
+  {% assign size = include.size %}
+{% endif %}
+
+{% capture icon_styles %}
+  height: {{ size }}px;
+  width: {{ size }}px;
+{% endcapture %}
+
+<div class="icon icon--{{ include.type }}" style="{{ icon_styles }}">
+  {% case include.type %}
+    {% when 'next' %}
+      {% include icons/media-fast-forward.svg size=include.size %}
+    {% when 'previous' %}
+      {% include icons/media-rewind.svg size=include.size %}
+    {% when 'play' %}
+      {% include icons/media-play.svg size=include.size %}
+    {% when 'pause' %}
+      {% include icons/media-pause.svg size=include.size %}
+    {% when 'volume-up' %}
+      {% include icons/volume-up.svg size=include.size %}
+    {% else %}
+  {% endcase %}
+</div>

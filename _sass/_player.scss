@@ -1,0 +1,189 @@
+// ------
+// Layout
+// ------
+
+.player {
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.player__meta {
+  background: $white-ter;
+  display: flex;
+  flex-direction: column;
+  padding: $space-md;
+
+  @include md {
+    flex-direction: row;
+  }
+}
+
+.player__art {
+  margin: 0 auto $space-md;
+  width: 260px;
+  max-width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @include md {
+    margin-bottom: 0;
+  }
+}
+
+.player__controls {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: $space-sm;
+  padding-right: 0;
+}
+
+// -----------
+// Time Slider
+// -----------
+
+.player-time {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $space-md;
+
+  @include md {
+    margin-bottom: 0;
+  }
+}
+
+.player-time__slider {
+  -webkit-appearance: none;
+  flex: 1;
+  margin: 0 $space-sm;
+
+  @include range-track {
+    height: 1px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: $grey-light;
+  }
+
+  @include range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: $primary;
+    cursor: pointer;
+    margin-top: -10px;
+    -webkit-appearance: none;
+  }
+
+  &:focus {
+    outline: none;
+
+    @include range-track {
+      background: $primary;
+    }
+  }
+
+  &::-ms-fill-lower,
+  &::-ms-fill-upper {
+    background: $primary;
+  }
+
+  &::-ms-tooltip {
+    display: none;
+  }
+}
+
+// -------
+// Buttons
+// -------
+
+.player-buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex: 3;
+  justify-content: center;
+}
+
+.player-buttons__item {
+  cursor: pointer;
+  margin: 0 $space-sm;
+  padding: $space-xs;
+}
+
+.player-buttons__playpause {
+  border: 2px solid currentColor;
+  border-radius: 50%;
+
+  > * {
+    display: none;
+  }
+
+  &.amplitude-paused {
+    .icon--play {
+      display: block;
+    }
+  }
+
+  &.amplitude-playing {
+    .icon--pause {
+      display: block;
+    }
+  }
+}
+
+.player-buttons__prev {
+
+}
+
+.player-buttons__next {
+
+}
+
+// ------
+// Tracks
+// ------
+
+.player__tracks {
+  flex: 1;
+  flex-direction: column;
+}
+
+.player-track {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $space-sm $space-md;
+  text-align: left;
+
+  &:hover {
+    background: $primary;
+    color: $white;
+  }
+}
+
+.player-track__name {
+  font-weight: bold;
+  margin-bottom: $space-xxs;
+}
+
+.player-track__date {
+  opacity: 0.75;
+  font-size: $size-small;
+}
+
+.player-track__now-playing {
+  opacity: 0;
+
+  .amplitude-active-song-container & {
+    opacity: 1;
+  }
+}
