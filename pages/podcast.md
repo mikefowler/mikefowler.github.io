@@ -1,7 +1,7 @@
 ---
 title: An Irrevocable Condition
 subtitle: Essays and field recordings, exploring the idea of home, travel, and happiness.
-permalink: /an-irrevocable-condition
+permalink: /an-irrevocable-condition/
 redirect_from:
   - /podcast
   - /audio
