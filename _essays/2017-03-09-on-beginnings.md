@@ -3,6 +3,8 @@ title: On Beginnings
 excerpt: On Friday I left my apartment. Moved out. It was a hard decision to leave that place, a home I spent two incredible years living in.
 image:
   path: /assets/images/essays/on-beginnings.jpg
+  width: 1600
+  height: 900
 ---
 
 _To hear this essay read aloud, check out [An Irrevocable Condition](/an-irrevocable-condition)_.

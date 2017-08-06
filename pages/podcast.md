@@ -11,7 +11,10 @@ layout_options:
   fullscreen: true
   hero: true
   hide_page_title: true
-image: /assets/images/podcast/cover.jpg
+image:
+  path: /assets/images/podcast/cover.jpg
+  width: 1600
+  height: 900
 stylesheets:
   - /assets/styles/podcast.css
 javascripts:

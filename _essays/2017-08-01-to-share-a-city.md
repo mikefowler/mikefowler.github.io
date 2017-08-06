@@ -3,6 +3,8 @@ title: To Share a City
 excerpt: How do you define "city"? Could the wilderness be considered a city?
 image:
   path: /assets/images/essays/to-share-a-city.jpg
+  width: 1600
+  height: 900
 ---
 
 _To hear this essay read aloud, check out [An Irrevocable Condition](/an-irrevocable-condition)_.
