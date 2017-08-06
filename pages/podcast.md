@@ -1,5 +1,6 @@
 ---
 title: An Irrevocable Condition
+description: An Irrevocable Condition is a series of essays and field recordings, exploring the idea of home, travel, and happiness.
 subtitle: Essays and field recordings, exploring the idea of home, travel, and happiness.
 permalink: /an-irrevocable-condition/
 redirect_from:
