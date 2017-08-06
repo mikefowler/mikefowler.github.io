@@ -13,16 +13,17 @@
   background: $white-ter;
   display: flex;
   flex-direction: column;
-  padding: $space-md;
+  padding: $space-sm;
 
-  @include md {
+  @include sm {
     flex-direction: row;
   }
 }
 
 .player__art {
-  margin: 0 auto $space-md;
-  width: 260px;
+  margin: 0 auto;
+  margin-bottom: $space-sm;
+  width: 150px;
   max-width: 100%;
 
   img {
@@ -33,6 +34,8 @@
 
   @include md {
     margin-bottom: 0;
+    margin-right: $space-sm;
+    width: 260px;
   }
 }
 
@@ -74,6 +77,7 @@
   @include range-thumb {
     height: 20px;
     width: 20px;
+    border: none;
     border-radius: 50%;
     background: $primary;
     cursor: pointer;
@@ -130,6 +134,12 @@
     display: none;
   }
 
+  // A triangle looks off-center when it's inside of a circle,
+  // so we'll nudge it over a couple of pixels to make it look better.
+  .icon--play {
+    transform: translateX(2px);
+  }
+
   &.amplitude-paused {
     .icon--play {
       display: block;
@@ -178,6 +188,10 @@
 .player-track__name {
   font-weight: bold;
   margin-bottom: $space-xxs;
+
+  .amplitude-active-song-container:not(:hover) & {
+    color: $primary;
+  }
 }
 
 .player-track__date {
@@ -188,7 +202,7 @@
 .player-track__now-playing {
   opacity: 0;
 
-  .amplitude-active-song-container & {
+  .amplitude-active-song-container.amplitude-playing & {
     opacity: 1;
   }
 }

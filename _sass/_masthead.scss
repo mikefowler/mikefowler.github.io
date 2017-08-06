@@ -7,15 +7,17 @@ $masthead-height: 75px;
 }
 
 .masthead--floating {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: $z-masthead;
+  @include sm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: $z-masthead;
 
-  .masthead__link,
-  .masthead__logo--dimmed .masthead__link {
-    color: white;
+    .masthead__link,
+    .masthead__logo--dimmed .masthead__link {
+      color: white;
+    }
   }
 }
 

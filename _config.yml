@@ -21,8 +21,8 @@ navigation:
   - text: Journal
     url: /journal/
     position: left
-  - text: Projects
-    url: /projects/
+  - text: Audio
+    url: /an-irrevocable-condition/
   - text: About
     url: /about/
 
@@ -93,6 +93,9 @@ podcast:
   url: /an-irrevocable-condition
   explicit: "no"
   image: /assets/images/podcast/cover.jpg
+  itunes_link: https://itunes.apple.com/us/podcast/an-irrevocable-condition/id1267211362?mt=2
+  pocketcasts_link: http://pca.st/gPhH
+  stitcher_link: http://www.stitcher.com/s?fid=146478
   categories:
     "Society & Culture":
       - "Personal Journals"
