@@ -12,9 +12,9 @@ layout_options:
   hero: true
   hide_page_title: true
 image:
-  path: /assets/images/podcast/cover.jpg
-  width: 1600
-  height: 900
+  path: /assets/images/podcast/cover-social.jpg
+  width: 1024
+  height: 512
 stylesheets:
   - /assets/styles/podcast.css
 javascripts:
