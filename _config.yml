@@ -16,15 +16,15 @@ author:
 
 navigation:
   - text: Writing
-    url: /writing/
+    url: /writing
     position: left
   - text: Journal
-    url: /journal/
+    url: /journal
     position: left
   - text: Audio
-    url: /an-irrevocable-condition/
+    url: /an-irrevocable-condition
   - text: About
-    url: /about/
+    url: /about
 
 social:
   name: Mike Fowler

@@ -64,6 +64,13 @@ $masthead-height: 75px;
     }
   }
 
+  @include sm {
+    .masthead--floating .masthead__link--active & {
+      &::after {
+        background: $white;
+      }
+    }
+  }
 }
 
 .masthead__logo {
