@@ -35,3 +35,10 @@ camp_mendocino:
   state: CA
   latitude: 39.4456
   longitude: -123.8055
+
+arcosanti:
+  name: FORM
+  city: Arcosanti
+  state: AZ
+  latitude: 34.3425
+  longtidue: -112.1006
