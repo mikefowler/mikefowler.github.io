@@ -2,14 +2,17 @@
 {% assign featured_events = events | where: "featured", true %}
 {% assign number_of_featured_events = featured_events | size %}
 
-{% if number_of_featured_events != 0 %}
-  {% assign event = featured_events | first %}
+{% if page.image %}
+  {% assign image = page.image %}
 {% else %}
-  {% assign event = events | first %}
+  {% if number_of_featured_events != 0 %}
+    {% assign event = featured_events | first %}
+  {% else %}
+    {% assign event = events | first %}
+  {% endif %}
+  {% assign image = event.image %}
 {% endif %}
 
-{% assign location = site.data.locations[event.location] %}
-{% assign image = event.image %}
 {% assign width = image.width | times: 1.0 %}
 {% assign height = image.height | times: 1.0 %}
 {% assign aspect_ratio = height | divided_by: width %}
