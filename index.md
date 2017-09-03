@@ -3,7 +3,7 @@ title: Home
 layout: page
 homepage: true
 image:
-  src: /assets/images/location/fulfillment.jpg
+  src: /assets/images/posts/fulfillment.jpg
   width: 1600
   height: 1289
 layout_options:

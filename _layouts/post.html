@@ -19,7 +19,7 @@ layout: default
     </div>
   </header>
 
-  {% if image and image.path %}
+  {% if image and image.path and image.display != false %}
     <div class="post__image container" aria-hidden="true">
       <div class="row center-xs">
         <div class="col-xs-12 col-sm-10 col-md-10">
@@ -29,6 +29,7 @@ layout: default
               aspect_ratio = 0.6
               caption = image.caption
               attribution = image.attribution
+              background_size = image.background_size
           %}
         </div>
       </div>
