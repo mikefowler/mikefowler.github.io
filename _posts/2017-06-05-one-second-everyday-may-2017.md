@@ -1,5 +1,5 @@
 ---
-title: 'One Second Everyday: May 2017'
+title: 'Recap: May 2017'
 ---
 
 June marks three full months of wandering. May took me to eight towns or cities across four states. Here are some moments.

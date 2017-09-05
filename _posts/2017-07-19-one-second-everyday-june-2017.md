@@ -1,5 +1,5 @@
 ---
-title: 'One Second Everyday: June 2017'
+title: 'Recap: June 2017'
 ---
 
 After a hectic month of travel in May, June was a slow jaunt through my northeast haunts.

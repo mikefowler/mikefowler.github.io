@@ -42,3 +42,10 @@ arcosanti:
   state: AZ
   latitude: 34.3425
   longtidue: -112.1006
+
+tolland_ma:
+  name: Camp Wonderful
+  city: Tolland
+  state: MA
+  latitude: 42.1200
+  longitude: -73.0500
