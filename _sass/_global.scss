@@ -40,13 +40,7 @@ body {
 }
 
 a {
-  color: $text;
-  text-decoration: none;
-
-  .no-touch &:hover {
-    text-decoration: underline;
-    text-decoration-skip: ink;
-  }
+  @include link;
 }
 
 p,

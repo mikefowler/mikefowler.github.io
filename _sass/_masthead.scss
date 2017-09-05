@@ -16,7 +16,11 @@ $masthead-height: 75px;
 
     .masthead__link,
     .masthead__logo--dimmed .masthead__link {
-      color: white;
+      color: $white;
+
+      .no-touch &:hover {
+        color: $white;
+      }
     }
   }
 }
@@ -29,6 +33,7 @@ $masthead-height: 75px;
   &,
   .no-touch &:hover {
     text-decoration: none;
+    color: inherit;
   }
 
   @include sm {

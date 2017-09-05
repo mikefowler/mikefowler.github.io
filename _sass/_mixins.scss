@@ -62,6 +62,19 @@
 // Utilities
 // ----------------------------------------------------------------------------
 
+@mixin link {
+  color: $text;
+  text-decoration: underline;
+  text-decoration-skip: ink;
+  text-decoration-color: $primary;
+  -webkit-text-decoration-skip: ink;
+  -webkit-text-decoration-color: $primary;
+
+  .no-touch &:hover {
+    color: $primary;
+  }
+}
+
 @mixin cover-parent {
   position: absolute;
   top: 0;
