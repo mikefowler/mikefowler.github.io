@@ -1,4 +1,24 @@
 - type: living
+  location: brooklyn
+  caption: Myrtle-Wyckoff (L/M)
+  image:
+    src: /assets/images/location/myrtlewyckoff.jpg
+    width: 1600
+    height: 930
+  starts_at: 2017-09-10
+  ends_at: 2017-09-19
+
+- type: living
+  location: benson
+  caption: Fall is coming.
+  image:
+    src: /assets/images/location/falliscoming.jpg
+    width: 1600
+    height: 1236
+  starts_at: 2017-08-30
+  ends_at: 2017-09-09
+
+- type: living
   location: tolland_ma
   caption: Camp Wonderful
   image:
