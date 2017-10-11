@@ -13,7 +13,7 @@ layout_options:
 
 <div class="row center-xs">
 
-<div class="col-xs-12 col-sm-8 col-md-4" markdown="1">
+<div class="col-xs-12 col-sm-8 col-md-4 space-4" markdown="1">
 
 {%
   include figure.html
@@ -26,9 +26,11 @@ layout_options:
 
 <div class="col-xs-12 col-sm-8 col-md-6 has-text-left" markdown="1">
 
-I'm Mike Fowler, a writer and software engineer. I work ⅔ of my time [from the road](/is-in), and the other ⅓ from San Francisco.
+I'm Mike Fowler, a writer and software engineer. I work ⅔ of my time [from the road]({% link pages/location.md %}), and the rest from San Francisco.
 
-I work at [Airbnb][airbnb], where I focus on web performance. In 2015 and 2016 I helped prototype and build what eventually became [Airbnb Experiences][experiences]. Before that I helped bring [Findery][findery] to life.
+I work at [Airbnb][airbnb], where I build products for our internal community; previously, I helped conceptualize and build [Airbnb Experiences][experiences].
+
+You can get in touch with me via email at [mike@mikefowler.me][email].
 
 </div>
 
@@ -38,3 +40,4 @@ I work at [Airbnb][airbnb], where I focus on web performance. In 2015 and 2016 I
 [airbnb]: https://airbnb.com
 [experiences]: https://www.airbnb.com/experiences
 [findery]: https://findery.com
+[email]: mailto:mike@mikefowler.me

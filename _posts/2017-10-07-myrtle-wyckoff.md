@@ -14,7 +14,7 @@ In August, I lived in Crown Heights for a week. One night, returning late, I wai
 
 For most of my time in New York, all but the week in Crown Heights, I’ve slept in Bushwick, walked every morning to the Myrtle-Wyckoff station. Here is the quintessential Brooklyn, a train grinding past overhead while another rumbles the concrete from below. The L and M trains intersect at this station, and while the M is a faster route into Greenwich, its recent maintenance closure has sent me through the turnstiles and down two flights of stairs to the L. At the bottom, lining the opposing platform walls, are the tiled murals familiar to many New York subway stations. It is still a wonder, with each new station I find myself in, to see the unassuming works of art that accompany each.
 
-After my most recent stint in Brooklyn, I recreated the tiled “M” of the Myrtle-Wyckoff station. I’ve been continuing to [paint when I travel](/is-in), and the practice has become a gratifying way to capture memories.
+After my most recent stint in Brooklyn, I recreated the tiled “M” of the Myrtle-Wyckoff station. I’ve been continuing to [paint when I travel]({% link pages/location.md %}), and the practice has become a gratifying way to capture memories.
 
 {%
   include figure.html

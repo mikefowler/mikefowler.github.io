@@ -18,14 +18,14 @@
 {% assign aspect_ratio = height | divided_by: width %}
 
 <div class="location-hero">
-  <a class="location-hero__link" href="/is-in">
+  <a class="location-hero__link" href="{% link pages/location.md %}">
     {%
-      include image-block.html
+      include figure.html
         src = image.src
+        caption = image.caption
+        caption_position = "after"
         aspect_ratio = aspect_ratio
         background_size = "contain"
-        background_position = "center top"
-        class = "location-hero__image"
     %}
   </a>
 </div>

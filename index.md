@@ -7,4 +7,16 @@ layout_options:
   hide_page_title: true
 ---
 
-{% include location-hero.html %}
+<div class="container">
+  <div class="row center-xs">
+    <div class="col-xs-12 col-sm-10 col-md-8">
+      <a href="{% link pages/location.md %}">
+        {%
+          include locations.html
+            limit = 1
+            caption_position = "after"
+        %}
+      </a>
+    </div>
+  </div>
+</div>

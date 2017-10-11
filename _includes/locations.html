@@ -1,6 +1,7 @@
 {% assign events = site.data.events | where: "type", "living" %}
+{% assign caption_position = include.caption_position | default: "before" %}
 
-{% for event in events %}
+{% for event in events limit: include.limit %}
 
   {% assign location = site.data.locations[event.location] %}
   {% assign image = event.image %}
@@ -21,7 +22,8 @@
     include figure.html
       src = image.src
       caption = caption
-      caption_position = "before"
+      caption_position = caption_position
+      attribution = event.link
       aspect_ratio = aspect_ratio
       background_size = "contain"
   %}
