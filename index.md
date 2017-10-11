@@ -7,7 +7,7 @@ layout_options:
   hide_page_title: true
 ---
 
-<div class="container">
+<div class="container space-top-4">
   <div class="row center-xs">
     <div class="col-xs-12 col-sm-10 col-md-8">
       <a href="{% link pages/location.md %}">
